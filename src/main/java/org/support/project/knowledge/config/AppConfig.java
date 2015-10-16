@@ -71,4 +71,41 @@ public class AppConfig extends org.support.project.web.config.AppConfig {
         this.slidePath = slidePath;
     }
 
+	private String hostName;
+	private String redmineURL;
+
+	/**
+	 * @return the hostName
+	 */
+	public String getHostName() {
+		if (StringUtils.isEmpty(hostName)) {
+			return "";
+		}
+		return hostName;
+	}
+
+	/**
+	 * @param hostName the hostName to set
+	 */
+	public void setHostName(String hostName) {
+		this.hostName = hostName;
+	}
+
+	/**
+	 * @return the redmineURL
+	 */
+	public String getRedmineURL() {
+		if (StringUtils.isEmpty(redmineURL)) {
+			return "";
+		}
+		return redmineURL;
+	}
+
+	/**
+	 * @param redmineURL the redmineURL to set
+	 */
+	public void setRedmineURL(String redmineURL) {
+		this.redmineURL = redmineURL;
+	}
+
 }

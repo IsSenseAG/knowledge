@@ -13,15 +13,17 @@
     <hashIterations>100</hashIterations>
     <languages>
         <language>
-            <label>jp</label>
+            <label>Japanese</label>
             <value>ja</value>
         </language>
         <language>
-            <label>us</label>
+            <label>English</label>
             <value>en</value>
         </language>
     </languages>
     <addUserProcess>org.support.project.knowledge.logic.AddUserProcessLogic</addUserProcess>
+    <hostName>10.2.1.167</hostName>
+    <redmineURL>http://10.2.1.167:10083/</redmineURL>
 </app>
 
 
