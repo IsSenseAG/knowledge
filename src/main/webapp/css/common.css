@@ -47,11 +47,12 @@ body {
 
 .title {
 	text-align: left;
-	padding: 10px;
-	margin-bottom: 20px;
-	font-size: 18px;
-	border-bottom: 3px dotted #7E7E7E;
-}
+/* 	padding: 10px; */
+	margin-bottom: 16px;
+/* 	font-size: 18px;*/
+	font-size: 32px;
+/* 	border-bottom: 3px dotted #7E7E7E;*/
+ }
 
 
 .sub_title {
@@ -62,5 +63,73 @@ body {
 	border-bottom: 1px dashed #7E7E7E;
 }
 
+/*  navbar
+/*--------------------------------- */ 
+.nav .navButton {
+	margin: 5px;
+	height: 50px;
+	vertical-align: middle;
+	color: white;
+}
+#navAddButtonLink,#navListButtonLink,#navMenuButtonLink {
+	padding-top: 14px;
+	color: white;
+}
+.navbar-default .navbar-nav > .navAddButton > a,
+.navbar-default .navbar-nav > .navAddButton > a:hover,
+.navbar-default .navbar-nav > .navAddButton > a:focus {
+	border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	height: 50px;
+	background: #009900;
+}
+.navbar-default .navbar-nav > .navListButton > a,
+.navbar-default .navbar-nav > .navListButton > a:hover,
+.navbar-default .navbar-nav > .navListButton > a:focus {
+	border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	height: 50px;
+	background: #999900;
+}
+.navbar-nav > .dropdown .dropdown-toggle {
+	border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	height: 50px;
+}
+.navbar-default .navbar-nav > .navMenuButton > a,
+.navbar-default .navbar-nav > .navMenuButton > a:hover,
+.navbar-default .navbar-nav > .navMenuButton > a:focus {
+	background: #cccccc;
+}
+.navbar-default .navbar-nav > .navLoginedMenuButton > a,
+.navbar-default .navbar-nav > .navLoginedMenuButton > a:hover,
+.navbar-default .navbar-nav > .navLoginedMenuButton > a:focus {
+	background: #0099cc;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+	background: #ff9966;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	#navSearch {
+		width: 200px;
+	}
+}
+@media screen and (min-width: 992px) {
+	#navSearch {
+		width: 350px;
+	}
+}
+.navbar .navbar-header .navbar-brand:hover{
+	color: white;
+}
 
 
+.menu_list li {
+	margin-top: 10px;
+}

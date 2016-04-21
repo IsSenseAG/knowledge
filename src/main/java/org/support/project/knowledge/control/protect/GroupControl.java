@@ -6,8 +6,6 @@ import java.util.Map;
 
 import org.support.project.common.bean.ValidateError;
 import org.support.project.common.exception.ParseException;
-import org.support.project.common.log.Log;
-import org.support.project.common.log.LogFactory;
 import org.support.project.common.util.RandomUtil;
 import org.support.project.common.util.StringUtils;
 import org.support.project.di.DI;
@@ -29,11 +27,13 @@ import org.support.project.web.entity.GroupsEntity;
 import org.support.project.web.entity.UserGroupsEntity;
 import org.support.project.web.exception.InvalidParamException;
 
-@DI(instance=Instance.Prototype)
+/**
+ * グループ操作のコントロール
+ * @author Koda
+ */
+@DI(instance = Instance.Prototype)
 public class GroupControl extends Control {
-	/** ログ */
-	private static Log LOG = LogFactory.getLog(GroupControl.class);
-	
+	/** 一覧の表示件数 */
 	public static final int PAGE_LIMIT = 10;
 	
 	/**
@@ -49,7 +49,7 @@ public class GroupControl extends Control {
 		List<GroupsEntity> groups = groupLogic.selectMyGroup(super.getLoginedUser(), offset * PAGE_LIMIT, PAGE_LIMIT);
 		setAttribute("groups", groups);
 		
-		int previous = offset -1;
+		int previous = offset - 1;
 		if (previous < 0) {
 			previous = 0;
 		}
@@ -75,7 +75,7 @@ public class GroupControl extends Control {
 		List<GroupsEntity> groups = groupLogic.selectOnKeyword(keyword, super.getLoginedUser(), offset * PAGE_LIMIT, PAGE_LIMIT);
 		setAttribute("groups", groups);
 		
-		int previous = offset -1;
+		int previous = offset - 1;
 		if (previous < 0) {
 			previous = 0;
 		}
@@ -162,7 +162,7 @@ public class GroupControl extends Control {
 			}
 		}
 		
-		int previous = offset -1;
+		int previous = offset - 1;
 		if (previous < 0) {
 			previous = 0;
 		}
@@ -452,6 +452,33 @@ public class GroupControl extends Control {
 			aHeads.add(aHead);
 		}
 		return send(aHeads);
+	}
+
+	/**
+	 * 自身が所属してるグループ選択のための候補をJSONで取得
+	 *
+	 * @return
+	 * @throws InvalidParamException
+	 */
+	@Get
+	public Boundary json() throws InvalidParamException {
+		int limit = 10;
+		String keyword = super.getParam("keyword");
+		Integer offset = super.getPathInteger(0);
+		LoginedUser loginedUser = super.getLoginedUser();
+
+		List<GroupsEntity> groups = new ArrayList<GroupsEntity>();
+		if (loginedUser == null) {
+			return send(groups);
+		}
+
+		if (loginedUser.isAdmin()) {
+			groups = GroupLogic.get().selectOnKeyword(keyword, loginedUser, offset * limit, limit);
+		} else {
+			groups = GroupLogic.get().selectMyGroupOnKeyword(keyword, loginedUser, offset * limit, limit);
+		}
+
+		return send(groups);
 	}
 	
 	/**

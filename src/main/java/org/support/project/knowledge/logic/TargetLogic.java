@@ -1,7 +1,9 @@
 package org.support.project.knowledge.logic;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.support.project.common.log.Log;
 import org.support.project.common.log.LogFactory;
@@ -9,10 +11,10 @@ import org.support.project.common.util.StringUtils;
 import org.support.project.di.Container;
 import org.support.project.di.DI;
 import org.support.project.di.Instance;
+import org.support.project.knowledge.dao.ExGroupsDao;
 import org.support.project.knowledge.dao.TargetsDao;
 import org.support.project.web.bean.LabelValue;
 import org.support.project.web.bean.LoginedUser;
-import org.support.project.web.dao.GroupsDao;
 import org.support.project.web.dao.UsersDao;
 import org.support.project.web.entity.GroupsEntity;
 import org.support.project.web.entity.UsersEntity;
@@ -48,7 +50,7 @@ public class TargetLogic {
 
 	public List<LabelValue> selectTargets(String[] targets) {
 		List<LabelValue> results = new ArrayList<>();
-		GroupsDao groupsDao = GroupsDao.get();
+		ExGroupsDao groupsDao = ExGroupsDao.get();
 		UsersDao usersDao = UsersDao.get();
 		List<Integer> groupids = new ArrayList<>();
 		List<Integer> userids = new ArrayList<>();
@@ -107,6 +109,50 @@ public class TargetLogic {
 		}
 		return results;
 	}
+
+	/**
+	 * ナレッジに指定されている公開先を取得
+	 * ナレッジ一覧に用いる
+	 *
+	 * @param knowledgeIds
+	 * @param loginedUser
+	 * @return
+	 */
+	public Map<Long, ArrayList<LabelValue>> selectTargetsOnKnowledgeIds(ArrayList<Long> knowledgeIds, LoginedUser loginedUser) {
+		Map<Long, ArrayList<LabelValue>> results = new HashMap<Long, ArrayList<LabelValue>>();
+		if (loginedUser == null || knowledgeIds.isEmpty()) {
+			return results;
+		}
+
+		TargetsDao targetsDao = TargetsDao.get();
+
+		for (Long knowledgeId : knowledgeIds) {
+			results.put(knowledgeId, new ArrayList<LabelValue>());
+		}
+
+		List<GroupsEntity> groups = targetsDao.selectGroupsOnKnowledgeIds(knowledgeIds);
+		for (GroupsEntity groupsEntity : groups) {
+			LabelValue labelValue = new LabelValue();
+			labelValue.setLabel(NAME_PREFIX_GROUP + groupsEntity.getGroupName());
+			labelValue.setValue(ID_PREFIX_GROUP + groupsEntity.getGroupId());
+			results.get(groupsEntity.getKnowledgeId()).add(labelValue);
+		}
+
+		List<UsersEntity> users = targetsDao.selectUsersOnKnowledgeIds(knowledgeIds);
+		for (UsersEntity usersEntity : users) {
+			// 自分の場合はスキップ
+			if (usersEntity.getUserId().intValue() == loginedUser.getUserId().intValue()) {
+				continue;
+			}
+			LabelValue labelValue = new LabelValue();
+			labelValue.setLabel(NAME_PREFIX_USER + usersEntity.getUserName());
+			labelValue.setValue(ID_PREFIX_USER + usersEntity.getUserId());
+			results.get(usersEntity.getKnowledgeId()).add(labelValue);
+		}
+
+		return results;
+	}
+
 	
 	/**
 	 * ナレッジに指定されている編集可能なグループを取得
@@ -133,7 +179,6 @@ public class TargetLogic {
 		return results;
 	}
 	
-	
 	/**
 	 * ターゲットからグループのIDを取得
 	 * 対象外（ユーザがターゲット）の場合、MIN_VALUEを返す
@@ -149,6 +194,19 @@ public class TargetLogic {
 			}
 		}
 		return Integer.MIN_VALUE;
+	}
+
+	/**
+	 * グループラベルか
+	 *
+	 * @param str
+	 * @return
+	 */
+	public boolean isGroupLabel(String str) {
+		if (str.startsWith(ID_PREFIX_GROUP)) {
+			return true;
+		}
+		return false;
 	}
 	
 	/**
@@ -166,6 +224,19 @@ public class TargetLogic {
 			}
 		}
 		return Integer.MIN_VALUE;
+	}
+
+	/**
+	 * ユーザラベルか
+	 *
+	 * @param str
+	 * @return
+	 */
+	public boolean isUserLabel(String str) {
+		if (str.startsWith(ID_PREFIX_USER)) {
+			return true;
+		}
+		return false;
 	}
 
 	public List<LabelValue> selectUsersOnKeyword(String keyword, LoginedUser loginedUser, int offset, int limit) {

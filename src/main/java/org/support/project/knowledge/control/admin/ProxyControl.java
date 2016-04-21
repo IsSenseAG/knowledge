@@ -9,6 +9,8 @@ import org.support.project.common.log.Log;
 import org.support.project.common.log.LogFactory;
 import org.support.project.common.util.PasswordUtil;
 import org.support.project.common.util.StringUtils;
+import org.support.project.di.DI;
+import org.support.project.di.Instance;
 import org.support.project.knowledge.config.AppConfig;
 import org.support.project.knowledge.config.AuthType;
 import org.support.project.knowledge.control.Control;
@@ -20,6 +22,7 @@ import org.support.project.web.control.service.Post;
 import org.support.project.web.dao.ProxyConfigsDao;
 import org.support.project.web.entity.ProxyConfigsEntity;
 
+@DI(instance=Instance.Prototype)
 public class ProxyControl extends Control {
 	/** ログ */
 	private static Log LOG = LogFactory.getLog(ProxyControl.class);
@@ -93,7 +96,7 @@ public class ProxyControl extends Control {
 	@Auth(roles="admin")
 	public Boundary test() throws Exception {
 		try {
-			ProxyConfigsEntity entity = null;
+			ProxyConfigsEntity entity;
 			String testUrl = getParam("testUrl");
 			Integer testType = getParam("testType", Integer.class);
 			if (INT_FLAG.OFF.getValue() == testType.intValue()) {

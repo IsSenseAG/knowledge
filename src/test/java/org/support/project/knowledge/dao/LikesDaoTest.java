@@ -1,7 +1,5 @@
 package org.support.project.knowledge.dao;
 
-import static org.junit.Assert.*;
-
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Assert;
@@ -10,6 +8,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import org.support.project.common.log.Log;
 import org.support.project.common.log.LogFactory;
+import org.support.project.common.logic.H2DBServerLogic;
 import org.support.project.knowledge.entity.LikesEntity;
 
 public class LikesDaoTest {
@@ -18,10 +17,11 @@ public class LikesDaoTest {
 
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
+		H2DBServerLogic.get().start();
 	}
-
 	@AfterClass
 	public static void tearDownAfterClass() throws Exception {
+		H2DBServerLogic.get().stop();
 	}
 
 	@Before

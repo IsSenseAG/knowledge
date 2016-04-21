@@ -5,6 +5,8 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.TimeZone;
 
+import javax.annotation.Nullable;
+
 import org.support.project.common.log.Log;
 import org.support.project.common.log.LogFactory;
 import org.support.project.knowledge.deploy.v0_0_1.InitializeSystem;
@@ -15,6 +17,9 @@ import org.support.project.knowledge.deploy.v0_5_2pre2.Migrate_0_5_2pre2;
 import org.support.project.knowledge.deploy.v0_5_3pre2.Migrate_0_5_3pre2;
 import org.support.project.knowledge.deploy.v0_5_3pre3.Migrate_0_5_3pre3;
 import org.support.project.knowledge.deploy.v0_6_0pre2.Migrate_0_6_0pre2;
+import org.support.project.knowledge.deploy.v0_6_0pre4.Migrate_0_6_0pre4;
+import org.support.project.knowledge.deploy.v0_8_0pre1.Migrate_0_8_0pre1;
+import org.support.project.knowledge.deploy.v1_1_0pre1.Migrate_1_1_0pre1;
 import org.support.project.web.dao.SystemsDao;
 import org.support.project.web.entity.SystemsEntity;
 
@@ -27,7 +32,7 @@ public class InitDB {
 	private static final Map<String, Migrate> MAP = new LinkedHashMap<>();
 	
 	private static final Migrate INIT = InitializeSystem.get();
-	public static final String CURRENT = "0.6.0.pre2";
+	public static final String CURRENT = "1.1.0.pre1";
 	
 	public InitDB() {
 		super();
@@ -38,10 +43,13 @@ public class InitDB {
 		MAP.put("0.5.2.pre2", Migrate_0_5_2pre2.get()); // 共同編集
 		MAP.put("0.5.3.pre2", Migrate_0_5_3pre2.get()); // ALLグループ
 		MAP.put("0.5.3.pre3", Migrate_0_5_3pre3.get()); // メールアドレス
-		MAP.put(CURRENT, Migrate_0_6_0pre2.get());
+		MAP.put("0.6.0.pre2", Migrate_0_6_0pre2.get());
+		MAP.put("0.6.0.pre4", Migrate_0_6_0pre4.get());
+		MAP.put("0.8.0.pre1", Migrate_0_8_0pre1.get());
+		MAP.put("1.1.0.pre1", Migrate_1_1_0pre1.get());
 	}
 
-	public static void main(String[] args) throws Exception {
+	public static void main(@Nullable String[] args) throws Exception {
 		// 内部的には、日付はGMTとして扱う
 		TimeZone zone = TimeZone.getTimeZone("GMT");
 		TimeZone.setDefault(zone);
@@ -53,9 +61,9 @@ public class InitDB {
 	public void start() throws Exception {
 		String version = "";
 		
-		Migrate migrate = null;
+		Migrate migrate;
 		SystemsDao dao = SystemsDao.get();
-		SystemsEntity entity = null;
+		SystemsEntity entity;
 		do {
 			boolean verup = false;
 			migrate = null;

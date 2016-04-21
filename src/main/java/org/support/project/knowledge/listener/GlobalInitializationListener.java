@@ -23,10 +23,10 @@ public class GlobalInitializationListener implements ServletContextListener {
 		if (StringUtils.isNotEmpty(envValue)) {
 			LOG.info("Env [" + SystemConfig.KNOWLEDGE_ENV_KEY + "] is [" + envValue + "].");
 		}
-		
 		String rootPath = AppConfig.get().getBasePath();
 		System.setProperty("user.dir", rootPath);
-		File logDir = new File(rootPath + "/logs");
+		String logsPath = AppConfig.get().getLogsPath();
+		File logDir = new File(logsPath);
 		if (!logDir.exists()) {
 			logDir.mkdirs();
 		}
@@ -34,7 +34,7 @@ public class GlobalInitializationListener implements ServletContextListener {
 		FileAppender appendar= (FileAppender) log.getAppender("APP_FILEOUT");
 		appendar.setFile(logDir + "/app.log");
 		appendar.activateOptions();//変更の反映
-		System.out.println("[APP LOG] " + logDir.getAbsolutePath() + "/app.log");
+		LOG.info("[APP LOG] " + logDir.getAbsolutePath() + "/app.log");
 		LOG.info(logDir.getAbsolutePath());
 	}
 	

@@ -60,13 +60,13 @@ public class DataTransferLogic {
 		SystemsEntity systemEntity = systemsDao.selectOnKey(AppConfig.get().getSystemName());
 		if (systemEntity == null) {
 			// Systemバージョン情報が無い未初期化のDBからコピーしてもしょうがない
-			System.out.println("Data transfer is failed.");
+			LOG.info("Data transfer is failed.");
 			return;
 		}
 		String version = systemEntity.getVersion();
 		if (!InitDB.CURRENT.equals(version)) {
 			// コピー元のDBのバージョンが古い（なんかおかしい）
-			System.out.println("Data transfer is failed.");
+			LOG.info("Data transfer is failed.");
 			return;
 		}
 		
@@ -115,7 +115,7 @@ public class DataTransferLogic {
 		// データコピー
 		for (Class class1 : targets) {
 			if (AbstractDao.class.isAssignableFrom(class1)) {
-				System.out.println("Data transfer : " + class1.getName());
+				LOG.info("Data transfer : " + class1.getName());
 				Object dao = Container.getComp(class1);
 				// From からデータ取得
 				Method setConnectionNameMethods = class1.getMethod("setConnectionName", String.class);
@@ -258,7 +258,7 @@ public class DataTransferLogic {
 		AppConfig appConfig = AppConfig.get();
 		Path source = Paths.get(appConfig.getDatabasePath());
 		if (Files.exists(source)) {
-			Path target = Paths.get(appConfig.getBasePath() + "/db_" + DateUtils.TRANSFER_DATETIME.format(new Date()));
+			Path target = Paths.get(appConfig.getBasePath() + "/db_" + DateUtils.getTransferDateFormat().format(new Date()));
 			Files.move(source, target, StandardCopyOption.REPLACE_EXISTING);
 		}
 	}

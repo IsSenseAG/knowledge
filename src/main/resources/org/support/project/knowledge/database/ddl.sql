@@ -72,6 +72,7 @@ create table TEMPLATE_ITEMS (
   , ITEM_NO integer not null
   , ITEM_NAME character varying(32) not null
   , ITEM_TYPE integer not null
+  , DESCRIPTION character varying(1024)
   , INSERT_USER integer
   , INSERT_DATETIME timestamp
   , UPDATE_USER integer
@@ -375,6 +376,40 @@ create table KNOWLEDGES (
   , constraint KNOWLEDGES_PKC primary key (KNOWLEDGE_ID)
 ) ;
 
+-- Webhook 設定
+drop table if exists WEBHOOK_CONFIGS cascade;
+
+create table WEBHOOK_CONFIGS (
+  HOOK_ID serial not null
+  , HOOK character varying(20) not null
+  , URL character varying(256) not null
+  , INSERT_USER integer
+  , INSERT_DATETIME timestamp
+  , UPDATE_USER integer
+  , UPDATE_DATETIME timestamp
+  , DELETE_FLAG integer
+  , constraint WEBHOOK_CONFIGS_PKC primary key (HOOK_ID)
+) ;
+
+-- Webhooks
+drop table if exists WEBHOOKS cascade;
+
+create table WEBHOOKS (
+  WEBHOOK_ID character varying(64) not null
+  , STATUS integer not null
+  , HOOK character varying(20)
+  , CONTENT text
+  , INSERT_USER integer
+  , INSERT_DATETIME timestamp
+  , UPDATE_USER integer
+  , UPDATE_DATETIME timestamp
+  , DELETE_FLAG integer
+  , constraint WEBHOOKS_PKC primary key (WEBHOOK_ID)
+) ;
+
+create index IDX_WEBHOOKS_STATUS
+  on WEBHOOKS(STATUS);
+
 comment on table STOCKS is 'ストック';
 comment on column STOCKS.STOCK_ID is 'STOCK ID';
 comment on column STOCKS.STOCK_NAME is 'STOCK 名';
@@ -426,6 +461,7 @@ comment on column TEMPLATE_ITEMS.TYPE_ID is 'テンプレートの種類ID';
 comment on column TEMPLATE_ITEMS.ITEM_NO is '項目NO';
 comment on column TEMPLATE_ITEMS.ITEM_NAME is '項目名';
 comment on column TEMPLATE_ITEMS.ITEM_TYPE is '項目の種類';
+comment on column TEMPLATE_ITEMS.DESCRIPTION is '説明';
 comment on column TEMPLATE_ITEMS.INSERT_USER is '登録ユーザ';
 comment on column TEMPLATE_ITEMS.INSERT_DATETIME is '登録日時';
 comment on column TEMPLATE_ITEMS.UPDATE_USER is '更新ユーザ';
@@ -623,3 +659,22 @@ comment on column KNOWLEDGES.INSERT_DATETIME is '登録日時';
 comment on column KNOWLEDGES.UPDATE_USER is '更新ユーザ';
 comment on column KNOWLEDGES.UPDATE_DATETIME is '更新日時';
 comment on column KNOWLEDGES.DELETE_FLAG is '削除フラグ';
+
+comment on table WEBHOOK_CONFIGS is 'Webhooks 設定';
+comment on column WEBHOOK_CONFIGS.HOOK_ID is 'HOOK ID';
+comment on column WEBHOOK_CONFIGS.HOOK is 'HOOK';
+comment on column WEBHOOK_CONFIGS.URL is 'URL';
+comment on column WEBHOOK_CONFIGS.INSERT_USER is '登録ユーザ';
+comment on column WEBHOOK_CONFIGS.INSERT_DATETIME is '登録日時';
+comment on column WEBHOOK_CONFIGS.DELETE_FLAG is '削除フラグ';
+
+comment on table WEBHOOKS is 'Webhooks';
+comment on column WEBHOOKS.WEBHOOK_ID is 'WEBHOOK ID';
+comment on column WEBHOOKS.STATUS is 'ステータス';
+comment on column WEBHOOKS.HOOK is 'HOOK';
+comment on column WEBHOOKS.CONTENT is '通知用json文字列';
+comment on column WEBHOOKS.INSERT_USER is '登録ユーザ';
+comment on column WEBHOOKS.INSERT_DATETIME is '登録日時';
+comment on column WEBHOOKS.UPDATE_USER is '更新ユーザ';
+comment on column WEBHOOKS.UPDATE_DATETIME is '更新日時';
+comment on column WEBHOOKS.DELETE_FLAG is '削除フラグ';

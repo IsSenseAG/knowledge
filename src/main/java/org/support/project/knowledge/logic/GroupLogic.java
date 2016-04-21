@@ -10,6 +10,7 @@ import org.support.project.common.util.StringUtils;
 import org.support.project.di.Container;
 import org.support.project.di.DI;
 import org.support.project.di.Instance;
+import org.support.project.knowledge.dao.ExGroupsDao;
 import org.support.project.knowledge.dao.ExUsersDao;
 import org.support.project.knowledge.dao.KnowledgeGroupsDao;
 import org.support.project.knowledge.dao.TargetsDao;
@@ -41,17 +42,17 @@ public class GroupLogic {
 	 */
 	@Aspect(advice=org.support.project.ormapping.transaction.Transaction.class)
 	public GroupsEntity addGroup(GroupsEntity groupsEntity, LoginedUser loginedUser) {
-		GroupsDao groupsDao = GroupsDao.get();
-		groupsEntity = groupsDao.insert(groupsEntity);
+		ExGroupsDao groupsDao = ExGroupsDao.get();
+		GroupsEntity insertedEntity = groupsDao.insert(groupsEntity);
 		
 		UserGroupsDao userGroupsDao = UserGroupsDao.get();
 		UserGroupsEntity userGroupsEntity = new UserGroupsEntity(
-				groupsEntity.getGroupId(), 
+				insertedEntity.getGroupId(), 
 				loginedUser.getUserId());
 		userGroupsEntity.setGroupRole(CommonWebParameter.GROUP_ROLE_ADMIN);
 		userGroupsDao.insert(userGroupsEntity);
 		
-		return groupsEntity;
+		return insertedEntity;
 	}
 	
 	/**
@@ -62,14 +63,13 @@ public class GroupLogic {
 	 */
 	@Aspect(advice=org.support.project.ormapping.transaction.Transaction.class)
 	public GroupsEntity updateGroup(GroupsEntity groupsEntity, LoginedUser loginedUser) {
-		GroupsDao groupsDao = GroupsDao.get();
+		ExGroupsDao groupsDao = ExGroupsDao.get();
 		if (!loginedUser.isAdmin()) {
 			if (groupsDao.selectAccessAbleGroup(groupsEntity.getGroupId(), loginedUser) == null) {
 				return null; // アクセス権がないユーザ
 			}
 		}
-		groupsEntity = groupsDao.save(groupsEntity);
-		return groupsEntity;
+		return groupsDao.save(groupsEntity);
 	}
 	
 	/**
@@ -79,7 +79,7 @@ public class GroupLogic {
 	 */
 	@Aspect(advice=org.support.project.ormapping.transaction.Transaction.class)
 	public void deleteGroup(Integer groupId, LoginedUser loginedUser) {
-		GroupsDao groupsDao = GroupsDao.get();
+		ExGroupsDao groupsDao = ExGroupsDao.get();
 		if (!loginedUser.isAdmin()) {
 			if (groupsDao.selectAccessAbleGroup(groupId, loginedUser) == null) {
 				return; // アクセス権がないユーザ
@@ -110,11 +110,12 @@ public class GroupLogic {
 		List<GroupsEntity> list;
 		if (loginedUser == null) {
 			list = new ArrayList<>();
+			return list;
 		}
-		GroupsDao groupsDao = GroupsDao.get();
-		if (loginedUser.isAdmin()) {
+		ExGroupsDao groupsDao = ExGroupsDao.get();
+		if (loginedUser != null && loginedUser.isAdmin()) {
 			if (StringUtils.isEmpty(keyword)) {
-				list = groupsDao.selectAll(offset, limit);
+				list = groupsDao.selectGroupsWithCount(offset, limit);
 			} else {
 				list = groupsDao.selectOnKeyword(keyword, loginedUser, offset, limit);
 			}
@@ -141,7 +142,7 @@ public class GroupLogic {
 	 * @return
 	 */
 	public List<GroupsEntity> selectMyGroup(LoginedUser loginedUser, int offset, int limit) {
-		GroupsDao groupsDao = GroupsDao.get();
+		ExGroupsDao groupsDao = ExGroupsDao.get();
 		List<GroupsEntity> list = groupsDao.selectMyGroup(loginedUser, offset, limit);
 		
 		for (GroupsEntity groupsEntity : list) {
@@ -150,7 +151,27 @@ public class GroupLogic {
 		
 		return list;
 	}
-	
+
+	/**
+	 * 所属グループをキーワードで検索する
+	 *
+	 * @param keyword
+	 * @param loginedUser
+	 * @param offset
+	 * @param limit
+	 * @return
+	 */
+	public List<GroupsEntity> selectMyGroupOnKeyword(String keyword, LoginedUser loginedUser, int offset, int limit) {
+		ExGroupsDao groupsDao = ExGroupsDao.get();
+		List<GroupsEntity> list = groupsDao.selectMyGroupOnKeyword(keyword, loginedUser, offset, limit);
+
+		for (GroupsEntity groupsEntity : list) {
+			setGroupStatus(groupsEntity, loginedUser);
+		}
+
+		return list;
+	}
+
 	/**
 	 * 自分が指定のグループの所属状態がどうなっているかセットする
 	 * @param groupsEntity
@@ -171,11 +192,18 @@ public class GroupLogic {
 	 * @return
 	 */
 	public GroupsEntity getGroup(Integer groupId, LoginedUser loginedUser) {
-		GroupsDao groupsDao = GroupsDao.get();
+		ExGroupsDao groupsDao = ExGroupsDao.get();
+		GroupsEntity group;
 		if (loginedUser.isAdmin()) {
-			return groupsDao.selectOnKey(groupId);
+			group = groupsDao.selectOnKey(groupId);
+		} else {
+			group = groupsDao.selectAccessAbleGroup(groupId, loginedUser);
 		}
-		return groupsDao.selectAccessAbleGroup(groupId, loginedUser);
+
+		if (group != null) {
+			setGroupStatus(group, loginedUser);
+		}
+		return group;
 	}
 
 	/**
@@ -187,7 +215,7 @@ public class GroupLogic {
 	 * @return
 	 */
 	public GroupsEntity getEditAbleGroup(Integer groupId, LoginedUser loginedUser) {
-		GroupsDao groupsDao = GroupsDao.get();
+		ExGroupsDao groupsDao = ExGroupsDao.get();
 		if (loginedUser.isAdmin()) {
 			return groupsDao.selectOnKey(groupId);
 		}
@@ -250,7 +278,7 @@ public class GroupLogic {
 	 * @return
 	 */
 	public List<GroupsEntity> selectGroups(String[] groups) {
-		GroupsDao groupsDao = GroupsDao.get();
+		ExGroupsDao groupsDao = ExGroupsDao.get();
 		List<Integer> groupids = new ArrayList<>();
 		for (String str : groups) {
 			if (StringUtils.isInteger(str)) {
@@ -280,7 +308,7 @@ public class GroupLogic {
 	 * @return
 	 */
 	public MessageResult addUsers(LoginedUser loginedUser, Integer groupId, String users) {
-		GroupsDao groupsDao = GroupsDao.get();
+		ExGroupsDao groupsDao = ExGroupsDao.get();
 		if (!loginedUser.isAdmin()) {
 			if (groupsDao.selectAccessAbleGroup(groupId, loginedUser) == null) {
 				MessageResult messageResult = new MessageResult();

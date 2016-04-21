@@ -184,55 +184,102 @@ $(document).ready(function() {
 	$('#emojiSymbolsModal').on('loaded.bs.modal', function (event) {
 		emojiSelect('#emojiSymbolsModal');
 	});
-	
-	$('#sampleMarkdownCheck').click(function() {
-		var text = $('#sampleMarkdownText').val();
-		var textarea = $('#content');
-		textarea.val(text);
-		preview();
-		$('#helpMarkdownModal').modal('hide');
-		var p = $("#preview").offset().top - 60;
-		$('html,body').animate({ scrollTop: p }, 'fast');
-	});
-	
-	$('#select_template').change(function() {
-		var sel = $('#select_template').val();
-		var title = $('#Title' + sel).val();
-		var text = $('#Template' + sel).val();
-		var textarea = $('#content');
-		var inputtitle = $('#input_title');
-		//入力済みチェック
-		if (!(inputtitle.val() == '' && textarea.val() == '')) {
-			if(!confirm("編集内容が失われますがよろしいですか？")) {
-				return;
-			}
-		}
-		//変数置換
-		var date = new Date();
-		title=title.replace("%{Year}", date.getFullYear());
-		title=title.replace("%{month}", date.getMonth()+1);
-		title=title.replace("%{day}", date.getDate());
-		title=title.replace("%{user}", $("#userName").val());
-		text=text.replace("%{Year}", date.getFullYear());
-		text=text.replace("%{month}", date.getMonth()+1);
-		text=text.replace("%{day}", date.getDate());
-		text=text.replace("%{user}", $("#userName").val());
-		//セット
-		inputtitle.val(title);
-		textarea.val(text);
-		preview();
+	$('#helpMarkdownModal').on('shown.bs.modal', function (event) {
+		$.post(_CONTEXT + '/open.knowledge/marked', {
+			title : 'Markdown Sample',
+			content : $('#sampleMarkdownText').val()
+		}, function(data) {
+			var html = '<div style="word-break:break-all" id="content">';
+			var content = data.content;
+			html += content;
+			html += '</div>';
+			
+			var jqObj = $('#markdownSamplePreview');
+			jqObj.html(html);
+			jqObj.find('code').addClass('hljs');
+			codeHighlight(jqObj)
+			.then(function() {
+				var content = emoji(jqObj.html().trim(), _CONTEXT + '/bower/emoji-parser/emoji', {classes: 'emoji-img'});
+				jqObj.html(content);
+			}).then(function () {
+				jqObj.find('a.oembed').oembed();
+			});
+		});
 	});
 	
 	setUpTagSelect();
 	
-	if ($('.selectpicker').length) {
-		$('.selectpicker').selectpicker();
-		
-		$('input[name="typeId"]:radio').change(function() {
-			changeTemplate();
-		});
+	$('input[name="typeId"]:radio').change(function() {
 		changeTemplate();
-	}
+	});
+	changeTemplate();
+	
+	
+	// 保存処理
+	// フォームのサブミットは禁止
+	$('#knowledgeForm').submit(function(event) {
+		console.log('submit');
+		// 操作対象のフォーム要素を取得
+		var $form = $(this);
+		// ページ遷移を禁止して、Ajaxで保存
+		event.preventDefault();
+		
+		// 送信ボタンを取得
+		// （後で使う: 二重送信を防止する。）
+		var $button = $form.find('button');
+		
+		// 送信
+		$.ajax({
+			url: $form.attr('action'),
+			type: $form.attr('method'),
+			data: $form.serialize(),
+			timeout: 10000,  // 単位はミリ秒
+
+			// 送信前
+			beforeSend: function(xhr, settings) {
+				// ボタンを無効化し、二重送信を防止
+				$button.attr('disabled', true);
+			},
+			// 応答後
+			complete: function(xhr, textStatus) {
+				// ボタンを有効化し、再送信を許可
+				$button.attr('disabled', false);
+			},
+			
+			// 通信成功時の処理
+			success: function(result, textStatus, xhr) {
+				// 入力値を初期化
+				console.log(result);
+				
+				$form.attr('action', _CONTEXT + '/protect.knowledge/update');
+				
+				var knowledgeId = result.result;
+				$('#knowledgeId').val(knowledgeId);
+				$('#knowledgeIdForDelete').val(knowledgeId);
+				$('#savebutton').html('<i class="fa fa-save"></i>&nbsp;' + _LABEL_UPDATE);
+				$('#title_msg').text(_UPDATE_TITLE);
+				$('#deleteButton').removeClass('hide');
+				$('#cancelButton').removeClass('hide');
+				$('#cancelButton').attr('href', _CONTEXT + '/open.knowledge/view/' + knowledgeId);
+				
+				$.notify(result.message, 'info');
+			},
+			// 通信失敗時の処理
+			error: function(xhr, textStatus, error) {
+				// 入力値を初期化
+				console.log(xhr.responseJSON);
+				var msg = xhr.responseJSON;
+				if (msg.children) {
+					for (var i = 0; i < msg.children.length; i++) {
+						var child = msg.children[i];
+						console.log(child);
+						$.notify(child.message, 'warn');
+					}
+				}
+			}
+		});
+		return false;
+	});
 	
 });
 
@@ -258,7 +305,7 @@ var getGroups = function(keyword, offset, listId, pageId, selectFunc) {
 		} else {
 			html+= '<div class="list-group">';
 			for (var int = 0; int < result.length; int++) {
-				html += '<a href="#" class="list-group-item" onclick="' + selectFunc + '(' + int + ')">';
+				html += '<a href="javascript:void(0);" class="list-group-item" onclick="' + selectFunc + '(' + int + ')">';
 				html += result[int].label;
 				html += '</a>';
 			}
@@ -376,51 +423,26 @@ var setImagePath = function(url, name) {
 
 
 var emoji = window.emojiParser;
-
-var previewTimer;
-
-var previewInput = function() {
-	clearTimeout(previewTimer);
-	previewTimer = setTimeout('preview();',400);
-}
-
 var preview = function() {
 	$.post(_CONTEXT + '/open.knowledge/marked', {
 		title : $('#input_title').val(),
 		content : $('#content').val()
 	}, function(data) {
-		var html = '<div class="row">';
-		html += '<div class="col-sm-12">';
-		html += '<div class="thumbnail">';
-		html += '<div class="caption">';
-		html += '[preview]';
-		html += '<h3>';
-		html += data.title;
-		html += '</h3><hr/>';
-		html += '<p style="word-break:break-all" id="content">';
+		var html = '<div style="word-break:break-all" id="content">';
 		var content = data.content;
 		html += content;
-		html += '</p>';
-		html += '</div>';
-		html += '</div>';
-		html += '</div>';
 		html += '</div>';
 		
 		var jqObj = $('#preview');
 		jqObj.html(html);
+		jqObj.find('code').addClass('hljs');
 		codeHighlight(jqObj)
 		.then(function() {
 			var content = emoji(jqObj.html().trim(), _CONTEXT + '/bower/emoji-parser/emoji', {classes: 'emoji-img'});
 			jqObj.html(content);
-			
-			//var speed = 500;
-			//var target = $('#preview');
-			//var position = target.offset().top;
-			//$("html, body").animate({scrollTop:position}, speed, "swing");
-			
-			return;
+		}).then(function () {
+			jqObj.find('a.oembed').oembed();
 		});
-		
 	});
 };
 
@@ -438,8 +460,8 @@ var emojiSelect = function(id) {
 function deleteKnowledge() {
 	bootbox.confirm(_CONFIRM, function(result) {
 		if (result) {
-			$('#knowledgeForm').attr('action', _CONTEXT + '/protect.knowledge/delete');
-			$('#knowledgeForm').submit();
+			$('#knowledgeDeleteForm').attr('action', _CONTEXT + '/protect.knowledge/delete');
+			$('#knowledgeDeleteForm').submit();
 		}
 	}); 
 };
@@ -469,24 +491,64 @@ var changeTemplate = function() {
 };
 
 var addTemplateItem = function(template) {
-	$('#template_name').text(template.typeName);
 	$('#template_msg').text(template.description);
 	$('#template_info').removeClass('hide');
 	$('#template_info').addClass('show');
 	
-
 	$('#template_items').html('');
 	if (template.items && template.items.length > 0) {
 		for (var i = 0; i < template.items.length; i++) {
 			var item = template.items[i];
 			console.log(item);
-			var tag = '<label for="item_' + item.itemNo + '">' + item.itemName + '</label>';
-			tag += '<input type="text" class="form-control" name="item_' + item.itemNo + '" for="item_' + item.itemNo
-			var val = '';
-			if (item.itemValue) {
-				val = item.itemValue;
+			var tag = '<div class="form-group"><label for="item_' + item.itemNo + '">' + item.itemName + '</label>';
+			
+			// テンプレートの項目の種類毎に生成する入力項目を変化
+			if (item.itemType === 1) {
+				// textarea
+			} else if (item.itemType === 10) {
+				// Radio
+				if (item.choices) {
+					tag += '<br/>';
+					for (var j = 0; j < item.choices.length; j++) {
+						var choice = item.choices[j];
+						tag += '<label class="radio-inline"><input type="radio" class="" name="item_' + item.itemNo;
+						tag += '" value="' + choice.choiceValue + '" ';
+						if (choice.choiceValue == item.itemValue) {
+							tag += 'checked="checked" ';
+						}
+						tag += '/> &nbsp;' + choice.choiceLabel + '</label><br/>';
+					}
+				}
+			} else if (item.itemType === 11) {
+				// Checkbox
+				if (item.choices) {
+					tag += '<br/>';
+					for (var j = 0; j < item.choices.length; j++) {
+						var choice = item.choices[j];
+						tag += '<label class="checkbox-inline"><input type="checkbox" class="" name="item_' + item.itemNo;
+						tag += '" value="' + choice.choiceValue + '" ';
+						if (item.itemValue) {
+							var vals = item.itemValue.split(',');
+							for (var k = 0; k < vals.length; k++) {
+								if (choice.choiceValue == vals[k].trim()) {
+									tag += 'checked="checked" ';
+									break;
+								}
+							}
+						}
+						tag += '/> &nbsp;' + choice.choiceLabel + '</label><br/>';
+					}
+				}
+			} else {
+				// text
+				tag += '<input type="text" class="form-control" name="item_' + item.itemNo;
+				var val = '';
+				if (item.itemValue) {
+					val = item.itemValue;
+				}
+				tag += '" value="' + val + '" />';
 			}
-			tag += '" value="' + val + '" />';
+			tag += '</div>';
 			$('#template_items').append(tag);
 		}
 	}

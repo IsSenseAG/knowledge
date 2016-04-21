@@ -29,23 +29,6 @@ import org.support.project.web.logic.SanitizingLogic;
 public class MarkdownLogicTest extends TestCommon {
 	/** ログ */
 	private static Log LOG = LogFactory.getLog(MarkdownLogicTest.class);
-
-	@BeforeClass
-	public static void setUpBeforeClass() throws Exception {
-	}
-
-	@AfterClass
-	public static void tearDownAfterClass() throws Exception {
-	}
-
-	@Before
-	public void setUp() throws Exception {
-	}
-
-	@After
-	public void tearDown() throws Exception {
-	}
-	
 	
 	/**
 	 * 改行コードは無視して値比較をするために、文字列（Line）の配列で取得
@@ -76,7 +59,7 @@ public class MarkdownLogicTest extends TestCommon {
 	public void test1() throws Exception {
 		String markdown = FileUtil.read(getClass().getResourceAsStream("markdown/markdown-1.md"));
 		String html = FileUtil.read(getClass().getResourceAsStream("markdown/result-1.txt"));
-		String result = MarkdownLogic.get().markdownToHtml(markdown).getHtml();
+		String result = MarkdownLogic.get().markdownToHtml(markdown, MarkdownLogic.ENGINE_PEGDOWN).getHtml();
 		try {
 			org.junit.Assert.assertArrayEquals(read(html), read(result));
 		} catch (AssertionError e) {
@@ -94,7 +77,7 @@ public class MarkdownLogicTest extends TestCommon {
 	public void test2() throws UnsupportedEncodingException, IOException, ParseException, TransformerFactoryConfigurationError, TransformerException {
 		String markdown = FileUtil.read(getClass().getResourceAsStream("markdown/markdown-2.md"));
 		String html = FileUtil.read(getClass().getResourceAsStream("markdown/result-2.txt"));
-		String result = MarkdownLogic.get().markdownToHtml(markdown).getHtml();
+		String result = MarkdownLogic.get().markdownToHtml(markdown, MarkdownLogic.ENGINE_PEGDOWN).getHtml();
 		try {
 			org.junit.Assert.assertArrayEquals(read(html), read(result));
 		} catch (AssertionError e) {
@@ -112,7 +95,7 @@ public class MarkdownLogicTest extends TestCommon {
 	public void test3() throws ParseException, UnsupportedEncodingException, IOException, TransformerFactoryConfigurationError, TransformerException {
 		String markdown = FileUtil.read(getClass().getResourceAsStream("markdown/markdown-3.md"));
 		String html = FileUtil.read(getClass().getResourceAsStream("markdown/result-3.txt"));
-		String result = MarkdownLogic.get().markdownToHtml(markdown).getHtml();
+		String result = MarkdownLogic.get().markdownToHtml(markdown, MarkdownLogic.ENGINE_PEGDOWN).getHtml();
 		try {
 			org.junit.Assert.assertArrayEquals(read(html), read(result));
 		} catch (AssertionError e) {
@@ -130,7 +113,7 @@ public class MarkdownLogicTest extends TestCommon {
 	public void test4() throws ParseException, UnsupportedEncodingException, IOException, TransformerFactoryConfigurationError, TransformerException {
 		String markdown = FileUtil.read(getClass().getResourceAsStream("markdown/markdown-4.md"));
 		String html = FileUtil.read(getClass().getResourceAsStream("markdown/result-4.txt"));
-		String result = MarkdownLogic.get().markdownToHtml(markdown).getHtml();
+		String result = MarkdownLogic.get().markdownToHtml(markdown, MarkdownLogic.ENGINE_PEGDOWN).getHtml();
 		try {
 			org.junit.Assert.assertArrayEquals(read(html), read(result));
 		} catch (AssertionError e) {
@@ -148,7 +131,7 @@ public class MarkdownLogicTest extends TestCommon {
 	public void test5() throws ParseException, UnsupportedEncodingException, IOException, TransformerFactoryConfigurationError, TransformerException {
 		String markdown = FileUtil.read(getClass().getResourceAsStream("markdown/markdown-5.md"));
 		String html = FileUtil.read(getClass().getResourceAsStream("markdown/result-5.txt"));
-		String result = MarkdownLogic.get().markdownToHtml(markdown).getHtml();
+		String result = MarkdownLogic.get().markdownToHtml(markdown, MarkdownLogic.ENGINE_PEGDOWN).getHtml();
 		try {
 			org.junit.Assert.assertArrayEquals(read(html), read(result));
 		} catch (AssertionError e) {
@@ -171,7 +154,7 @@ public class MarkdownLogicTest extends TestCommon {
 		try {
 			org.junit.Assert.assertArrayEquals(read(html), read(result));
 		} catch (AssertionError e) {
-			LOG.info("test5");
+			LOG.info("test6");
 			LOG.info("[Markdown] : " + markdown);
 			LOG.info("[Html]     : " + html);
 			LOG.info("[Parsed]   : " + result);
@@ -185,7 +168,7 @@ public class MarkdownLogicTest extends TestCommon {
 		try {
 			org.junit.Assert.assertArrayEquals(read(html), read(result));
 		} catch (AssertionError e) {
-			LOG.info("test5");
+			LOG.info("test6-2");
 			LOG.info("[Markdown] : " + markdown);
 			LOG.info("[Html]     : " + html);
 			LOG.info("[Parsed]   : " + result);
@@ -206,6 +189,66 @@ public class MarkdownLogicTest extends TestCommon {
 			throw e;
 		}
 	}
+	
+	
+	
+	
+	@Test
+	@Order(order= 7)
+	public void testMarkdJ1() throws ParseException, UnsupportedEncodingException, IOException, TransformerFactoryConfigurationError, TransformerException {
+		String markdown = FileUtil.read(getClass().getResourceAsStream("markdown/markdj-1.md"));
+		String html = FileUtil.read(getClass().getResourceAsStream("markdown/result-markdj-1.txt"));
+		String result = MarkdownLogic.get().markdownToHtml(markdown, MarkdownLogic.ENGINE_MARKEDJ).getHtml();
+		try {
+			org.junit.Assert.assertArrayEquals(read(html), read(result));
+		} catch (AssertionError e) {
+			LOG.info("testMarkdJ1");
+			LOG.info("[Markdown] : " + markdown);
+			LOG.info("[Html]     : " + html);
+			LOG.info("[Parsed]   : " + result);
+			LOG.info("[Indent]   : " + SanitizingLogic.get().indent(result));
+			throw e;
+		}
+	}
+	
+
+	@Test
+	@Order(order= 8)
+	public void testMarkdJLink() throws ParseException, UnsupportedEncodingException, IOException, TransformerFactoryConfigurationError, TransformerException {
+		String markdown = FileUtil.read(getClass().getResourceAsStream("markdown/markdj-link.md"));
+		String html = FileUtil.read(getClass().getResourceAsStream("markdown/result-markdj-link.txt"));
+		String result = MarkdownLogic.get().markdownToHtml(markdown, MarkdownLogic.ENGINE_MARKEDJ).getHtml();
+		try {
+			org.junit.Assert.assertArrayEquals(read(html), read(result));
+		} catch (AssertionError e) {
+			LOG.info("testMarkdJ1");
+			LOG.info("[Markdown] : " + markdown);
+			LOG.info("[Html]     : " + html);
+			LOG.info("[Parsed]   : " + result);
+			LOG.info("[Indent]   : " + SanitizingLogic.get().indent(result));
+			throw e;
+		}
+	}
+	
+	
+	
+    @Test
+    @Order(order= 8)
+    public void testMarkdJDel() throws ParseException, UnsupportedEncodingException, IOException, TransformerFactoryConfigurationError, TransformerException {
+        String markdown = FileUtil.read(getClass().getResourceAsStream("markdown/markdj-del.md"));
+        String html = FileUtil.read(getClass().getResourceAsStream("markdown/result-markdj-del.txt"));
+        String result = MarkdownLogic.get().markdownToHtml(markdown, MarkdownLogic.ENGINE_MARKEDJ).getHtml();
+        try {
+            org.junit.Assert.assertArrayEquals(read(html), read(result));
+        } catch (AssertionError e) {
+            LOG.info("testMarkdJDel");
+            LOG.info("[Markdown] : " + markdown);
+            LOG.info("[Html]     : " + html);
+            LOG.info("[Parsed]   : " + result);
+            LOG.info("[Indent]   : " + SanitizingLogic.get().indent(result));
+            throw e;
+        }
+    }	
 	
 	
 	

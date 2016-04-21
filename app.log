@@ -1,0 +1,2148 @@
+INFO  2016-04-21 18:59:14,925 [H2DBServerLogic(52)] H2 Database server started.
+INFO  2016-04-21 18:59:14,956 [TestWatcher(23)] @@@@@@ TEST START - org.support.project.knowledge.control.open.KnowledgeControlTest#testView
+INFO  2016-04-21 18:59:15,519 [TestWatcher(31)] @@@@@@ TEST FINISHED - 563 [ms]  -  org.support.project.knowledge.control.open.KnowledgeControlTest#testView
+INFO  2016-04-21 18:59:15,535 [TestWatcher(23)] @@@@@@ TEST START - org.support.project.knowledge.control.open.KnowledgeControlTest#testList
+INFO  2016-04-21 18:59:16,642 [TestWatcher(31)] @@@@@@ TEST FINISHED - 1107 [ms]  -  org.support.project.knowledge.control.open.KnowledgeControlTest#testList
+INFO  2016-04-21 18:59:16,642 [TestWatcher(23)] @@@@@@ TEST START - org.support.project.knowledge.control.open.KnowledgeControlTest#test
+INFO  2016-04-21 18:59:16,658 [TestWatcher(31)] @@@@@@ TEST FINISHED - 16 [ms]  -  org.support.project.knowledge.control.open.KnowledgeControlTest#test
+INFO  2016-04-21 18:59:16,658 [H2DBServerLogic(66)] H2 Database server stoped.
+INFO  2016-04-21 18:59:16,674 [H2DBServerLogic(52)] H2 Database server started.
+INFO  2016-04-21 18:59:17,162 [H2DBServerLogic(66)] H2 Database server stoped.
+INFO  2016-04-21 18:59:17,211 [H2DBServerLogic(52)] H2 Database server started.
+INFO  2016-04-21 18:59:17,523 [DatabaseMetaDataDao(114)] Read Table info: ACCESS_LOGS
+INFO  2016-04-21 18:59:17,523 [DatabaseMetaDataDao(114)] Read Table info: ACCOUNT_IMAGES
+INFO  2016-04-21 18:59:17,523 [DatabaseMetaDataDao(114)] Read Table info: COMMENTS
+INFO  2016-04-21 18:59:17,523 [DatabaseMetaDataDao(114)] Read Table info: CONFIRM_MAIL_CHANGES
+INFO  2016-04-21 18:59:17,523 [DatabaseMetaDataDao(114)] Read Table info: FUNCTIONS
+INFO  2016-04-21 18:59:17,538 [DatabaseMetaDataDao(114)] Read Table info: GROUPS
+INFO  2016-04-21 18:59:17,538 [DatabaseMetaDataDao(114)] Read Table info: HASH_CONFIGS
+INFO  2016-04-21 18:59:17,538 [DatabaseMetaDataDao(114)] Read Table info: ITEM_CHOICES
+INFO  2016-04-21 18:59:17,538 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGES
+INFO  2016-04-21 18:59:17,538 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_EDIT_GROUPS
+INFO  2016-04-21 18:59:17,538 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_EDIT_USERS
+INFO  2016-04-21 18:59:17,538 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_FILES
+INFO  2016-04-21 18:59:17,538 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_GROUPS
+INFO  2016-04-21 18:59:17,538 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_HISTORIES
+INFO  2016-04-21 18:59:17,538 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_ITEM_VALUES
+INFO  2016-04-21 18:59:17,554 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_TAGS
+INFO  2016-04-21 18:59:17,554 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_USERS
+INFO  2016-04-21 18:59:17,554 [DatabaseMetaDataDao(114)] Read Table info: LDAP_CONFIGS
+INFO  2016-04-21 18:59:17,554 [DatabaseMetaDataDao(114)] Read Table info: LIKES
+INFO  2016-04-21 18:59:17,554 [DatabaseMetaDataDao(114)] Read Table info: LOCALES
+INFO  2016-04-21 18:59:17,554 [DatabaseMetaDataDao(114)] Read Table info: LOGIN_HISTORIES
+INFO  2016-04-21 18:59:17,554 [DatabaseMetaDataDao(114)] Read Table info: MAILS
+INFO  2016-04-21 18:59:17,554 [DatabaseMetaDataDao(114)] Read Table info: MAIL_CONFIGS
+INFO  2016-04-21 18:59:17,554 [DatabaseMetaDataDao(114)] Read Table info: NOTICES
+INFO  2016-04-21 18:59:17,554 [DatabaseMetaDataDao(114)] Read Table info: NOTIFY_CONFIGS
+INFO  2016-04-21 18:59:17,554 [DatabaseMetaDataDao(114)] Read Table info: NOTIFY_QUEUES
+INFO  2016-04-21 18:59:17,554 [DatabaseMetaDataDao(114)] Read Table info: PASSWORD_RESETS
+INFO  2016-04-21 18:59:17,554 [DatabaseMetaDataDao(114)] Read Table info: PROVISIONAL_REGISTRATIONS
+INFO  2016-04-21 18:59:17,554 [DatabaseMetaDataDao(114)] Read Table info: PROXY_CONFIGS
+INFO  2016-04-21 18:59:17,554 [DatabaseMetaDataDao(114)] Read Table info: READ_MARKS
+INFO  2016-04-21 18:59:17,554 [DatabaseMetaDataDao(114)] Read Table info: ROLES
+INFO  2016-04-21 18:59:17,554 [DatabaseMetaDataDao(114)] Read Table info: ROLE_FUNCTIONS
+INFO  2016-04-21 18:59:17,570 [DatabaseMetaDataDao(114)] Read Table info: STOCKS
+INFO  2016-04-21 18:59:17,570 [DatabaseMetaDataDao(114)] Read Table info: STOCK_KNOWLEDGES
+INFO  2016-04-21 18:59:17,570 [DatabaseMetaDataDao(114)] Read Table info: SYSTEMS
+INFO  2016-04-21 18:59:17,570 [DatabaseMetaDataDao(114)] Read Table info: SYSTEM_ATTRIBUTES
+INFO  2016-04-21 18:59:17,570 [DatabaseMetaDataDao(114)] Read Table info: SYSTEM_CONFIGS
+INFO  2016-04-21 18:59:17,570 [DatabaseMetaDataDao(114)] Read Table info: TAGS
+INFO  2016-04-21 18:59:17,570 [DatabaseMetaDataDao(114)] Read Table info: TEMPLATE_ITEMS
+INFO  2016-04-21 18:59:17,570 [DatabaseMetaDataDao(114)] Read Table info: TEMPLATE_MASTERS
+INFO  2016-04-21 18:59:17,570 [DatabaseMetaDataDao(114)] Read Table info: USERS
+INFO  2016-04-21 18:59:17,570 [DatabaseMetaDataDao(114)] Read Table info: USER_CONFIGS
+INFO  2016-04-21 18:59:17,570 [DatabaseMetaDataDao(114)] Read Table info: USER_GROUPS
+INFO  2016-04-21 18:59:17,570 [DatabaseMetaDataDao(114)] Read Table info: USER_ROLES
+INFO  2016-04-21 18:59:17,570 [DatabaseMetaDataDao(114)] Read Table info: VIEW_HISTORIES
+INFO  2016-04-21 18:59:17,570 [DatabaseMetaDataDao(114)] Read Table info: VOTES
+INFO  2016-04-21 18:59:17,570 [DatabaseMetaDataDao(114)] Read Table info: WEBHOOKS
+INFO  2016-04-21 18:59:17,570 [DatabaseMetaDataDao(114)] Read Table info: WEBHOOK_CONFIGS
+INFO  2016-04-21 18:59:18,047 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGES cascade
+INFO  2016-04-21 18:59:18,062 [InitializeDao(90)] DROP TABLE if exists ACCOUNT_IMAGES cascade
+INFO  2016-04-21 18:59:18,062 [InitializeDao(90)] DROP TABLE if exists HASH_CONFIGS cascade
+INFO  2016-04-21 18:59:18,078 [InitializeDao(90)] DROP TABLE if exists GROUPS cascade
+INFO  2016-04-21 18:59:18,078 [InitializeDao(90)] DROP TABLE if exists SYSTEM_CONFIGS cascade
+INFO  2016-04-21 18:59:18,078 [InitializeDao(90)] DROP TABLE if exists WEBHOOK_CONFIGS cascade
+INFO  2016-04-21 18:59:18,094 [InitializeDao(90)] DROP TABLE if exists MAIL_CONFIGS cascade
+INFO  2016-04-21 18:59:18,094 [InitializeDao(90)] DROP TABLE if exists VOTES cascade
+INFO  2016-04-21 18:59:18,094 [InitializeDao(90)] DROP TABLE if exists COMMENTS cascade
+INFO  2016-04-21 18:59:18,109 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_GROUPS cascade
+INFO  2016-04-21 18:59:18,109 [InitializeDao(90)] DROP TABLE if exists PASSWORD_RESETS cascade
+INFO  2016-04-21 18:59:18,109 [InitializeDao(90)] DROP TABLE if exists FUNCTIONS cascade
+INFO  2016-04-21 18:59:18,125 [InitializeDao(90)] DROP TABLE if exists LIKES cascade
+INFO  2016-04-21 18:59:18,125 [InitializeDao(90)] DROP TABLE if exists NOTICES cascade
+INFO  2016-04-21 18:59:18,125 [InitializeDao(90)] DROP TABLE if exists LOCALES cascade
+INFO  2016-04-21 18:59:18,140 [InitializeDao(90)] DROP TABLE if exists SYSTEM_ATTRIBUTES cascade
+INFO  2016-04-21 18:59:18,140 [InitializeDao(90)] DROP TABLE if exists VIEW_HISTORIES cascade
+INFO  2016-04-21 18:59:18,140 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_EDIT_GROUPS cascade
+INFO  2016-04-21 18:59:18,140 [InitializeDao(90)] DROP TABLE if exists WEBHOOKS cascade
+INFO  2016-04-21 18:59:18,156 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_FILES cascade
+INFO  2016-04-21 18:59:18,156 [InitializeDao(90)] DROP TABLE if exists NOTIFY_QUEUES cascade
+INFO  2016-04-21 18:59:18,156 [InitializeDao(90)] DROP TABLE if exists TEMPLATE_MASTERS cascade
+INFO  2016-04-21 18:59:18,156 [InitializeDao(90)] DROP TABLE if exists USER_GROUPS cascade
+INFO  2016-04-21 18:59:18,172 [InitializeDao(90)] DROP TABLE if exists ITEM_CHOICES cascade
+INFO  2016-04-21 18:59:18,172 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_EDIT_USERS cascade
+INFO  2016-04-21 18:59:18,172 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_HISTORIES cascade
+INFO  2016-04-21 18:59:18,172 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_ITEM_VALUES cascade
+INFO  2016-04-21 18:59:18,172 [InitializeDao(90)] DROP TABLE if exists ACCESS_LOGS cascade
+INFO  2016-04-21 18:59:18,187 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_TAGS cascade
+INFO  2016-04-21 18:59:18,187 [InitializeDao(90)] DROP TABLE if exists ROLE_FUNCTIONS cascade
+INFO  2016-04-21 18:59:18,187 [InitializeDao(90)] DROP TABLE if exists PROXY_CONFIGS cascade
+INFO  2016-04-21 18:59:18,187 [InitializeDao(90)] DROP TABLE if exists MAILS cascade
+INFO  2016-04-21 18:59:18,203 [InitializeDao(90)] DROP TABLE if exists LDAP_CONFIGS cascade
+INFO  2016-04-21 18:59:18,203 [InitializeDao(90)] DROP TABLE if exists LOGIN_HISTORIES cascade
+INFO  2016-04-21 18:59:18,203 [InitializeDao(90)] DROP TABLE if exists CONFIRM_MAIL_CHANGES cascade
+INFO  2016-04-21 18:59:18,203 [InitializeDao(90)] DROP TABLE if exists PROVISIONAL_REGISTRATIONS cascade
+INFO  2016-04-21 18:59:18,203 [InitializeDao(90)] DROP TABLE if exists USER_ROLES cascade
+INFO  2016-04-21 18:59:18,203 [InitializeDao(90)] DROP TABLE if exists NOTIFY_CONFIGS cascade
+INFO  2016-04-21 18:59:18,203 [InitializeDao(90)] DROP TABLE if exists ROLES cascade
+INFO  2016-04-21 18:59:18,218 [InitializeDao(90)] DROP TABLE if exists USER_CONFIGS cascade
+INFO  2016-04-21 18:59:18,218 [InitializeDao(90)] DROP TABLE if exists READ_MARKS cascade
+INFO  2016-04-21 18:59:18,218 [InitializeDao(90)] DROP TABLE if exists SYSTEMS cascade
+INFO  2016-04-21 18:59:18,218 [InitializeDao(90)] DROP TABLE if exists STOCKS cascade
+INFO  2016-04-21 18:59:18,234 [InitializeDao(90)] DROP TABLE if exists STOCK_KNOWLEDGES cascade
+INFO  2016-04-21 18:59:18,234 [InitializeDao(90)] DROP TABLE if exists USERS cascade
+INFO  2016-04-21 18:59:18,250 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_USERS cascade
+INFO  2016-04-21 18:59:18,250 [InitializeDao(90)] DROP TABLE if exists TAGS cascade
+INFO  2016-04-21 18:59:18,250 [InitializeDao(90)] DROP TABLE if exists TEMPLATE_ITEMS cascade
+INFO  2016-04-21 18:59:18,297 [Intercepter(215)] error. [object]class org.support.project.web.dao.SystemsDao_$$_jvstfee_a[proceed]_d17executeQuerySingle[param0]SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0[param1]class org.support.project.web.entity.SystemsEntity[param2][Ljava.lang.Object;@3b96c42e
+[throwable.getMessage()] テーブル "SYSTEMS" が見つかりません
+Table "SYSTEMS" not found; SQL statement:
+SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0 [42102-183] [cause] テーブル "SYSTEMS" が見つかりません
+Table "SYSTEMS" not found; SQL statement:
+SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0 [42102-183]
+----- SQL Infomation -----
+[sql]SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0
+[params]
+	[params][0]knowledge
+[execute]SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = knowledge  AND DELETE_FLAG = 0
+
+ERROR 2016-04-21 18:59:18,297 [Transaction(60)] Error(Rollback) : org.support.project.web.dao.SystemsDao_$$_jvstfee_a#_d42selectOnKey
+INFO  2016-04-21 18:59:18,297 [Intercepter(215)] error. [object]class org.support.project.web.dao.SystemsDao_$$_jvstfee_a[proceed]_d42selectOnKey[param0]knowledge
+[throwable.getMessage()] テーブル "SYSTEMS" が見つかりません
+Table "SYSTEMS" not found; SQL statement:
+SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0 [42102-183] [cause] テーブル "SYSTEMS" が見つかりません
+Table "SYSTEMS" not found; SQL statement:
+SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0 [42102-183]
+----- SQL Infomation -----
+[sql]SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0
+[params]
+	[params][0]knowledge
+[execute]SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = knowledge  AND DELETE_FLAG = 0
+
+INFO  2016-04-21 18:59:18,297 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGES cascade
+INFO  2016-04-21 18:59:18,297 [InitializeDao(90)] DROP TABLE if exists ACCOUNT_IMAGES cascade
+INFO  2016-04-21 18:59:18,297 [InitializeDao(90)] DROP TABLE if exists HASH_CONFIGS cascade
+INFO  2016-04-21 18:59:18,297 [InitializeDao(90)] DROP TABLE if exists GROUPS cascade
+INFO  2016-04-21 18:59:18,297 [InitializeDao(90)] DROP TABLE if exists SYSTEM_CONFIGS cascade
+INFO  2016-04-21 18:59:18,313 [InitializeDao(90)] DROP TABLE if exists WEBHOOK_CONFIGS cascade
+INFO  2016-04-21 18:59:18,313 [InitializeDao(90)] DROP TABLE if exists MAIL_CONFIGS cascade
+INFO  2016-04-21 18:59:18,313 [InitializeDao(90)] DROP TABLE if exists VOTES cascade
+INFO  2016-04-21 18:59:18,313 [InitializeDao(90)] DROP TABLE if exists COMMENTS cascade
+INFO  2016-04-21 18:59:18,313 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_GROUPS cascade
+INFO  2016-04-21 18:59:18,313 [InitializeDao(90)] DROP TABLE if exists PASSWORD_RESETS cascade
+INFO  2016-04-21 18:59:18,313 [InitializeDao(90)] DROP TABLE if exists FUNCTIONS cascade
+INFO  2016-04-21 18:59:18,313 [InitializeDao(90)] DROP TABLE if exists LIKES cascade
+INFO  2016-04-21 18:59:18,329 [InitializeDao(90)] DROP TABLE if exists NOTICES cascade
+INFO  2016-04-21 18:59:18,329 [InitializeDao(90)] DROP TABLE if exists LOCALES cascade
+INFO  2016-04-21 18:59:18,329 [InitializeDao(90)] DROP TABLE if exists SYSTEM_ATTRIBUTES cascade
+INFO  2016-04-21 18:59:18,329 [InitializeDao(90)] DROP TABLE if exists VIEW_HISTORIES cascade
+INFO  2016-04-21 18:59:18,329 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_EDIT_GROUPS cascade
+INFO  2016-04-21 18:59:18,329 [InitializeDao(90)] DROP TABLE if exists WEBHOOKS cascade
+INFO  2016-04-21 18:59:18,344 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_FILES cascade
+INFO  2016-04-21 18:59:18,344 [InitializeDao(90)] DROP TABLE if exists NOTIFY_QUEUES cascade
+INFO  2016-04-21 18:59:18,344 [InitializeDao(90)] DROP TABLE if exists TEMPLATE_MASTERS cascade
+INFO  2016-04-21 18:59:18,344 [InitializeDao(90)] DROP TABLE if exists USER_GROUPS cascade
+INFO  2016-04-21 18:59:18,344 [InitializeDao(90)] DROP TABLE if exists ITEM_CHOICES cascade
+INFO  2016-04-21 18:59:18,344 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_EDIT_USERS cascade
+INFO  2016-04-21 18:59:18,344 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_HISTORIES cascade
+INFO  2016-04-21 18:59:18,344 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_ITEM_VALUES cascade
+INFO  2016-04-21 18:59:18,344 [InitializeDao(90)] DROP TABLE if exists ACCESS_LOGS cascade
+INFO  2016-04-21 18:59:18,344 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_TAGS cascade
+INFO  2016-04-21 18:59:18,360 [InitializeDao(90)] DROP TABLE if exists ROLE_FUNCTIONS cascade
+INFO  2016-04-21 18:59:18,360 [InitializeDao(90)] DROP TABLE if exists PROXY_CONFIGS cascade
+INFO  2016-04-21 18:59:18,360 [InitializeDao(90)] DROP TABLE if exists MAILS cascade
+INFO  2016-04-21 18:59:18,360 [InitializeDao(90)] DROP TABLE if exists LDAP_CONFIGS cascade
+INFO  2016-04-21 18:59:18,360 [InitializeDao(90)] DROP TABLE if exists LOGIN_HISTORIES cascade
+INFO  2016-04-21 18:59:18,375 [InitializeDao(90)] DROP TABLE if exists CONFIRM_MAIL_CHANGES cascade
+INFO  2016-04-21 18:59:18,375 [InitializeDao(90)] DROP TABLE if exists PROVISIONAL_REGISTRATIONS cascade
+INFO  2016-04-21 18:59:18,375 [InitializeDao(90)] DROP TABLE if exists USER_ROLES cascade
+INFO  2016-04-21 18:59:18,375 [InitializeDao(90)] DROP TABLE if exists NOTIFY_CONFIGS cascade
+INFO  2016-04-21 18:59:18,375 [InitializeDao(90)] DROP TABLE if exists ROLES cascade
+INFO  2016-04-21 18:59:18,375 [InitializeDao(90)] DROP TABLE if exists USER_CONFIGS cascade
+INFO  2016-04-21 18:59:18,375 [InitializeDao(90)] DROP TABLE if exists READ_MARKS cascade
+INFO  2016-04-21 18:59:18,375 [InitializeDao(90)] DROP TABLE if exists SYSTEMS cascade
+INFO  2016-04-21 18:59:18,391 [InitializeDao(90)] DROP TABLE if exists STOCKS cascade
+INFO  2016-04-21 18:59:18,391 [InitializeDao(90)] DROP TABLE if exists STOCK_KNOWLEDGES cascade
+INFO  2016-04-21 18:59:18,391 [InitializeDao(90)] DROP TABLE if exists USERS cascade
+INFO  2016-04-21 18:59:18,391 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_USERS cascade
+INFO  2016-04-21 18:59:18,391 [InitializeDao(90)] DROP TABLE if exists TAGS cascade
+INFO  2016-04-21 18:59:18,391 [InitializeDao(90)] DROP TABLE if exists TEMPLATE_ITEMS cascade
+INFO  2016-04-21 18:59:18,391 [InitializeDao(41)] Database initialize start.
+INFO  2016-04-21 18:59:18,703 [InitializeDao(47)] /org/support/project/web/database/ddl.sql is loaded.
+INFO  2016-04-21 18:59:18,843 [InitializeDao(47)] /org/support/project/knowledge/database/ddl.sql is loaded.
+INFO  2016-04-21 18:59:18,843 [InitializeDao(47)] /org/support/project/knowledge/database/init_datas.sql is loaded.
+INFO  2016-04-21 18:59:18,843 [InitializeDao(49)] Database initialize finish.
+INFO  2016-04-21 18:59:18,921 [InitDB(121)] Migrate to 1.1.0.pre1
+INFO  2016-04-21 18:59:35,605 [KnowledgesDaoTest(117)] 2016-03-21 09:59
+INFO  2016-04-21 18:59:35,605 [KnowledgesDaoTest(122)] 2016-04-22 09:59
+INFO  2016-04-21 18:59:35,652 [KnowledgesDaoTest(127)] Test-29:29
+INFO  2016-04-21 18:59:35,652 [KnowledgesDaoTest(127)] Test-28:28
+INFO  2016-04-21 18:59:35,652 [KnowledgesDaoTest(127)] Test-27:27
+INFO  2016-04-21 18:59:35,652 [KnowledgesDaoTest(127)] Test-26:26
+INFO  2016-04-21 18:59:35,652 [KnowledgesDaoTest(127)] Test-25:25
+INFO  2016-04-21 18:59:35,652 [KnowledgesDaoTest(127)] Test-24:24
+INFO  2016-04-21 18:59:35,652 [KnowledgesDaoTest(127)] Test-23:23
+INFO  2016-04-21 18:59:35,652 [KnowledgesDaoTest(127)] Test-22:22
+INFO  2016-04-21 18:59:35,652 [KnowledgesDaoTest(127)] Test-21:21
+INFO  2016-04-21 18:59:35,652 [KnowledgesDaoTest(127)] Test-20:20
+INFO  2016-04-21 18:59:35,652 [KnowledgesDaoTest(127)] Test-19:19
+INFO  2016-04-21 18:59:35,652 [KnowledgesDaoTest(127)] Test-18:18
+INFO  2016-04-21 18:59:35,652 [KnowledgesDaoTest(127)] Test-17:17
+INFO  2016-04-21 18:59:35,652 [KnowledgesDaoTest(127)] Test-16:16
+INFO  2016-04-21 18:59:35,652 [KnowledgesDaoTest(127)] Test-15:15
+INFO  2016-04-21 18:59:35,652 [KnowledgesDaoTest(127)] Test-14:14
+INFO  2016-04-21 18:59:35,652 [KnowledgesDaoTest(127)] Test-13:13
+INFO  2016-04-21 18:59:35,652 [KnowledgesDaoTest(127)] Test-12:12
+INFO  2016-04-21 18:59:35,652 [KnowledgesDaoTest(127)] Test-11:11
+INFO  2016-04-21 18:59:35,652 [KnowledgesDaoTest(127)] Test-10:10
+INFO  2016-04-21 18:59:40,508 [KnowledgesDaoTest(48)] {"commentCount":0,"content":"テスト","deleteFlag":0,"insertDatetime":1461232775652,"insertUser":2,"insertUserName":"テストユーザ1","keyValues":[31],"knowledgeId":31,"likeCount":0,"likeCountOnTerm":null,"publicFlag":0,"score":null,"tagIds":"","tagNames":"","title":"Test-0","typeId":0,"updateDatetime":1461232775652,"updateUser":2,"updateUserName":"テストユーザ1"}
+INFO  2016-04-21 18:59:40,508 [KnowledgesDaoTest(48)] {"commentCount":0,"content":"テスト","deleteFlag":0,"insertDatetime":1461232776467,"insertUser":2,"insertUserName":"テストユーザ1","keyValues":[32],"knowledgeId":32,"likeCount":0,"likeCountOnTerm":null,"publicFlag":0,"score":null,"tagIds":"","tagNames":"","title":"Test-1","typeId":0,"updateDatetime":1461232776482,"updateUser":2,"updateUserName":"テストユーザ1"}
+INFO  2016-04-21 18:59:40,508 [KnowledgesDaoTest(48)] {"commentCount":0,"content":"テスト","deleteFlag":0,"insertDatetime":1461232776983,"insertUser":2,"insertUserName":"テストユーザ1","keyValues":[33],"knowledgeId":33,"likeCount":0,"likeCountOnTerm":null,"publicFlag":0,"score":null,"tagIds":"","tagNames":"","title":"Test-2","typeId":0,"updateDatetime":1461232776983,"updateUser":2,"updateUserName":"テストユーザ1"}
+INFO  2016-04-21 18:59:40,508 [KnowledgesDaoTest(48)] {"commentCount":0,"content":"テスト","deleteFlag":0,"insertDatetime":1461232777311,"insertUser":2,"insertUserName":"テストユーザ1","keyValues":[34],"knowledgeId":34,"likeCount":0,"likeCountOnTerm":null,"publicFlag":0,"score":null,"tagIds":"","tagNames":"","title":"Test-3","typeId":0,"updateDatetime":1461232777311,"updateUser":2,"updateUserName":"テストユーザ1"}
+INFO  2016-04-21 18:59:40,508 [KnowledgesDaoTest(48)] {"commentCount":0,"content":"テスト","deleteFlag":0,"insertDatetime":1461232777602,"insertUser":2,"insertUserName":"テストユーザ1","keyValues":[35],"knowledgeId":35,"likeCount":0,"likeCountOnTerm":null,"publicFlag":0,"score":null,"tagIds":"","tagNames":"","title":"Test-4","typeId":0,"updateDatetime":1461232777602,"updateUser":2,"updateUserName":"テストユーザ1"}
+INFO  2016-04-21 18:59:40,508 [KnowledgesDaoTest(48)] {"commentCount":0,"content":"テスト","deleteFlag":0,"insertDatetime":1461232778079,"insertUser":2,"insertUserName":"テストユーザ1","keyValues":[36],"knowledgeId":36,"likeCount":0,"likeCountOnTerm":null,"publicFlag":0,"score":null,"tagIds":"","tagNames":"","title":"Test-5","typeId":0,"updateDatetime":1461232778079,"updateUser":2,"updateUserName":"テストユーザ1"}
+INFO  2016-04-21 18:59:40,524 [KnowledgesDaoTest(48)] {"commentCount":0,"content":"テスト","deleteFlag":0,"insertDatetime":1461232778407,"insertUser":2,"insertUserName":"テストユーザ1","keyValues":[37],"knowledgeId":37,"likeCount":0,"likeCountOnTerm":null,"publicFlag":0,"score":null,"tagIds":"","tagNames":"","title":"Test-6","typeId":0,"updateDatetime":1461232778407,"updateUser":2,"updateUserName":"テストユーザ1"}
+INFO  2016-04-21 18:59:40,524 [KnowledgesDaoTest(48)] {"commentCount":0,"content":"テスト","deleteFlag":0,"insertDatetime":1461232779552,"insertUser":2,"insertUserName":"テストユーザ1","keyValues":[38],"knowledgeId":38,"likeCount":0,"likeCountOnTerm":null,"publicFlag":0,"score":null,"tagIds":"","tagNames":"","title":"Test-7","typeId":0,"updateDatetime":1461232779552,"updateUser":2,"updateUserName":"テストユーザ1"}
+INFO  2016-04-21 18:59:40,524 [KnowledgesDaoTest(48)] {"commentCount":0,"content":"テスト","deleteFlag":0,"insertDatetime":1461232779864,"insertUser":2,"insertUserName":"テストユーザ1","keyValues":[39],"knowledgeId":39,"likeCount":0,"likeCountOnTerm":null,"publicFlag":0,"score":null,"tagIds":"","tagNames":"","title":"Test-8","typeId":0,"updateDatetime":1461232779864,"updateUser":2,"updateUserName":"テストユーザ1"}
+INFO  2016-04-21 18:59:40,540 [KnowledgesDaoTest(48)] {"commentCount":0,"content":"テスト","deleteFlag":0,"insertDatetime":1461232780118,"insertUser":2,"insertUserName":"テストユーザ1","keyValues":[40],"knowledgeId":40,"likeCount":0,"likeCountOnTerm":null,"publicFlag":0,"score":null,"tagIds":"","tagNames":"","title":"Test-9","typeId":0,"updateDatetime":1461232780118,"updateUser":2,"updateUserName":"テストユーザ1"}
+INFO  2016-04-21 18:59:54,023 [KnowledgesDaoTest(77)] 2016-03-21 09:59
+INFO  2016-04-21 18:59:54,023 [KnowledgesDaoTest(82)] 2016-04-22 09:59
+INFO  2016-04-21 18:59:54,070 [KnowledgesDaoTest(87)] Test-29:29
+INFO  2016-04-21 18:59:54,070 [KnowledgesDaoTest(87)] Test-29:29
+INFO  2016-04-21 18:59:54,070 [KnowledgesDaoTest(87)] Test-28:28
+INFO  2016-04-21 18:59:54,070 [KnowledgesDaoTest(87)] Test-28:28
+INFO  2016-04-21 18:59:54,070 [KnowledgesDaoTest(87)] Test-27:27
+INFO  2016-04-21 18:59:54,070 [KnowledgesDaoTest(87)] Test-27:27
+INFO  2016-04-21 18:59:54,070 [KnowledgesDaoTest(87)] Test-26:26
+INFO  2016-04-21 18:59:54,070 [KnowledgesDaoTest(87)] Test-26:26
+INFO  2016-04-21 18:59:54,070 [KnowledgesDaoTest(87)] Test-25:25
+INFO  2016-04-21 18:59:54,070 [KnowledgesDaoTest(87)] Test-25:25
+INFO  2016-04-21 18:59:54,070 [KnowledgesDaoTest(87)] Test-24:24
+INFO  2016-04-21 18:59:54,086 [KnowledgesDaoTest(87)] Test-24:24
+INFO  2016-04-21 18:59:54,086 [KnowledgesDaoTest(87)] Test-23:23
+INFO  2016-04-21 18:59:54,086 [KnowledgesDaoTest(87)] Test-23:23
+INFO  2016-04-21 18:59:54,086 [KnowledgesDaoTest(87)] Test-22:22
+INFO  2016-04-21 18:59:54,086 [KnowledgesDaoTest(87)] Test-22:22
+INFO  2016-04-21 18:59:54,086 [KnowledgesDaoTest(87)] Test-21:21
+INFO  2016-04-21 18:59:54,086 [KnowledgesDaoTest(87)] Test-21:21
+INFO  2016-04-21 18:59:54,086 [KnowledgesDaoTest(87)] Test-20:20
+INFO  2016-04-21 18:59:54,086 [KnowledgesDaoTest(87)] Test-20:20
+INFO  2016-04-21 18:59:54,101 [H2DBServerLogic(66)] H2 Database server stoped.
+INFO  2016-04-21 18:59:54,102 [H2DBServerLogic(52)] H2 Database server started.
+INFO  2016-04-21 18:59:54,165 [H2DBServerLogic(66)] H2 Database server stoped.
+INFO  2016-04-21 18:59:54,214 [H2DBServerLogic(52)] H2 Database server started.
+INFO  2016-04-21 18:59:54,338 [DatabaseMetaDataDao(114)] Read Table info: ACCESS_LOGS
+INFO  2016-04-21 18:59:54,338 [DatabaseMetaDataDao(114)] Read Table info: ACCOUNT_IMAGES
+INFO  2016-04-21 18:59:54,338 [DatabaseMetaDataDao(114)] Read Table info: COMMENTS
+INFO  2016-04-21 18:59:54,338 [DatabaseMetaDataDao(114)] Read Table info: CONFIRM_MAIL_CHANGES
+INFO  2016-04-21 18:59:54,338 [DatabaseMetaDataDao(114)] Read Table info: FUNCTIONS
+INFO  2016-04-21 18:59:54,338 [DatabaseMetaDataDao(114)] Read Table info: GROUPS
+INFO  2016-04-21 18:59:54,338 [DatabaseMetaDataDao(114)] Read Table info: HASH_CONFIGS
+INFO  2016-04-21 18:59:54,338 [DatabaseMetaDataDao(114)] Read Table info: ITEM_CHOICES
+INFO  2016-04-21 18:59:54,338 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGES
+INFO  2016-04-21 18:59:54,338 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_EDIT_GROUPS
+INFO  2016-04-21 18:59:54,338 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_EDIT_USERS
+INFO  2016-04-21 18:59:54,338 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_FILES
+INFO  2016-04-21 18:59:54,338 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_GROUPS
+INFO  2016-04-21 18:59:54,338 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_HISTORIES
+INFO  2016-04-21 18:59:54,338 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_ITEM_VALUES
+INFO  2016-04-21 18:59:54,338 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_TAGS
+INFO  2016-04-21 18:59:54,338 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_USERS
+INFO  2016-04-21 18:59:54,338 [DatabaseMetaDataDao(114)] Read Table info: LDAP_CONFIGS
+INFO  2016-04-21 18:59:54,338 [DatabaseMetaDataDao(114)] Read Table info: LIKES
+INFO  2016-04-21 18:59:54,338 [DatabaseMetaDataDao(114)] Read Table info: LOCALES
+INFO  2016-04-21 18:59:54,338 [DatabaseMetaDataDao(114)] Read Table info: LOGIN_HISTORIES
+INFO  2016-04-21 18:59:54,338 [DatabaseMetaDataDao(114)] Read Table info: MAILS
+INFO  2016-04-21 18:59:54,338 [DatabaseMetaDataDao(114)] Read Table info: MAIL_CONFIGS
+INFO  2016-04-21 18:59:54,338 [DatabaseMetaDataDao(114)] Read Table info: NOTICES
+INFO  2016-04-21 18:59:54,338 [DatabaseMetaDataDao(114)] Read Table info: NOTIFY_CONFIGS
+INFO  2016-04-21 18:59:54,338 [DatabaseMetaDataDao(114)] Read Table info: NOTIFY_QUEUES
+INFO  2016-04-21 18:59:54,338 [DatabaseMetaDataDao(114)] Read Table info: PASSWORD_RESETS
+INFO  2016-04-21 18:59:54,338 [DatabaseMetaDataDao(114)] Read Table info: PROVISIONAL_REGISTRATIONS
+INFO  2016-04-21 18:59:54,338 [DatabaseMetaDataDao(114)] Read Table info: PROXY_CONFIGS
+INFO  2016-04-21 18:59:54,338 [DatabaseMetaDataDao(114)] Read Table info: READ_MARKS
+INFO  2016-04-21 18:59:54,338 [DatabaseMetaDataDao(114)] Read Table info: ROLES
+INFO  2016-04-21 18:59:54,338 [DatabaseMetaDataDao(114)] Read Table info: ROLE_FUNCTIONS
+INFO  2016-04-21 18:59:54,338 [DatabaseMetaDataDao(114)] Read Table info: STOCKS
+INFO  2016-04-21 18:59:54,338 [DatabaseMetaDataDao(114)] Read Table info: STOCK_KNOWLEDGES
+INFO  2016-04-21 18:59:54,338 [DatabaseMetaDataDao(114)] Read Table info: SYSTEMS
+INFO  2016-04-21 18:59:54,338 [DatabaseMetaDataDao(114)] Read Table info: SYSTEM_ATTRIBUTES
+INFO  2016-04-21 18:59:54,338 [DatabaseMetaDataDao(114)] Read Table info: SYSTEM_CONFIGS
+INFO  2016-04-21 18:59:54,354 [DatabaseMetaDataDao(114)] Read Table info: TAGS
+INFO  2016-04-21 18:59:54,354 [DatabaseMetaDataDao(114)] Read Table info: TEMPLATE_ITEMS
+INFO  2016-04-21 18:59:54,354 [DatabaseMetaDataDao(114)] Read Table info: TEMPLATE_MASTERS
+INFO  2016-04-21 18:59:54,354 [DatabaseMetaDataDao(114)] Read Table info: USERS
+INFO  2016-04-21 18:59:54,354 [DatabaseMetaDataDao(114)] Read Table info: USER_CONFIGS
+INFO  2016-04-21 18:59:54,354 [DatabaseMetaDataDao(114)] Read Table info: USER_GROUPS
+INFO  2016-04-21 18:59:54,354 [DatabaseMetaDataDao(114)] Read Table info: USER_ROLES
+INFO  2016-04-21 18:59:54,354 [DatabaseMetaDataDao(114)] Read Table info: VIEW_HISTORIES
+INFO  2016-04-21 18:59:54,354 [DatabaseMetaDataDao(114)] Read Table info: VOTES
+INFO  2016-04-21 18:59:54,354 [DatabaseMetaDataDao(114)] Read Table info: WEBHOOKS
+INFO  2016-04-21 18:59:54,354 [DatabaseMetaDataDao(114)] Read Table info: WEBHOOK_CONFIGS
+INFO  2016-04-21 18:59:54,572 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGES cascade
+INFO  2016-04-21 18:59:54,572 [InitializeDao(90)] DROP TABLE if exists ACCOUNT_IMAGES cascade
+INFO  2016-04-21 18:59:54,588 [InitializeDao(90)] DROP TABLE if exists HASH_CONFIGS cascade
+INFO  2016-04-21 18:59:54,588 [InitializeDao(90)] DROP TABLE if exists GROUPS cascade
+INFO  2016-04-21 18:59:54,588 [InitializeDao(90)] DROP TABLE if exists SYSTEM_CONFIGS cascade
+INFO  2016-04-21 18:59:54,588 [InitializeDao(90)] DROP TABLE if exists WEBHOOK_CONFIGS cascade
+INFO  2016-04-21 18:59:54,588 [InitializeDao(90)] DROP TABLE if exists MAIL_CONFIGS cascade
+INFO  2016-04-21 18:59:54,588 [InitializeDao(90)] DROP TABLE if exists VOTES cascade
+INFO  2016-04-21 18:59:54,588 [InitializeDao(90)] DROP TABLE if exists COMMENTS cascade
+INFO  2016-04-21 18:59:54,604 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_GROUPS cascade
+INFO  2016-04-21 18:59:54,604 [InitializeDao(90)] DROP TABLE if exists PASSWORD_RESETS cascade
+INFO  2016-04-21 18:59:54,604 [InitializeDao(90)] DROP TABLE if exists FUNCTIONS cascade
+INFO  2016-04-21 18:59:54,604 [InitializeDao(90)] DROP TABLE if exists LIKES cascade
+INFO  2016-04-21 18:59:54,604 [InitializeDao(90)] DROP TABLE if exists NOTICES cascade
+INFO  2016-04-21 18:59:54,604 [InitializeDao(90)] DROP TABLE if exists LOCALES cascade
+INFO  2016-04-21 18:59:54,604 [InitializeDao(90)] DROP TABLE if exists SYSTEM_ATTRIBUTES cascade
+INFO  2016-04-21 18:59:54,604 [InitializeDao(90)] DROP TABLE if exists VIEW_HISTORIES cascade
+INFO  2016-04-21 18:59:54,604 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_EDIT_GROUPS cascade
+INFO  2016-04-21 18:59:54,604 [InitializeDao(90)] DROP TABLE if exists WEBHOOKS cascade
+INFO  2016-04-21 18:59:54,604 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_FILES cascade
+INFO  2016-04-21 18:59:54,604 [InitializeDao(90)] DROP TABLE if exists NOTIFY_QUEUES cascade
+INFO  2016-04-21 18:59:54,619 [InitializeDao(90)] DROP TABLE if exists TEMPLATE_MASTERS cascade
+INFO  2016-04-21 18:59:54,619 [InitializeDao(90)] DROP TABLE if exists USER_GROUPS cascade
+INFO  2016-04-21 18:59:54,619 [InitializeDao(90)] DROP TABLE if exists ITEM_CHOICES cascade
+INFO  2016-04-21 18:59:54,619 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_EDIT_USERS cascade
+INFO  2016-04-21 18:59:54,619 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_HISTORIES cascade
+INFO  2016-04-21 18:59:54,619 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_ITEM_VALUES cascade
+INFO  2016-04-21 18:59:54,619 [InitializeDao(90)] DROP TABLE if exists ACCESS_LOGS cascade
+INFO  2016-04-21 18:59:54,619 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_TAGS cascade
+INFO  2016-04-21 18:59:54,619 [InitializeDao(90)] DROP TABLE if exists ROLE_FUNCTIONS cascade
+INFO  2016-04-21 18:59:54,619 [InitializeDao(90)] DROP TABLE if exists PROXY_CONFIGS cascade
+INFO  2016-04-21 18:59:54,635 [InitializeDao(90)] DROP TABLE if exists MAILS cascade
+INFO  2016-04-21 18:59:54,635 [InitializeDao(90)] DROP TABLE if exists LDAP_CONFIGS cascade
+INFO  2016-04-21 18:59:54,635 [InitializeDao(90)] DROP TABLE if exists LOGIN_HISTORIES cascade
+INFO  2016-04-21 18:59:54,635 [InitializeDao(90)] DROP TABLE if exists CONFIRM_MAIL_CHANGES cascade
+INFO  2016-04-21 18:59:54,635 [InitializeDao(90)] DROP TABLE if exists PROVISIONAL_REGISTRATIONS cascade
+INFO  2016-04-21 18:59:54,635 [InitializeDao(90)] DROP TABLE if exists USER_ROLES cascade
+INFO  2016-04-21 18:59:54,635 [InitializeDao(90)] DROP TABLE if exists NOTIFY_CONFIGS cascade
+INFO  2016-04-21 18:59:54,635 [InitializeDao(90)] DROP TABLE if exists ROLES cascade
+INFO  2016-04-21 18:59:54,650 [InitializeDao(90)] DROP TABLE if exists USER_CONFIGS cascade
+INFO  2016-04-21 18:59:54,650 [InitializeDao(90)] DROP TABLE if exists READ_MARKS cascade
+INFO  2016-04-21 18:59:54,650 [InitializeDao(90)] DROP TABLE if exists SYSTEMS cascade
+INFO  2016-04-21 18:59:54,650 [InitializeDao(90)] DROP TABLE if exists STOCKS cascade
+INFO  2016-04-21 18:59:54,650 [InitializeDao(90)] DROP TABLE if exists STOCK_KNOWLEDGES cascade
+INFO  2016-04-21 18:59:54,650 [InitializeDao(90)] DROP TABLE if exists USERS cascade
+INFO  2016-04-21 18:59:54,650 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_USERS cascade
+INFO  2016-04-21 18:59:54,650 [InitializeDao(90)] DROP TABLE if exists TAGS cascade
+INFO  2016-04-21 18:59:54,666 [InitializeDao(90)] DROP TABLE if exists TEMPLATE_ITEMS cascade
+INFO  2016-04-21 18:59:54,666 [Intercepter(215)] error. [object]class org.support.project.web.dao.SystemsDao_$$_jvstfee_a[proceed]_d17executeQuerySingle[param0]SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0[param1]class org.support.project.web.entity.SystemsEntity[param2][Ljava.lang.Object;@52d96367
+[throwable.getMessage()] テーブル "SYSTEMS" が見つかりません
+Table "SYSTEMS" not found; SQL statement:
+SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0 [42102-183] [cause] テーブル "SYSTEMS" が見つかりません
+Table "SYSTEMS" not found; SQL statement:
+SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0 [42102-183]
+----- SQL Infomation -----
+[sql]SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0
+[params]
+	[params][0]knowledge
+[execute]SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = knowledge  AND DELETE_FLAG = 0
+
+ERROR 2016-04-21 18:59:54,666 [Transaction(60)] Error(Rollback) : org.support.project.web.dao.SystemsDao_$$_jvstfee_a#_d42selectOnKey
+INFO  2016-04-21 18:59:54,666 [Intercepter(215)] error. [object]class org.support.project.web.dao.SystemsDao_$$_jvstfee_a[proceed]_d42selectOnKey[param0]knowledge
+[throwable.getMessage()] テーブル "SYSTEMS" が見つかりません
+Table "SYSTEMS" not found; SQL statement:
+SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0 [42102-183] [cause] テーブル "SYSTEMS" が見つかりません
+Table "SYSTEMS" not found; SQL statement:
+SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0 [42102-183]
+----- SQL Infomation -----
+[sql]SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0
+[params]
+	[params][0]knowledge
+[execute]SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = knowledge  AND DELETE_FLAG = 0
+
+INFO  2016-04-21 18:59:54,666 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGES cascade
+INFO  2016-04-21 18:59:54,666 [InitializeDao(90)] DROP TABLE if exists ACCOUNT_IMAGES cascade
+INFO  2016-04-21 18:59:54,666 [InitializeDao(90)] DROP TABLE if exists HASH_CONFIGS cascade
+INFO  2016-04-21 18:59:54,682 [InitializeDao(90)] DROP TABLE if exists GROUPS cascade
+INFO  2016-04-21 18:59:54,682 [InitializeDao(90)] DROP TABLE if exists SYSTEM_CONFIGS cascade
+INFO  2016-04-21 18:59:54,682 [InitializeDao(90)] DROP TABLE if exists WEBHOOK_CONFIGS cascade
+INFO  2016-04-21 18:59:54,682 [InitializeDao(90)] DROP TABLE if exists MAIL_CONFIGS cascade
+INFO  2016-04-21 18:59:54,682 [InitializeDao(90)] DROP TABLE if exists VOTES cascade
+INFO  2016-04-21 18:59:54,682 [InitializeDao(90)] DROP TABLE if exists COMMENTS cascade
+INFO  2016-04-21 18:59:54,682 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_GROUPS cascade
+INFO  2016-04-21 18:59:54,682 [InitializeDao(90)] DROP TABLE if exists PASSWORD_RESETS cascade
+INFO  2016-04-21 18:59:54,682 [InitializeDao(90)] DROP TABLE if exists FUNCTIONS cascade
+INFO  2016-04-21 18:59:54,682 [InitializeDao(90)] DROP TABLE if exists LIKES cascade
+INFO  2016-04-21 18:59:54,682 [InitializeDao(90)] DROP TABLE if exists NOTICES cascade
+INFO  2016-04-21 18:59:54,682 [InitializeDao(90)] DROP TABLE if exists LOCALES cascade
+INFO  2016-04-21 18:59:54,682 [InitializeDao(90)] DROP TABLE if exists SYSTEM_ATTRIBUTES cascade
+INFO  2016-04-21 18:59:54,682 [InitializeDao(90)] DROP TABLE if exists VIEW_HISTORIES cascade
+INFO  2016-04-21 18:59:54,682 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_EDIT_GROUPS cascade
+INFO  2016-04-21 18:59:54,682 [InitializeDao(90)] DROP TABLE if exists WEBHOOKS cascade
+INFO  2016-04-21 18:59:54,682 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_FILES cascade
+INFO  2016-04-21 18:59:54,682 [InitializeDao(90)] DROP TABLE if exists NOTIFY_QUEUES cascade
+INFO  2016-04-21 18:59:54,682 [InitializeDao(90)] DROP TABLE if exists TEMPLATE_MASTERS cascade
+INFO  2016-04-21 18:59:54,697 [InitializeDao(90)] DROP TABLE if exists USER_GROUPS cascade
+INFO  2016-04-21 18:59:54,697 [InitializeDao(90)] DROP TABLE if exists ITEM_CHOICES cascade
+INFO  2016-04-21 18:59:54,697 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_EDIT_USERS cascade
+INFO  2016-04-21 18:59:54,697 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_HISTORIES cascade
+INFO  2016-04-21 18:59:54,697 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_ITEM_VALUES cascade
+INFO  2016-04-21 18:59:54,697 [InitializeDao(90)] DROP TABLE if exists ACCESS_LOGS cascade
+INFO  2016-04-21 18:59:54,697 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_TAGS cascade
+INFO  2016-04-21 18:59:54,697 [InitializeDao(90)] DROP TABLE if exists ROLE_FUNCTIONS cascade
+INFO  2016-04-21 18:59:54,697 [InitializeDao(90)] DROP TABLE if exists PROXY_CONFIGS cascade
+INFO  2016-04-21 18:59:54,697 [InitializeDao(90)] DROP TABLE if exists MAILS cascade
+INFO  2016-04-21 18:59:54,697 [InitializeDao(90)] DROP TABLE if exists LDAP_CONFIGS cascade
+INFO  2016-04-21 18:59:54,697 [InitializeDao(90)] DROP TABLE if exists LOGIN_HISTORIES cascade
+INFO  2016-04-21 18:59:54,697 [InitializeDao(90)] DROP TABLE if exists CONFIRM_MAIL_CHANGES cascade
+INFO  2016-04-21 18:59:54,697 [InitializeDao(90)] DROP TABLE if exists PROVISIONAL_REGISTRATIONS cascade
+INFO  2016-04-21 18:59:54,697 [InitializeDao(90)] DROP TABLE if exists USER_ROLES cascade
+INFO  2016-04-21 18:59:54,697 [InitializeDao(90)] DROP TABLE if exists NOTIFY_CONFIGS cascade
+INFO  2016-04-21 18:59:54,697 [InitializeDao(90)] DROP TABLE if exists ROLES cascade
+INFO  2016-04-21 18:59:54,697 [InitializeDao(90)] DROP TABLE if exists USER_CONFIGS cascade
+INFO  2016-04-21 18:59:54,697 [InitializeDao(90)] DROP TABLE if exists READ_MARKS cascade
+INFO  2016-04-21 18:59:54,697 [InitializeDao(90)] DROP TABLE if exists SYSTEMS cascade
+INFO  2016-04-21 18:59:54,697 [InitializeDao(90)] DROP TABLE if exists STOCKS cascade
+INFO  2016-04-21 18:59:54,697 [InitializeDao(90)] DROP TABLE if exists STOCK_KNOWLEDGES cascade
+INFO  2016-04-21 18:59:54,713 [InitializeDao(90)] DROP TABLE if exists USERS cascade
+INFO  2016-04-21 18:59:54,713 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_USERS cascade
+INFO  2016-04-21 18:59:54,713 [InitializeDao(90)] DROP TABLE if exists TAGS cascade
+INFO  2016-04-21 18:59:54,713 [InitializeDao(90)] DROP TABLE if exists TEMPLATE_ITEMS cascade
+INFO  2016-04-21 18:59:54,713 [InitializeDao(41)] Database initialize start.
+INFO  2016-04-21 18:59:54,808 [InitializeDao(47)] /org/support/project/web/database/ddl.sql is loaded.
+INFO  2016-04-21 18:59:54,902 [InitializeDao(47)] /org/support/project/knowledge/database/ddl.sql is loaded.
+INFO  2016-04-21 18:59:54,902 [InitializeDao(47)] /org/support/project/knowledge/database/init_datas.sql is loaded.
+INFO  2016-04-21 18:59:54,902 [InitializeDao(49)] Database initialize finish.
+INFO  2016-04-21 18:59:54,933 [InitDB(121)] Migrate to 1.1.0.pre1
+INFO  2016-04-21 18:59:55,136 [H2DBServerLogic(66)] H2 Database server stoped.
+INFO  2016-04-21 18:59:55,204 [H2DBServerLogic(52)] H2 Database server started.
+INFO  2016-04-21 18:59:55,345 [DatabaseMetaDataDao(114)] Read Table info: ACCESS_LOGS
+INFO  2016-04-21 18:59:55,345 [DatabaseMetaDataDao(114)] Read Table info: ACCOUNT_IMAGES
+INFO  2016-04-21 18:59:55,345 [DatabaseMetaDataDao(114)] Read Table info: COMMENTS
+INFO  2016-04-21 18:59:55,345 [DatabaseMetaDataDao(114)] Read Table info: CONFIRM_MAIL_CHANGES
+INFO  2016-04-21 18:59:55,345 [DatabaseMetaDataDao(114)] Read Table info: FUNCTIONS
+INFO  2016-04-21 18:59:55,345 [DatabaseMetaDataDao(114)] Read Table info: GROUPS
+INFO  2016-04-21 18:59:55,345 [DatabaseMetaDataDao(114)] Read Table info: HASH_CONFIGS
+INFO  2016-04-21 18:59:55,345 [DatabaseMetaDataDao(114)] Read Table info: ITEM_CHOICES
+INFO  2016-04-21 18:59:55,345 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGES
+INFO  2016-04-21 18:59:55,345 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_EDIT_GROUPS
+INFO  2016-04-21 18:59:55,345 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_EDIT_USERS
+INFO  2016-04-21 18:59:55,345 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_FILES
+INFO  2016-04-21 18:59:55,345 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_GROUPS
+INFO  2016-04-21 18:59:55,345 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_HISTORIES
+INFO  2016-04-21 18:59:55,345 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_ITEM_VALUES
+INFO  2016-04-21 18:59:55,345 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_TAGS
+INFO  2016-04-21 18:59:55,345 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_USERS
+INFO  2016-04-21 18:59:55,345 [DatabaseMetaDataDao(114)] Read Table info: LDAP_CONFIGS
+INFO  2016-04-21 18:59:55,345 [DatabaseMetaDataDao(114)] Read Table info: LIKES
+INFO  2016-04-21 18:59:55,345 [DatabaseMetaDataDao(114)] Read Table info: LOCALES
+INFO  2016-04-21 18:59:55,345 [DatabaseMetaDataDao(114)] Read Table info: LOGIN_HISTORIES
+INFO  2016-04-21 18:59:55,345 [DatabaseMetaDataDao(114)] Read Table info: MAILS
+INFO  2016-04-21 18:59:55,345 [DatabaseMetaDataDao(114)] Read Table info: MAIL_CONFIGS
+INFO  2016-04-21 18:59:55,345 [DatabaseMetaDataDao(114)] Read Table info: NOTICES
+INFO  2016-04-21 18:59:55,345 [DatabaseMetaDataDao(114)] Read Table info: NOTIFY_CONFIGS
+INFO  2016-04-21 18:59:55,345 [DatabaseMetaDataDao(114)] Read Table info: NOTIFY_QUEUES
+INFO  2016-04-21 18:59:55,345 [DatabaseMetaDataDao(114)] Read Table info: PASSWORD_RESETS
+INFO  2016-04-21 18:59:55,345 [DatabaseMetaDataDao(114)] Read Table info: PROVISIONAL_REGISTRATIONS
+INFO  2016-04-21 18:59:55,345 [DatabaseMetaDataDao(114)] Read Table info: PROXY_CONFIGS
+INFO  2016-04-21 18:59:55,345 [DatabaseMetaDataDao(114)] Read Table info: READ_MARKS
+INFO  2016-04-21 18:59:55,345 [DatabaseMetaDataDao(114)] Read Table info: ROLES
+INFO  2016-04-21 18:59:55,345 [DatabaseMetaDataDao(114)] Read Table info: ROLE_FUNCTIONS
+INFO  2016-04-21 18:59:55,345 [DatabaseMetaDataDao(114)] Read Table info: STOCKS
+INFO  2016-04-21 18:59:55,345 [DatabaseMetaDataDao(114)] Read Table info: STOCK_KNOWLEDGES
+INFO  2016-04-21 18:59:55,360 [DatabaseMetaDataDao(114)] Read Table info: SYSTEMS
+INFO  2016-04-21 18:59:55,360 [DatabaseMetaDataDao(114)] Read Table info: SYSTEM_ATTRIBUTES
+INFO  2016-04-21 18:59:55,360 [DatabaseMetaDataDao(114)] Read Table info: SYSTEM_CONFIGS
+INFO  2016-04-21 18:59:55,360 [DatabaseMetaDataDao(114)] Read Table info: TAGS
+INFO  2016-04-21 18:59:55,360 [DatabaseMetaDataDao(114)] Read Table info: TEMPLATE_ITEMS
+INFO  2016-04-21 18:59:55,360 [DatabaseMetaDataDao(114)] Read Table info: TEMPLATE_MASTERS
+INFO  2016-04-21 18:59:55,360 [DatabaseMetaDataDao(114)] Read Table info: USERS
+INFO  2016-04-21 18:59:55,360 [DatabaseMetaDataDao(114)] Read Table info: USER_CONFIGS
+INFO  2016-04-21 18:59:55,360 [DatabaseMetaDataDao(114)] Read Table info: USER_GROUPS
+INFO  2016-04-21 18:59:55,360 [DatabaseMetaDataDao(114)] Read Table info: USER_ROLES
+INFO  2016-04-21 18:59:55,360 [DatabaseMetaDataDao(114)] Read Table info: VIEW_HISTORIES
+INFO  2016-04-21 18:59:55,360 [DatabaseMetaDataDao(114)] Read Table info: VOTES
+INFO  2016-04-21 18:59:55,360 [DatabaseMetaDataDao(114)] Read Table info: WEBHOOKS
+INFO  2016-04-21 18:59:55,360 [DatabaseMetaDataDao(114)] Read Table info: WEBHOOK_CONFIGS
+INFO  2016-04-21 18:59:55,532 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGES cascade
+INFO  2016-04-21 18:59:55,532 [InitializeDao(90)] DROP TABLE if exists ACCOUNT_IMAGES cascade
+INFO  2016-04-21 18:59:55,532 [InitializeDao(90)] DROP TABLE if exists HASH_CONFIGS cascade
+INFO  2016-04-21 18:59:55,548 [InitializeDao(90)] DROP TABLE if exists GROUPS cascade
+INFO  2016-04-21 18:59:55,548 [InitializeDao(90)] DROP TABLE if exists SYSTEM_CONFIGS cascade
+INFO  2016-04-21 18:59:55,548 [InitializeDao(90)] DROP TABLE if exists WEBHOOK_CONFIGS cascade
+INFO  2016-04-21 18:59:55,548 [InitializeDao(90)] DROP TABLE if exists MAIL_CONFIGS cascade
+INFO  2016-04-21 18:59:55,548 [InitializeDao(90)] DROP TABLE if exists VOTES cascade
+INFO  2016-04-21 18:59:55,548 [InitializeDao(90)] DROP TABLE if exists COMMENTS cascade
+INFO  2016-04-21 18:59:55,548 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_GROUPS cascade
+INFO  2016-04-21 18:59:55,563 [InitializeDao(90)] DROP TABLE if exists PASSWORD_RESETS cascade
+INFO  2016-04-21 18:59:55,563 [InitializeDao(90)] DROP TABLE if exists FUNCTIONS cascade
+INFO  2016-04-21 18:59:55,579 [InitializeDao(90)] DROP TABLE if exists LIKES cascade
+INFO  2016-04-21 18:59:55,579 [InitializeDao(90)] DROP TABLE if exists NOTICES cascade
+INFO  2016-04-21 18:59:55,579 [InitializeDao(90)] DROP TABLE if exists LOCALES cascade
+INFO  2016-04-21 18:59:55,579 [InitializeDao(90)] DROP TABLE if exists SYSTEM_ATTRIBUTES cascade
+INFO  2016-04-21 18:59:55,579 [InitializeDao(90)] DROP TABLE if exists VIEW_HISTORIES cascade
+INFO  2016-04-21 18:59:55,579 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_EDIT_GROUPS cascade
+INFO  2016-04-21 18:59:55,579 [InitializeDao(90)] DROP TABLE if exists WEBHOOKS cascade
+INFO  2016-04-21 18:59:55,579 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_FILES cascade
+INFO  2016-04-21 18:59:55,579 [InitializeDao(90)] DROP TABLE if exists NOTIFY_QUEUES cascade
+INFO  2016-04-21 18:59:55,579 [InitializeDao(90)] DROP TABLE if exists TEMPLATE_MASTERS cascade
+INFO  2016-04-21 18:59:55,594 [InitializeDao(90)] DROP TABLE if exists USER_GROUPS cascade
+INFO  2016-04-21 18:59:55,594 [InitializeDao(90)] DROP TABLE if exists ITEM_CHOICES cascade
+INFO  2016-04-21 18:59:55,594 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_EDIT_USERS cascade
+INFO  2016-04-21 18:59:55,594 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_HISTORIES cascade
+INFO  2016-04-21 18:59:55,594 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_ITEM_VALUES cascade
+INFO  2016-04-21 18:59:55,594 [InitializeDao(90)] DROP TABLE if exists ACCESS_LOGS cascade
+INFO  2016-04-21 18:59:55,594 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_TAGS cascade
+INFO  2016-04-21 18:59:55,594 [InitializeDao(90)] DROP TABLE if exists ROLE_FUNCTIONS cascade
+INFO  2016-04-21 18:59:55,594 [InitializeDao(90)] DROP TABLE if exists PROXY_CONFIGS cascade
+INFO  2016-04-21 18:59:55,594 [InitializeDao(90)] DROP TABLE if exists MAILS cascade
+INFO  2016-04-21 18:59:55,594 [InitializeDao(90)] DROP TABLE if exists LDAP_CONFIGS cascade
+INFO  2016-04-21 18:59:55,594 [InitializeDao(90)] DROP TABLE if exists LOGIN_HISTORIES cascade
+INFO  2016-04-21 18:59:55,594 [InitializeDao(90)] DROP TABLE if exists CONFIRM_MAIL_CHANGES cascade
+INFO  2016-04-21 18:59:55,594 [InitializeDao(90)] DROP TABLE if exists PROVISIONAL_REGISTRATIONS cascade
+INFO  2016-04-21 18:59:55,594 [InitializeDao(90)] DROP TABLE if exists USER_ROLES cascade
+INFO  2016-04-21 18:59:55,594 [InitializeDao(90)] DROP TABLE if exists NOTIFY_CONFIGS cascade
+INFO  2016-04-21 18:59:55,610 [InitializeDao(90)] DROP TABLE if exists ROLES cascade
+INFO  2016-04-21 18:59:55,610 [InitializeDao(90)] DROP TABLE if exists USER_CONFIGS cascade
+INFO  2016-04-21 18:59:55,610 [InitializeDao(90)] DROP TABLE if exists READ_MARKS cascade
+INFO  2016-04-21 18:59:55,610 [InitializeDao(90)] DROP TABLE if exists SYSTEMS cascade
+INFO  2016-04-21 18:59:55,610 [InitializeDao(90)] DROP TABLE if exists STOCKS cascade
+INFO  2016-04-21 18:59:55,610 [InitializeDao(90)] DROP TABLE if exists STOCK_KNOWLEDGES cascade
+INFO  2016-04-21 18:59:55,610 [InitializeDao(90)] DROP TABLE if exists USERS cascade
+INFO  2016-04-21 18:59:55,610 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_USERS cascade
+INFO  2016-04-21 18:59:55,610 [InitializeDao(90)] DROP TABLE if exists TAGS cascade
+INFO  2016-04-21 18:59:55,610 [InitializeDao(90)] DROP TABLE if exists TEMPLATE_ITEMS cascade
+INFO  2016-04-21 18:59:55,610 [Intercepter(215)] error. [object]class org.support.project.web.dao.SystemsDao_$$_jvstfee_a[proceed]_d17executeQuerySingle[param0]SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0[param1]class org.support.project.web.entity.SystemsEntity[param2][Ljava.lang.Object;@50778bde
+[throwable.getMessage()] テーブル "SYSTEMS" が見つかりません
+Table "SYSTEMS" not found; SQL statement:
+SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0 [42102-183] [cause] テーブル "SYSTEMS" が見つかりません
+Table "SYSTEMS" not found; SQL statement:
+SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0 [42102-183]
+----- SQL Infomation -----
+[sql]SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0
+[params]
+	[params][0]knowledge
+[execute]SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = knowledge  AND DELETE_FLAG = 0
+
+ERROR 2016-04-21 18:59:55,610 [Transaction(60)] Error(Rollback) : org.support.project.web.dao.SystemsDao_$$_jvstfee_a#_d42selectOnKey
+INFO  2016-04-21 18:59:55,610 [Intercepter(215)] error. [object]class org.support.project.web.dao.SystemsDao_$$_jvstfee_a[proceed]_d42selectOnKey[param0]knowledge
+[throwable.getMessage()] テーブル "SYSTEMS" が見つかりません
+Table "SYSTEMS" not found; SQL statement:
+SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0 [42102-183] [cause] テーブル "SYSTEMS" が見つかりません
+Table "SYSTEMS" not found; SQL statement:
+SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0 [42102-183]
+----- SQL Infomation -----
+[sql]SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0
+[params]
+	[params][0]knowledge
+[execute]SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = knowledge  AND DELETE_FLAG = 0
+
+INFO  2016-04-21 18:59:55,610 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGES cascade
+INFO  2016-04-21 18:59:55,610 [InitializeDao(90)] DROP TABLE if exists ACCOUNT_IMAGES cascade
+INFO  2016-04-21 18:59:55,610 [InitializeDao(90)] DROP TABLE if exists HASH_CONFIGS cascade
+INFO  2016-04-21 18:59:55,626 [InitializeDao(90)] DROP TABLE if exists GROUPS cascade
+INFO  2016-04-21 18:59:55,626 [InitializeDao(90)] DROP TABLE if exists SYSTEM_CONFIGS cascade
+INFO  2016-04-21 18:59:55,626 [InitializeDao(90)] DROP TABLE if exists WEBHOOK_CONFIGS cascade
+INFO  2016-04-21 18:59:55,626 [InitializeDao(90)] DROP TABLE if exists MAIL_CONFIGS cascade
+INFO  2016-04-21 18:59:55,626 [InitializeDao(90)] DROP TABLE if exists VOTES cascade
+INFO  2016-04-21 18:59:55,626 [InitializeDao(90)] DROP TABLE if exists COMMENTS cascade
+INFO  2016-04-21 18:59:55,626 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_GROUPS cascade
+INFO  2016-04-21 18:59:55,626 [InitializeDao(90)] DROP TABLE if exists PASSWORD_RESETS cascade
+INFO  2016-04-21 18:59:55,626 [InitializeDao(90)] DROP TABLE if exists FUNCTIONS cascade
+INFO  2016-04-21 18:59:55,626 [InitializeDao(90)] DROP TABLE if exists LIKES cascade
+INFO  2016-04-21 18:59:55,626 [InitializeDao(90)] DROP TABLE if exists NOTICES cascade
+INFO  2016-04-21 18:59:55,626 [InitializeDao(90)] DROP TABLE if exists LOCALES cascade
+INFO  2016-04-21 18:59:55,626 [InitializeDao(90)] DROP TABLE if exists SYSTEM_ATTRIBUTES cascade
+INFO  2016-04-21 18:59:55,626 [InitializeDao(90)] DROP TABLE if exists VIEW_HISTORIES cascade
+INFO  2016-04-21 18:59:55,626 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_EDIT_GROUPS cascade
+INFO  2016-04-21 18:59:55,626 [InitializeDao(90)] DROP TABLE if exists WEBHOOKS cascade
+INFO  2016-04-21 18:59:55,626 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_FILES cascade
+INFO  2016-04-21 18:59:55,626 [InitializeDao(90)] DROP TABLE if exists NOTIFY_QUEUES cascade
+INFO  2016-04-21 18:59:55,626 [InitializeDao(90)] DROP TABLE if exists TEMPLATE_MASTERS cascade
+INFO  2016-04-21 18:59:55,626 [InitializeDao(90)] DROP TABLE if exists USER_GROUPS cascade
+INFO  2016-04-21 18:59:55,626 [InitializeDao(90)] DROP TABLE if exists ITEM_CHOICES cascade
+INFO  2016-04-21 18:59:55,626 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_EDIT_USERS cascade
+INFO  2016-04-21 18:59:55,641 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_HISTORIES cascade
+INFO  2016-04-21 18:59:55,641 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_ITEM_VALUES cascade
+INFO  2016-04-21 18:59:55,641 [InitializeDao(90)] DROP TABLE if exists ACCESS_LOGS cascade
+INFO  2016-04-21 18:59:55,641 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_TAGS cascade
+INFO  2016-04-21 18:59:55,641 [InitializeDao(90)] DROP TABLE if exists ROLE_FUNCTIONS cascade
+INFO  2016-04-21 18:59:55,641 [InitializeDao(90)] DROP TABLE if exists PROXY_CONFIGS cascade
+INFO  2016-04-21 18:59:55,641 [InitializeDao(90)] DROP TABLE if exists MAILS cascade
+INFO  2016-04-21 18:59:55,641 [InitializeDao(90)] DROP TABLE if exists LDAP_CONFIGS cascade
+INFO  2016-04-21 18:59:55,641 [InitializeDao(90)] DROP TABLE if exists LOGIN_HISTORIES cascade
+INFO  2016-04-21 18:59:55,641 [InitializeDao(90)] DROP TABLE if exists CONFIRM_MAIL_CHANGES cascade
+INFO  2016-04-21 18:59:55,641 [InitializeDao(90)] DROP TABLE if exists PROVISIONAL_REGISTRATIONS cascade
+INFO  2016-04-21 18:59:55,641 [InitializeDao(90)] DROP TABLE if exists USER_ROLES cascade
+INFO  2016-04-21 18:59:55,641 [InitializeDao(90)] DROP TABLE if exists NOTIFY_CONFIGS cascade
+INFO  2016-04-21 18:59:55,641 [InitializeDao(90)] DROP TABLE if exists ROLES cascade
+INFO  2016-04-21 18:59:55,641 [InitializeDao(90)] DROP TABLE if exists USER_CONFIGS cascade
+INFO  2016-04-21 18:59:55,641 [InitializeDao(90)] DROP TABLE if exists READ_MARKS cascade
+INFO  2016-04-21 18:59:55,641 [InitializeDao(90)] DROP TABLE if exists SYSTEMS cascade
+INFO  2016-04-21 18:59:55,641 [InitializeDao(90)] DROP TABLE if exists STOCKS cascade
+INFO  2016-04-21 18:59:55,641 [InitializeDao(90)] DROP TABLE if exists STOCK_KNOWLEDGES cascade
+INFO  2016-04-21 18:59:55,641 [InitializeDao(90)] DROP TABLE if exists USERS cascade
+INFO  2016-04-21 18:59:55,641 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_USERS cascade
+INFO  2016-04-21 18:59:55,641 [InitializeDao(90)] DROP TABLE if exists TAGS cascade
+INFO  2016-04-21 18:59:55,641 [InitializeDao(90)] DROP TABLE if exists TEMPLATE_ITEMS cascade
+INFO  2016-04-21 18:59:55,641 [InitializeDao(41)] Database initialize start.
+INFO  2016-04-21 18:59:55,813 [InitializeDao(47)] /org/support/project/web/database/ddl.sql is loaded.
+INFO  2016-04-21 18:59:55,891 [InitializeDao(47)] /org/support/project/knowledge/database/ddl.sql is loaded.
+INFO  2016-04-21 18:59:55,891 [InitializeDao(47)] /org/support/project/knowledge/database/init_datas.sql is loaded.
+INFO  2016-04-21 18:59:55,891 [InitializeDao(49)] Database initialize finish.
+INFO  2016-04-21 18:59:55,906 [InitDB(121)] Migrate to 1.1.0.pre1
+INFO  2016-04-21 18:59:56,980 [KnowledgeLogicTest(105)] [
+	{
+		"commentCount": 0,
+		"content": "テストだよ",
+		"deleteFlag": 0,
+		"insertDatetime": 1461232796016,
+		"insertUser": 2,
+		"insertUserName": "テストユーザ1",
+		"keyValues": [
+			1
+		],
+		"knowledgeId": 1,
+		"likeCount": 0,
+		"likeCountOnTerm": null,
+		"publicFlag": 0,
+		"score": "NaN",
+		"tagIds": "",
+		"tagNames": "",
+		"title": "Test1",
+		"typeId": -100,
+		"updateDatetime": 1461232796016,
+		"updateUser": 2,
+		"updateUserName": "テストユーザ1"
+	}
+]
+INFO  2016-04-21 18:59:57,011 [KnowledgeLogicTest(114)] [
+	{
+		"commentCount": 0,
+		"content": "xZn63E06BUKwoj27e0wznj3Jll9kVXsGqx7ttLOpcAhbECoPZIwVaXuHEr6aaKiAHev2tMl8A0EScSswIOFQa0EyRTQHYPkaVYywM3G43rgBe9l0ohMnZlvhXag2rqorNT9Y6PrCUFXskOPUr1YBkEmp0fQxhDIjCHmwfRfrufjUNsJWdxknNYIB4Uu2NSodhVrB837ZSM8SVGlr6iQj7GIDq4qEs5YQvanql7MRP4ePKjNpzhN6HcNqmxRL92ABepXUJqmbrA4UuiJSZ6GhVFXv8VXcRZXtLI1InXogg7vkarlHmR7Eka3ZxQdkOWOgOztEfNRkbjz6dVgU5obxUe09S8whzMCpPtw84JXcAdNCuQACSZPKzUdkD04pAOi6StnEt45ZX15ELp2JIISzkjMSOehdqQc4t7RKe9usCSx683CdA6scJa3lXnRXsQ6lNASL72NHby4Kp2zmae2K3DoYf6YaitUACfzrmSQGtDgSfiBLnrN7WrXhJijjEPPm0xc3olxtxZKWPQdsdmF5FpIxcW0RPLCpAAbjGrkDKHs5AK4FgEBdZh60T47MiBM9ZW1RvfryvmgOEe4GMCy4CK3XvmFubmCwbmIbbWQNojLWIAOK0RfrZX1YdbgmAgyHGJ6xT8TH8ou1YGMbakKehqUhpA0dM2cHp0lcmgGrF0Yoru9n43HiKj3Gju5qo3yFOGXVKgreFTu94IAb1nLNeU7jZANKmTR0m80rzJTuy52SHaycLo3kbXmdgiQAdSynNB6YbfHWa6mbrEA70MA053NRyj70j6L1eIZPQJ7aYatG8VB3OGgqCpvIlvc6CpTkbhnB9ez9lp4bUbfe2kJaJYJhQBOaqqd6V5ANAo0Tyu0AtPmHvJIfww3iRG5qMqT0cA1wlHoGgdWQKPm7VKxWHMCr76Gv4Aq6VuiAqHgpRXhr7f3tmlOVcahwgTQgstuzPkgli7EiTbzXqWYC2JTw50oRgngl5FJbOSCCsg7pEEgzGkf46NCU5lolkkUamV10",
+		"deleteFlag": 0,
+		"insertDatetime": 1461232796437,
+		"insertUser": 3,
+		"insertUserName": "テストユーザ2",
+		"keyValues": [
+			2
+		],
+		"knowledgeId": 2,
+		"likeCount": 0,
+		"likeCountOnTerm": null,
+		"publicFlag": 1,
+		"score": "NaN",
+		"tagIds": "",
+		"tagNames": "",
+		"title": "3OmX6jcp2CuNWCfgujeFupVh09gl7wWIQVuNKQr7o0hIajqdqEMfy3ej8IKrJ9x7",
+		"typeId": -99,
+		"updateDatetime": 1461232796687,
+		"updateUser": 3,
+		"updateUserName": "テストユーザ2"
+	},
+	{
+		"commentCount": 0,
+		"content": "テストだよ",
+		"deleteFlag": 0,
+		"insertDatetime": 1461232796016,
+		"insertUser": 2,
+		"insertUserName": "テストユーザ1",
+		"keyValues": [
+			1
+		],
+		"knowledgeId": 1,
+		"likeCount": 0,
+		"likeCountOnTerm": null,
+		"publicFlag": 0,
+		"score": "NaN",
+		"tagIds": "",
+		"tagNames": "",
+		"title": "Test1",
+		"typeId": -100,
+		"updateDatetime": 1461232796016,
+		"updateUser": 2,
+		"updateUserName": "テストユーザ1"
+	}
+]
+INFO  2016-04-21 18:59:57,026 [KnowledgeLogicTest(123)] [
+	{
+		"commentCount": 0,
+		"content": "\u003Cspan class=\"mark\"\u003Eテスト\u003C/span\u003Eだよ",
+		"deleteFlag": 0,
+		"insertDatetime": 1461232796016,
+		"insertUser": 2,
+		"insertUserName": "テストユーザ1",
+		"keyValues": [
+			1
+		],
+		"knowledgeId": 1,
+		"likeCount": 0,
+		"likeCountOnTerm": null,
+		"publicFlag": 0,
+		"score": 0.33544760942459106,
+		"tagIds": "",
+		"tagNames": "",
+		"title": "Test1",
+		"typeId": -100,
+		"updateDatetime": 1461232796016,
+		"updateUser": 2,
+		"updateUserName": "テストユーザ1"
+	}
+]
+INFO  2016-04-21 18:59:57,026 [H2DBServerLogic(66)] H2 Database server stoped.
+INFO  2016-04-21 18:59:57,043 [H2DBServerLogic(52)] H2 Database server started.
+INFO  2016-04-21 18:59:57,168 [DatabaseMetaDataDao(114)] Read Table info: ACCESS_LOGS
+INFO  2016-04-21 18:59:57,168 [DatabaseMetaDataDao(114)] Read Table info: ACCOUNT_IMAGES
+INFO  2016-04-21 18:59:57,168 [DatabaseMetaDataDao(114)] Read Table info: COMMENTS
+INFO  2016-04-21 18:59:57,168 [DatabaseMetaDataDao(114)] Read Table info: CONFIRM_MAIL_CHANGES
+INFO  2016-04-21 18:59:57,168 [DatabaseMetaDataDao(114)] Read Table info: FUNCTIONS
+INFO  2016-04-21 18:59:57,168 [DatabaseMetaDataDao(114)] Read Table info: GROUPS
+INFO  2016-04-21 18:59:57,168 [DatabaseMetaDataDao(114)] Read Table info: HASH_CONFIGS
+INFO  2016-04-21 18:59:57,168 [DatabaseMetaDataDao(114)] Read Table info: ITEM_CHOICES
+INFO  2016-04-21 18:59:57,168 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGES
+INFO  2016-04-21 18:59:57,168 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_EDIT_GROUPS
+INFO  2016-04-21 18:59:57,168 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_EDIT_USERS
+INFO  2016-04-21 18:59:57,168 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_FILES
+INFO  2016-04-21 18:59:57,168 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_GROUPS
+INFO  2016-04-21 18:59:57,168 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_HISTORIES
+INFO  2016-04-21 18:59:57,168 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_ITEM_VALUES
+INFO  2016-04-21 18:59:57,168 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_TAGS
+INFO  2016-04-21 18:59:57,168 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_USERS
+INFO  2016-04-21 18:59:57,168 [DatabaseMetaDataDao(114)] Read Table info: LDAP_CONFIGS
+INFO  2016-04-21 18:59:57,168 [DatabaseMetaDataDao(114)] Read Table info: LIKES
+INFO  2016-04-21 18:59:57,168 [DatabaseMetaDataDao(114)] Read Table info: LOCALES
+INFO  2016-04-21 18:59:57,168 [DatabaseMetaDataDao(114)] Read Table info: LOGIN_HISTORIES
+INFO  2016-04-21 18:59:57,168 [DatabaseMetaDataDao(114)] Read Table info: MAILS
+INFO  2016-04-21 18:59:57,168 [DatabaseMetaDataDao(114)] Read Table info: MAIL_CONFIGS
+INFO  2016-04-21 18:59:57,168 [DatabaseMetaDataDao(114)] Read Table info: NOTICES
+INFO  2016-04-21 18:59:57,168 [DatabaseMetaDataDao(114)] Read Table info: NOTIFY_CONFIGS
+INFO  2016-04-21 18:59:57,168 [DatabaseMetaDataDao(114)] Read Table info: NOTIFY_QUEUES
+INFO  2016-04-21 18:59:57,183 [DatabaseMetaDataDao(114)] Read Table info: PASSWORD_RESETS
+INFO  2016-04-21 18:59:57,183 [DatabaseMetaDataDao(114)] Read Table info: PROVISIONAL_REGISTRATIONS
+INFO  2016-04-21 18:59:57,183 [DatabaseMetaDataDao(114)] Read Table info: PROXY_CONFIGS
+INFO  2016-04-21 18:59:57,183 [DatabaseMetaDataDao(114)] Read Table info: READ_MARKS
+INFO  2016-04-21 18:59:57,183 [DatabaseMetaDataDao(114)] Read Table info: ROLES
+INFO  2016-04-21 18:59:57,183 [DatabaseMetaDataDao(114)] Read Table info: ROLE_FUNCTIONS
+INFO  2016-04-21 18:59:57,183 [DatabaseMetaDataDao(114)] Read Table info: STOCKS
+INFO  2016-04-21 18:59:57,183 [DatabaseMetaDataDao(114)] Read Table info: STOCK_KNOWLEDGES
+INFO  2016-04-21 18:59:57,183 [DatabaseMetaDataDao(114)] Read Table info: SYSTEMS
+INFO  2016-04-21 18:59:57,183 [DatabaseMetaDataDao(114)] Read Table info: SYSTEM_ATTRIBUTES
+INFO  2016-04-21 18:59:57,183 [DatabaseMetaDataDao(114)] Read Table info: SYSTEM_CONFIGS
+INFO  2016-04-21 18:59:57,183 [DatabaseMetaDataDao(114)] Read Table info: TAGS
+INFO  2016-04-21 18:59:57,183 [DatabaseMetaDataDao(114)] Read Table info: TEMPLATE_ITEMS
+INFO  2016-04-21 18:59:57,183 [DatabaseMetaDataDao(114)] Read Table info: TEMPLATE_MASTERS
+INFO  2016-04-21 18:59:57,183 [DatabaseMetaDataDao(114)] Read Table info: USERS
+INFO  2016-04-21 18:59:57,183 [DatabaseMetaDataDao(114)] Read Table info: USER_CONFIGS
+INFO  2016-04-21 18:59:57,183 [DatabaseMetaDataDao(114)] Read Table info: USER_GROUPS
+INFO  2016-04-21 18:59:57,183 [DatabaseMetaDataDao(114)] Read Table info: USER_ROLES
+INFO  2016-04-21 18:59:57,183 [DatabaseMetaDataDao(114)] Read Table info: VIEW_HISTORIES
+INFO  2016-04-21 18:59:57,183 [DatabaseMetaDataDao(114)] Read Table info: VOTES
+INFO  2016-04-21 18:59:57,183 [DatabaseMetaDataDao(114)] Read Table info: WEBHOOKS
+INFO  2016-04-21 18:59:57,183 [DatabaseMetaDataDao(114)] Read Table info: WEBHOOK_CONFIGS
+INFO  2016-04-21 18:59:57,355 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGES cascade
+INFO  2016-04-21 18:59:57,355 [InitializeDao(90)] DROP TABLE if exists ACCOUNT_IMAGES cascade
+INFO  2016-04-21 18:59:57,355 [InitializeDao(90)] DROP TABLE if exists HASH_CONFIGS cascade
+INFO  2016-04-21 18:59:57,355 [InitializeDao(90)] DROP TABLE if exists GROUPS cascade
+INFO  2016-04-21 18:59:57,355 [InitializeDao(90)] DROP TABLE if exists SYSTEM_CONFIGS cascade
+INFO  2016-04-21 18:59:57,371 [InitializeDao(90)] DROP TABLE if exists WEBHOOK_CONFIGS cascade
+INFO  2016-04-21 18:59:57,371 [InitializeDao(90)] DROP TABLE if exists MAIL_CONFIGS cascade
+INFO  2016-04-21 18:59:57,371 [InitializeDao(90)] DROP TABLE if exists VOTES cascade
+INFO  2016-04-21 18:59:57,371 [InitializeDao(90)] DROP TABLE if exists COMMENTS cascade
+INFO  2016-04-21 18:59:57,371 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_GROUPS cascade
+INFO  2016-04-21 18:59:57,371 [InitializeDao(90)] DROP TABLE if exists PASSWORD_RESETS cascade
+INFO  2016-04-21 18:59:57,371 [InitializeDao(90)] DROP TABLE if exists FUNCTIONS cascade
+INFO  2016-04-21 18:59:57,371 [InitializeDao(90)] DROP TABLE if exists LIKES cascade
+INFO  2016-04-21 18:59:57,371 [InitializeDao(90)] DROP TABLE if exists NOTICES cascade
+INFO  2016-04-21 18:59:57,371 [InitializeDao(90)] DROP TABLE if exists LOCALES cascade
+INFO  2016-04-21 18:59:57,371 [InitializeDao(90)] DROP TABLE if exists SYSTEM_ATTRIBUTES cascade
+INFO  2016-04-21 18:59:57,371 [InitializeDao(90)] DROP TABLE if exists VIEW_HISTORIES cascade
+INFO  2016-04-21 18:59:57,371 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_EDIT_GROUPS cascade
+INFO  2016-04-21 18:59:57,386 [InitializeDao(90)] DROP TABLE if exists WEBHOOKS cascade
+INFO  2016-04-21 18:59:57,386 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_FILES cascade
+INFO  2016-04-21 18:59:57,386 [InitializeDao(90)] DROP TABLE if exists NOTIFY_QUEUES cascade
+INFO  2016-04-21 18:59:57,386 [InitializeDao(90)] DROP TABLE if exists TEMPLATE_MASTERS cascade
+INFO  2016-04-21 18:59:57,386 [InitializeDao(90)] DROP TABLE if exists USER_GROUPS cascade
+INFO  2016-04-21 18:59:57,386 [InitializeDao(90)] DROP TABLE if exists ITEM_CHOICES cascade
+INFO  2016-04-21 18:59:57,386 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_EDIT_USERS cascade
+INFO  2016-04-21 18:59:57,386 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_HISTORIES cascade
+INFO  2016-04-21 18:59:57,386 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_ITEM_VALUES cascade
+INFO  2016-04-21 18:59:57,386 [InitializeDao(90)] DROP TABLE if exists ACCESS_LOGS cascade
+INFO  2016-04-21 18:59:57,386 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_TAGS cascade
+INFO  2016-04-21 18:59:57,386 [InitializeDao(90)] DROP TABLE if exists ROLE_FUNCTIONS cascade
+INFO  2016-04-21 18:59:57,386 [InitializeDao(90)] DROP TABLE if exists PROXY_CONFIGS cascade
+INFO  2016-04-21 18:59:57,386 [InitializeDao(90)] DROP TABLE if exists MAILS cascade
+INFO  2016-04-21 18:59:57,386 [InitializeDao(90)] DROP TABLE if exists LDAP_CONFIGS cascade
+INFO  2016-04-21 18:59:57,402 [InitializeDao(90)] DROP TABLE if exists LOGIN_HISTORIES cascade
+INFO  2016-04-21 18:59:57,402 [InitializeDao(90)] DROP TABLE if exists CONFIRM_MAIL_CHANGES cascade
+INFO  2016-04-21 18:59:57,402 [InitializeDao(90)] DROP TABLE if exists PROVISIONAL_REGISTRATIONS cascade
+INFO  2016-04-21 18:59:57,402 [InitializeDao(90)] DROP TABLE if exists USER_ROLES cascade
+INFO  2016-04-21 18:59:57,402 [InitializeDao(90)] DROP TABLE if exists NOTIFY_CONFIGS cascade
+INFO  2016-04-21 18:59:57,402 [InitializeDao(90)] DROP TABLE if exists ROLES cascade
+INFO  2016-04-21 18:59:57,402 [InitializeDao(90)] DROP TABLE if exists USER_CONFIGS cascade
+INFO  2016-04-21 18:59:57,402 [InitializeDao(90)] DROP TABLE if exists READ_MARKS cascade
+INFO  2016-04-21 18:59:57,402 [InitializeDao(90)] DROP TABLE if exists SYSTEMS cascade
+INFO  2016-04-21 18:59:57,402 [InitializeDao(90)] DROP TABLE if exists STOCKS cascade
+INFO  2016-04-21 18:59:57,402 [InitializeDao(90)] DROP TABLE if exists STOCK_KNOWLEDGES cascade
+INFO  2016-04-21 18:59:57,402 [InitializeDao(90)] DROP TABLE if exists USERS cascade
+INFO  2016-04-21 18:59:57,402 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_USERS cascade
+INFO  2016-04-21 18:59:57,402 [InitializeDao(90)] DROP TABLE if exists TAGS cascade
+INFO  2016-04-21 18:59:57,402 [InitializeDao(90)] DROP TABLE if exists TEMPLATE_ITEMS cascade
+INFO  2016-04-21 18:59:57,402 [Intercepter(215)] error. [object]class org.support.project.web.dao.SystemsDao_$$_jvstfee_a[proceed]_d17executeQuerySingle[param0]SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0[param1]class org.support.project.web.entity.SystemsEntity[param2][Ljava.lang.Object;@1bb96449
+[throwable.getMessage()] テーブル "SYSTEMS" が見つかりません
+Table "SYSTEMS" not found; SQL statement:
+SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0 [42102-183] [cause] テーブル "SYSTEMS" が見つかりません
+Table "SYSTEMS" not found; SQL statement:
+SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0 [42102-183]
+----- SQL Infomation -----
+[sql]SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0
+[params]
+	[params][0]knowledge
+[execute]SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = knowledge  AND DELETE_FLAG = 0
+
+ERROR 2016-04-21 18:59:57,417 [Transaction(60)] Error(Rollback) : org.support.project.web.dao.SystemsDao_$$_jvstfee_a#_d42selectOnKey
+INFO  2016-04-21 18:59:57,417 [Intercepter(215)] error. [object]class org.support.project.web.dao.SystemsDao_$$_jvstfee_a[proceed]_d42selectOnKey[param0]knowledge
+[throwable.getMessage()] テーブル "SYSTEMS" が見つかりません
+Table "SYSTEMS" not found; SQL statement:
+SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0 [42102-183] [cause] テーブル "SYSTEMS" が見つかりません
+Table "SYSTEMS" not found; SQL statement:
+SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0 [42102-183]
+----- SQL Infomation -----
+[sql]SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0
+[params]
+	[params][0]knowledge
+[execute]SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = knowledge  AND DELETE_FLAG = 0
+
+INFO  2016-04-21 18:59:57,417 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGES cascade
+INFO  2016-04-21 18:59:57,417 [InitializeDao(90)] DROP TABLE if exists ACCOUNT_IMAGES cascade
+INFO  2016-04-21 18:59:57,417 [InitializeDao(90)] DROP TABLE if exists HASH_CONFIGS cascade
+INFO  2016-04-21 18:59:57,417 [InitializeDao(90)] DROP TABLE if exists GROUPS cascade
+INFO  2016-04-21 18:59:57,417 [InitializeDao(90)] DROP TABLE if exists SYSTEM_CONFIGS cascade
+INFO  2016-04-21 18:59:57,417 [InitializeDao(90)] DROP TABLE if exists WEBHOOK_CONFIGS cascade
+INFO  2016-04-21 18:59:57,417 [InitializeDao(90)] DROP TABLE if exists MAIL_CONFIGS cascade
+INFO  2016-04-21 18:59:57,417 [InitializeDao(90)] DROP TABLE if exists VOTES cascade
+INFO  2016-04-21 18:59:57,417 [InitializeDao(90)] DROP TABLE if exists COMMENTS cascade
+INFO  2016-04-21 18:59:57,417 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_GROUPS cascade
+INFO  2016-04-21 18:59:57,417 [InitializeDao(90)] DROP TABLE if exists PASSWORD_RESETS cascade
+INFO  2016-04-21 18:59:57,417 [InitializeDao(90)] DROP TABLE if exists FUNCTIONS cascade
+INFO  2016-04-21 18:59:57,417 [InitializeDao(90)] DROP TABLE if exists LIKES cascade
+INFO  2016-04-21 18:59:57,417 [InitializeDao(90)] DROP TABLE if exists NOTICES cascade
+INFO  2016-04-21 18:59:57,417 [InitializeDao(90)] DROP TABLE if exists LOCALES cascade
+INFO  2016-04-21 18:59:57,417 [InitializeDao(90)] DROP TABLE if exists SYSTEM_ATTRIBUTES cascade
+INFO  2016-04-21 18:59:57,417 [InitializeDao(90)] DROP TABLE if exists VIEW_HISTORIES cascade
+INFO  2016-04-21 18:59:57,417 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_EDIT_GROUPS cascade
+INFO  2016-04-21 18:59:57,417 [InitializeDao(90)] DROP TABLE if exists WEBHOOKS cascade
+INFO  2016-04-21 18:59:57,417 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_FILES cascade
+INFO  2016-04-21 18:59:57,433 [InitializeDao(90)] DROP TABLE if exists NOTIFY_QUEUES cascade
+INFO  2016-04-21 18:59:57,433 [InitializeDao(90)] DROP TABLE if exists TEMPLATE_MASTERS cascade
+INFO  2016-04-21 18:59:57,433 [InitializeDao(90)] DROP TABLE if exists USER_GROUPS cascade
+INFO  2016-04-21 18:59:57,433 [InitializeDao(90)] DROP TABLE if exists ITEM_CHOICES cascade
+INFO  2016-04-21 18:59:57,433 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_EDIT_USERS cascade
+INFO  2016-04-21 18:59:57,433 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_HISTORIES cascade
+INFO  2016-04-21 18:59:57,433 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_ITEM_VALUES cascade
+INFO  2016-04-21 18:59:57,433 [InitializeDao(90)] DROP TABLE if exists ACCESS_LOGS cascade
+INFO  2016-04-21 18:59:57,433 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_TAGS cascade
+INFO  2016-04-21 18:59:57,433 [InitializeDao(90)] DROP TABLE if exists ROLE_FUNCTIONS cascade
+INFO  2016-04-21 18:59:57,433 [InitializeDao(90)] DROP TABLE if exists PROXY_CONFIGS cascade
+INFO  2016-04-21 18:59:57,433 [InitializeDao(90)] DROP TABLE if exists MAILS cascade
+INFO  2016-04-21 18:59:57,433 [InitializeDao(90)] DROP TABLE if exists LDAP_CONFIGS cascade
+INFO  2016-04-21 18:59:57,449 [InitializeDao(90)] DROP TABLE if exists LOGIN_HISTORIES cascade
+INFO  2016-04-21 18:59:57,449 [InitializeDao(90)] DROP TABLE if exists CONFIRM_MAIL_CHANGES cascade
+INFO  2016-04-21 18:59:57,449 [InitializeDao(90)] DROP TABLE if exists PROVISIONAL_REGISTRATIONS cascade
+INFO  2016-04-21 18:59:57,449 [InitializeDao(90)] DROP TABLE if exists USER_ROLES cascade
+INFO  2016-04-21 18:59:57,449 [InitializeDao(90)] DROP TABLE if exists NOTIFY_CONFIGS cascade
+INFO  2016-04-21 18:59:57,449 [InitializeDao(90)] DROP TABLE if exists ROLES cascade
+INFO  2016-04-21 18:59:57,449 [InitializeDao(90)] DROP TABLE if exists USER_CONFIGS cascade
+INFO  2016-04-21 18:59:57,449 [InitializeDao(90)] DROP TABLE if exists READ_MARKS cascade
+INFO  2016-04-21 18:59:57,449 [InitializeDao(90)] DROP TABLE if exists SYSTEMS cascade
+INFO  2016-04-21 18:59:57,449 [InitializeDao(90)] DROP TABLE if exists STOCKS cascade
+INFO  2016-04-21 18:59:57,449 [InitializeDao(90)] DROP TABLE if exists STOCK_KNOWLEDGES cascade
+INFO  2016-04-21 18:59:57,449 [InitializeDao(90)] DROP TABLE if exists USERS cascade
+INFO  2016-04-21 18:59:57,449 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_USERS cascade
+INFO  2016-04-21 18:59:57,449 [InitializeDao(90)] DROP TABLE if exists TAGS cascade
+INFO  2016-04-21 18:59:57,464 [InitializeDao(90)] DROP TABLE if exists TEMPLATE_ITEMS cascade
+INFO  2016-04-21 18:59:57,464 [InitializeDao(41)] Database initialize start.
+INFO  2016-04-21 18:59:57,589 [InitializeDao(47)] /org/support/project/web/database/ddl.sql is loaded.
+INFO  2016-04-21 18:59:57,698 [InitializeDao(47)] /org/support/project/knowledge/database/ddl.sql is loaded.
+INFO  2016-04-21 18:59:57,698 [InitializeDao(47)] /org/support/project/knowledge/database/init_datas.sql is loaded.
+INFO  2016-04-21 18:59:57,698 [InitializeDao(49)] Database initialize finish.
+INFO  2016-04-21 18:59:57,714 [InitDB(121)] Migrate to 1.1.0.pre1
+WARN  2016-04-21 18:59:57,901 [MarkdownLogic(67)] PegDown parser was deprecated
+WARN  2016-04-21 18:59:58,401 [MarkdownLogic(67)] PegDown parser was deprecated
+WARN  2016-04-21 18:59:58,417 [MarkdownLogic(67)] PegDown parser was deprecated
+WARN  2016-04-21 18:59:58,448 [MarkdownLogic(67)] PegDown parser was deprecated
+WARN  2016-04-21 18:59:58,486 [MarkdownLogic(67)] PegDown parser was deprecated
+WARN  2016-04-21 18:59:58,517 [MarkdownLogic(64)] marked.js parser was deprecated
+WARN  2016-04-21 19:00:00,035 [MarkdownLogic(64)] marked.js parser was deprecated
+WARN  2016-04-21 19:00:00,175 [MarkdownLogic(64)] marked.js parser was deprecated
+INFO  2016-04-21 19:00:00,300 [H2DBServerLogic(66)] H2 Database server stoped.
+INFO  2016-04-21 19:00:00,352 [H2DBServerLogic(52)] H2 Database server started.
+INFO  2016-04-21 19:00:00,523 [DatabaseMetaDataDao(114)] Read Table info: ACCESS_LOGS
+INFO  2016-04-21 19:00:00,523 [DatabaseMetaDataDao(114)] Read Table info: ACCOUNT_IMAGES
+INFO  2016-04-21 19:00:00,523 [DatabaseMetaDataDao(114)] Read Table info: COMMENTS
+INFO  2016-04-21 19:00:00,523 [DatabaseMetaDataDao(114)] Read Table info: CONFIRM_MAIL_CHANGES
+INFO  2016-04-21 19:00:00,523 [DatabaseMetaDataDao(114)] Read Table info: FUNCTIONS
+INFO  2016-04-21 19:00:00,523 [DatabaseMetaDataDao(114)] Read Table info: GROUPS
+INFO  2016-04-21 19:00:00,523 [DatabaseMetaDataDao(114)] Read Table info: HASH_CONFIGS
+INFO  2016-04-21 19:00:00,523 [DatabaseMetaDataDao(114)] Read Table info: ITEM_CHOICES
+INFO  2016-04-21 19:00:00,523 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGES
+INFO  2016-04-21 19:00:00,523 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_EDIT_GROUPS
+INFO  2016-04-21 19:00:00,523 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_EDIT_USERS
+INFO  2016-04-21 19:00:00,523 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_FILES
+INFO  2016-04-21 19:00:00,523 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_GROUPS
+INFO  2016-04-21 19:00:00,539 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_HISTORIES
+INFO  2016-04-21 19:00:00,539 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_ITEM_VALUES
+INFO  2016-04-21 19:00:00,539 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_TAGS
+INFO  2016-04-21 19:00:00,539 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_USERS
+INFO  2016-04-21 19:00:00,539 [DatabaseMetaDataDao(114)] Read Table info: LDAP_CONFIGS
+INFO  2016-04-21 19:00:00,539 [DatabaseMetaDataDao(114)] Read Table info: LIKES
+INFO  2016-04-21 19:00:00,539 [DatabaseMetaDataDao(114)] Read Table info: LOCALES
+INFO  2016-04-21 19:00:00,539 [DatabaseMetaDataDao(114)] Read Table info: LOGIN_HISTORIES
+INFO  2016-04-21 19:00:00,539 [DatabaseMetaDataDao(114)] Read Table info: MAILS
+INFO  2016-04-21 19:00:00,539 [DatabaseMetaDataDao(114)] Read Table info: MAIL_CONFIGS
+INFO  2016-04-21 19:00:00,539 [DatabaseMetaDataDao(114)] Read Table info: NOTICES
+INFO  2016-04-21 19:00:00,539 [DatabaseMetaDataDao(114)] Read Table info: NOTIFY_CONFIGS
+INFO  2016-04-21 19:00:00,539 [DatabaseMetaDataDao(114)] Read Table info: NOTIFY_QUEUES
+INFO  2016-04-21 19:00:00,539 [DatabaseMetaDataDao(114)] Read Table info: PASSWORD_RESETS
+INFO  2016-04-21 19:00:00,539 [DatabaseMetaDataDao(114)] Read Table info: PROVISIONAL_REGISTRATIONS
+INFO  2016-04-21 19:00:00,539 [DatabaseMetaDataDao(114)] Read Table info: PROXY_CONFIGS
+INFO  2016-04-21 19:00:00,539 [DatabaseMetaDataDao(114)] Read Table info: READ_MARKS
+INFO  2016-04-21 19:00:00,539 [DatabaseMetaDataDao(114)] Read Table info: ROLES
+INFO  2016-04-21 19:00:00,539 [DatabaseMetaDataDao(114)] Read Table info: ROLE_FUNCTIONS
+INFO  2016-04-21 19:00:00,539 [DatabaseMetaDataDao(114)] Read Table info: STOCKS
+INFO  2016-04-21 19:00:00,539 [DatabaseMetaDataDao(114)] Read Table info: STOCK_KNOWLEDGES
+INFO  2016-04-21 19:00:00,539 [DatabaseMetaDataDao(114)] Read Table info: SYSTEMS
+INFO  2016-04-21 19:00:00,539 [DatabaseMetaDataDao(114)] Read Table info: SYSTEM_ATTRIBUTES
+INFO  2016-04-21 19:00:00,539 [DatabaseMetaDataDao(114)] Read Table info: SYSTEM_CONFIGS
+INFO  2016-04-21 19:00:00,539 [DatabaseMetaDataDao(114)] Read Table info: TAGS
+INFO  2016-04-21 19:00:00,539 [DatabaseMetaDataDao(114)] Read Table info: TEMPLATE_ITEMS
+INFO  2016-04-21 19:00:00,539 [DatabaseMetaDataDao(114)] Read Table info: TEMPLATE_MASTERS
+INFO  2016-04-21 19:00:00,539 [DatabaseMetaDataDao(114)] Read Table info: USERS
+INFO  2016-04-21 19:00:00,539 [DatabaseMetaDataDao(114)] Read Table info: USER_CONFIGS
+INFO  2016-04-21 19:00:00,539 [DatabaseMetaDataDao(114)] Read Table info: USER_GROUPS
+INFO  2016-04-21 19:00:00,539 [DatabaseMetaDataDao(114)] Read Table info: USER_ROLES
+INFO  2016-04-21 19:00:00,539 [DatabaseMetaDataDao(114)] Read Table info: VIEW_HISTORIES
+INFO  2016-04-21 19:00:00,539 [DatabaseMetaDataDao(114)] Read Table info: VOTES
+INFO  2016-04-21 19:00:00,539 [DatabaseMetaDataDao(114)] Read Table info: WEBHOOKS
+INFO  2016-04-21 19:00:00,539 [DatabaseMetaDataDao(114)] Read Table info: WEBHOOK_CONFIGS
+INFO  2016-04-21 19:00:00,726 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGES cascade
+INFO  2016-04-21 19:00:00,726 [InitializeDao(90)] DROP TABLE if exists ACCOUNT_IMAGES cascade
+INFO  2016-04-21 19:00:00,726 [InitializeDao(90)] DROP TABLE if exists HASH_CONFIGS cascade
+INFO  2016-04-21 19:00:00,726 [InitializeDao(90)] DROP TABLE if exists GROUPS cascade
+INFO  2016-04-21 19:00:00,726 [InitializeDao(90)] DROP TABLE if exists SYSTEM_CONFIGS cascade
+INFO  2016-04-21 19:00:00,726 [InitializeDao(90)] DROP TABLE if exists WEBHOOK_CONFIGS cascade
+INFO  2016-04-21 19:00:00,726 [InitializeDao(90)] DROP TABLE if exists MAIL_CONFIGS cascade
+INFO  2016-04-21 19:00:00,726 [InitializeDao(90)] DROP TABLE if exists VOTES cascade
+INFO  2016-04-21 19:00:00,726 [InitializeDao(90)] DROP TABLE if exists COMMENTS cascade
+INFO  2016-04-21 19:00:00,742 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_GROUPS cascade
+INFO  2016-04-21 19:00:00,742 [InitializeDao(90)] DROP TABLE if exists PASSWORD_RESETS cascade
+INFO  2016-04-21 19:00:00,742 [InitializeDao(90)] DROP TABLE if exists FUNCTIONS cascade
+INFO  2016-04-21 19:00:00,742 [InitializeDao(90)] DROP TABLE if exists LIKES cascade
+INFO  2016-04-21 19:00:00,742 [InitializeDao(90)] DROP TABLE if exists NOTICES cascade
+INFO  2016-04-21 19:00:00,742 [InitializeDao(90)] DROP TABLE if exists LOCALES cascade
+INFO  2016-04-21 19:00:00,742 [InitializeDao(90)] DROP TABLE if exists SYSTEM_ATTRIBUTES cascade
+INFO  2016-04-21 19:00:00,742 [InitializeDao(90)] DROP TABLE if exists VIEW_HISTORIES cascade
+INFO  2016-04-21 19:00:00,742 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_EDIT_GROUPS cascade
+INFO  2016-04-21 19:00:00,742 [InitializeDao(90)] DROP TABLE if exists WEBHOOKS cascade
+INFO  2016-04-21 19:00:00,742 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_FILES cascade
+INFO  2016-04-21 19:00:00,742 [InitializeDao(90)] DROP TABLE if exists NOTIFY_QUEUES cascade
+INFO  2016-04-21 19:00:00,757 [InitializeDao(90)] DROP TABLE if exists TEMPLATE_MASTERS cascade
+INFO  2016-04-21 19:00:00,757 [InitializeDao(90)] DROP TABLE if exists USER_GROUPS cascade
+INFO  2016-04-21 19:00:00,757 [InitializeDao(90)] DROP TABLE if exists ITEM_CHOICES cascade
+INFO  2016-04-21 19:00:00,757 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_EDIT_USERS cascade
+INFO  2016-04-21 19:00:00,757 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_HISTORIES cascade
+INFO  2016-04-21 19:00:00,757 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_ITEM_VALUES cascade
+INFO  2016-04-21 19:00:00,757 [InitializeDao(90)] DROP TABLE if exists ACCESS_LOGS cascade
+INFO  2016-04-21 19:00:00,773 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_TAGS cascade
+INFO  2016-04-21 19:00:00,773 [InitializeDao(90)] DROP TABLE if exists ROLE_FUNCTIONS cascade
+INFO  2016-04-21 19:00:00,773 [InitializeDao(90)] DROP TABLE if exists PROXY_CONFIGS cascade
+INFO  2016-04-21 19:00:00,773 [InitializeDao(90)] DROP TABLE if exists MAILS cascade
+INFO  2016-04-21 19:00:00,773 [InitializeDao(90)] DROP TABLE if exists LDAP_CONFIGS cascade
+INFO  2016-04-21 19:00:00,773 [InitializeDao(90)] DROP TABLE if exists LOGIN_HISTORIES cascade
+INFO  2016-04-21 19:00:00,773 [InitializeDao(90)] DROP TABLE if exists CONFIRM_MAIL_CHANGES cascade
+INFO  2016-04-21 19:00:00,773 [InitializeDao(90)] DROP TABLE if exists PROVISIONAL_REGISTRATIONS cascade
+INFO  2016-04-21 19:00:00,773 [InitializeDao(90)] DROP TABLE if exists USER_ROLES cascade
+INFO  2016-04-21 19:00:00,773 [InitializeDao(90)] DROP TABLE if exists NOTIFY_CONFIGS cascade
+INFO  2016-04-21 19:00:00,773 [InitializeDao(90)] DROP TABLE if exists ROLES cascade
+INFO  2016-04-21 19:00:00,789 [InitializeDao(90)] DROP TABLE if exists USER_CONFIGS cascade
+INFO  2016-04-21 19:00:00,789 [InitializeDao(90)] DROP TABLE if exists READ_MARKS cascade
+INFO  2016-04-21 19:00:00,789 [InitializeDao(90)] DROP TABLE if exists SYSTEMS cascade
+INFO  2016-04-21 19:00:00,789 [InitializeDao(90)] DROP TABLE if exists STOCKS cascade
+INFO  2016-04-21 19:00:00,789 [InitializeDao(90)] DROP TABLE if exists STOCK_KNOWLEDGES cascade
+INFO  2016-04-21 19:00:00,789 [InitializeDao(90)] DROP TABLE if exists USERS cascade
+INFO  2016-04-21 19:00:00,789 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_USERS cascade
+INFO  2016-04-21 19:00:00,789 [InitializeDao(90)] DROP TABLE if exists TAGS cascade
+INFO  2016-04-21 19:00:00,804 [InitializeDao(90)] DROP TABLE if exists TEMPLATE_ITEMS cascade
+INFO  2016-04-21 19:00:00,804 [Intercepter(215)] error. [object]class org.support.project.web.dao.SystemsDao_$$_jvstfee_a[proceed]_d17executeQuerySingle[param0]SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0[param1]class org.support.project.web.entity.SystemsEntity[param2][Ljava.lang.Object;@4411a0fe
+[throwable.getMessage()] テーブル "SYSTEMS" が見つかりません
+Table "SYSTEMS" not found; SQL statement:
+SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0 [42102-183] [cause] テーブル "SYSTEMS" が見つかりません
+Table "SYSTEMS" not found; SQL statement:
+SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0 [42102-183]
+----- SQL Infomation -----
+[sql]SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0
+[params]
+	[params][0]knowledge
+[execute]SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = knowledge  AND DELETE_FLAG = 0
+
+ERROR 2016-04-21 19:00:00,804 [Transaction(60)] Error(Rollback) : org.support.project.web.dao.SystemsDao_$$_jvstfee_a#_d42selectOnKey
+INFO  2016-04-21 19:00:00,804 [Intercepter(215)] error. [object]class org.support.project.web.dao.SystemsDao_$$_jvstfee_a[proceed]_d42selectOnKey[param0]knowledge
+[throwable.getMessage()] テーブル "SYSTEMS" が見つかりません
+Table "SYSTEMS" not found; SQL statement:
+SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0 [42102-183] [cause] テーブル "SYSTEMS" が見つかりません
+Table "SYSTEMS" not found; SQL statement:
+SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0 [42102-183]
+----- SQL Infomation -----
+[sql]SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0
+[params]
+	[params][0]knowledge
+[execute]SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = knowledge  AND DELETE_FLAG = 0
+
+INFO  2016-04-21 19:00:00,804 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGES cascade
+INFO  2016-04-21 19:00:00,804 [InitializeDao(90)] DROP TABLE if exists ACCOUNT_IMAGES cascade
+INFO  2016-04-21 19:00:00,804 [InitializeDao(90)] DROP TABLE if exists HASH_CONFIGS cascade
+INFO  2016-04-21 19:00:00,804 [InitializeDao(90)] DROP TABLE if exists GROUPS cascade
+INFO  2016-04-21 19:00:00,804 [InitializeDao(90)] DROP TABLE if exists SYSTEM_CONFIGS cascade
+INFO  2016-04-21 19:00:00,804 [InitializeDao(90)] DROP TABLE if exists WEBHOOK_CONFIGS cascade
+INFO  2016-04-21 19:00:00,804 [InitializeDao(90)] DROP TABLE if exists MAIL_CONFIGS cascade
+INFO  2016-04-21 19:00:00,804 [InitializeDao(90)] DROP TABLE if exists VOTES cascade
+INFO  2016-04-21 19:00:00,804 [InitializeDao(90)] DROP TABLE if exists COMMENTS cascade
+INFO  2016-04-21 19:00:00,804 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_GROUPS cascade
+INFO  2016-04-21 19:00:00,804 [InitializeDao(90)] DROP TABLE if exists PASSWORD_RESETS cascade
+INFO  2016-04-21 19:00:00,804 [InitializeDao(90)] DROP TABLE if exists FUNCTIONS cascade
+INFO  2016-04-21 19:00:00,820 [InitializeDao(90)] DROP TABLE if exists LIKES cascade
+INFO  2016-04-21 19:00:00,820 [InitializeDao(90)] DROP TABLE if exists NOTICES cascade
+INFO  2016-04-21 19:00:00,820 [InitializeDao(90)] DROP TABLE if exists LOCALES cascade
+INFO  2016-04-21 19:00:00,820 [InitializeDao(90)] DROP TABLE if exists SYSTEM_ATTRIBUTES cascade
+INFO  2016-04-21 19:00:00,820 [InitializeDao(90)] DROP TABLE if exists VIEW_HISTORIES cascade
+INFO  2016-04-21 19:00:00,820 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_EDIT_GROUPS cascade
+INFO  2016-04-21 19:00:00,820 [InitializeDao(90)] DROP TABLE if exists WEBHOOKS cascade
+INFO  2016-04-21 19:00:00,820 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_FILES cascade
+INFO  2016-04-21 19:00:00,820 [InitializeDao(90)] DROP TABLE if exists NOTIFY_QUEUES cascade
+INFO  2016-04-21 19:00:00,820 [InitializeDao(90)] DROP TABLE if exists TEMPLATE_MASTERS cascade
+INFO  2016-04-21 19:00:00,820 [InitializeDao(90)] DROP TABLE if exists USER_GROUPS cascade
+INFO  2016-04-21 19:00:00,820 [InitializeDao(90)] DROP TABLE if exists ITEM_CHOICES cascade
+INFO  2016-04-21 19:00:00,820 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_EDIT_USERS cascade
+INFO  2016-04-21 19:00:00,820 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_HISTORIES cascade
+INFO  2016-04-21 19:00:00,820 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_ITEM_VALUES cascade
+INFO  2016-04-21 19:00:00,820 [InitializeDao(90)] DROP TABLE if exists ACCESS_LOGS cascade
+INFO  2016-04-21 19:00:00,820 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_TAGS cascade
+INFO  2016-04-21 19:00:00,820 [InitializeDao(90)] DROP TABLE if exists ROLE_FUNCTIONS cascade
+INFO  2016-04-21 19:00:00,820 [InitializeDao(90)] DROP TABLE if exists PROXY_CONFIGS cascade
+INFO  2016-04-21 19:00:00,820 [InitializeDao(90)] DROP TABLE if exists MAILS cascade
+INFO  2016-04-21 19:00:00,820 [InitializeDao(90)] DROP TABLE if exists LDAP_CONFIGS cascade
+INFO  2016-04-21 19:00:00,820 [InitializeDao(90)] DROP TABLE if exists LOGIN_HISTORIES cascade
+INFO  2016-04-21 19:00:00,820 [InitializeDao(90)] DROP TABLE if exists CONFIRM_MAIL_CHANGES cascade
+INFO  2016-04-21 19:00:00,820 [InitializeDao(90)] DROP TABLE if exists PROVISIONAL_REGISTRATIONS cascade
+INFO  2016-04-21 19:00:00,835 [InitializeDao(90)] DROP TABLE if exists USER_ROLES cascade
+INFO  2016-04-21 19:00:00,835 [InitializeDao(90)] DROP TABLE if exists NOTIFY_CONFIGS cascade
+INFO  2016-04-21 19:00:00,835 [InitializeDao(90)] DROP TABLE if exists ROLES cascade
+INFO  2016-04-21 19:00:00,835 [InitializeDao(90)] DROP TABLE if exists USER_CONFIGS cascade
+INFO  2016-04-21 19:00:00,835 [InitializeDao(90)] DROP TABLE if exists READ_MARKS cascade
+INFO  2016-04-21 19:00:00,835 [InitializeDao(90)] DROP TABLE if exists SYSTEMS cascade
+INFO  2016-04-21 19:00:00,835 [InitializeDao(90)] DROP TABLE if exists STOCKS cascade
+INFO  2016-04-21 19:00:00,835 [InitializeDao(90)] DROP TABLE if exists STOCK_KNOWLEDGES cascade
+INFO  2016-04-21 19:00:00,835 [InitializeDao(90)] DROP TABLE if exists USERS cascade
+INFO  2016-04-21 19:00:00,835 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_USERS cascade
+INFO  2016-04-21 19:00:00,835 [InitializeDao(90)] DROP TABLE if exists TAGS cascade
+INFO  2016-04-21 19:00:00,835 [InitializeDao(90)] DROP TABLE if exists TEMPLATE_ITEMS cascade
+INFO  2016-04-21 19:00:00,835 [InitializeDao(41)] Database initialize start.
+INFO  2016-04-21 19:00:00,929 [InitializeDao(47)] /org/support/project/web/database/ddl.sql is loaded.
+INFO  2016-04-21 19:00:01,023 [InitializeDao(47)] /org/support/project/knowledge/database/ddl.sql is loaded.
+INFO  2016-04-21 19:00:01,023 [InitializeDao(47)] /org/support/project/knowledge/database/init_datas.sql is loaded.
+INFO  2016-04-21 19:00:01,023 [InitializeDao(49)] Database initialize finish.
+INFO  2016-04-21 19:00:01,038 [InitDB(121)] Migrate to 1.1.0.pre1
+INFO  2016-04-21 19:00:01,054 [NotifyCommentLogicTest(50)] テストユーザ1でKnowledge登録
+INFO  2016-04-21 19:00:01,303 [NotifyCommentLogicTest(57)] テストユーザ1でKnowledge登録
+INFO  2016-04-21 19:00:01,537 [NotifyCommentLogicTest(64)] テストユーザ1でKnowledge登録
+INFO  2016-04-21 19:00:02,193 [NotifyCommentLogicTest(76)] テストユーザ1でKnowledge登録
+INFO  2016-04-21 19:00:03,021 [H2DBServerLogic(66)] H2 Database server stoped.
+INFO  2016-04-21 19:00:03,084 [SearchTest(37)] インデックスを削除しました
+INFO  2016-04-21 19:00:04,098 [SearchTest(74)] {"contents":"Lucene（ルシーン）は、Javaで記述された全文検索ソフトウェアである。あらかじめ蓄積した大量のデータから、指定したキーワードを探し出す機能を持つ。Javaのクラスライブラリとして提供される。","highlightedContents":"\u003Cspan class=\"mark\"\u003ELucene\u003C/span\u003E（ルシーン）は、Javaで記述された全文検索ソフトウェアである。あらかじめ蓄積した大量のデータから、指定したキーワードを探し出す機能を持つ。Javaのクラスライブラリとして提供される。","highlightedTitle":"[1]\u003Cspan class=\"mark\"\u003ELucene\u003C/span\u003E","id":"1264","score":0.1830749213695526,"title":"[1]Lucene","type":0}
+INFO  2016-04-21 19:00:05,143 [SearchTest(97)] {"contents":"Lucene（ルシーン）は、Javaで記述された全文検索ソフトウェアである。あらかじめ蓄積した大量のデータから、指定したキーワードを探し出す機能を持つ。Javaのクラスライブラリとして提供される。","highlightedContents":"\u003Cspan class=\"mark\"\u003ELucene\u003C/span\u003E（ルシーン）は、Javaで記述された全文検索ソフトウェアである。あらかじめ蓄積した大量のデータから、指定したキーワードを探し出す機能を持つ。Javaのクラスライブラリとして提供される。","highlightedTitle":"[1]\u003Cspan class=\"mark\"\u003ELucene\u003C/span\u003E","id":"1264","score":0.6036866903305054,"title":"[1]Lucene","type":0}
+INFO  2016-04-21 19:00:05,143 [SearchTest(97)] {"contents":"Lucene（ルシーン）は、Javaで記述された全文検索ソフトウェアである。","highlightedContents":"\u003Cspan class=\"mark\"\u003ELucene\u003C/span\u003E（ルシーン）は、Javaで記述された全文検索ソフトウェアである。","highlightedTitle":null,"id":"2639","score":0.05696805194020271,"title":"[2]るしーん","type":0}
+INFO  2016-04-21 19:00:05,377 [SearchTest(120)] 検索（ユーザで絞り込み）
+INFO  2016-04-21 19:00:05,393 [SearchTest(129)] {"contents":"Luceneは、Javaで記述された全文検索ソフトウェアである。","highlightedContents":"\u003Cspan class=\"mark\"\u003ELucene\u003C/span\u003Eは、Javaで記述された全文検索ソフトウェアである。","highlightedTitle":null,"id":"3584","score":0.9806087613105774,"title":"[3]るしーん","type":0}
+INFO  2016-04-21 19:00:05,393 [SearchTest(137)] 再度検索（タグで絞り込み）
+INFO  2016-04-21 19:00:05,408 [SearchTest(145)] 再度検索（絞り込みなし）
+INFO  2016-04-21 19:00:05,424 [SearchTest(152)] {"contents":"Lucene（ルシーン）は、Javaで記述された全文検索ソフトウェアである。あらかじめ蓄積した大量のデータから、指定したキーワードを探し出す機能を持つ。Javaのクラスライブラリとして提供される。","highlightedContents":"\u003Cspan class=\"mark\"\u003ELucene\u003C/span\u003E（ルシーン）は、Javaで記述された全文検索ソフトウェアである。あらかじめ蓄積した大量のデータから、指定したキーワードを探し出す機能を持つ。Javaのクラスライブラリとして提供される。","highlightedTitle":"[1]\u003Cspan class=\"mark\"\u003ELucene\u003C/span\u003E","id":"1264","score":0.8539716601371765,"title":"[1]Lucene","type":0}
+INFO  2016-04-21 19:00:05,424 [SearchTest(152)] {"contents":"Lucene（ルシーン）は、Javaで記述された全文検索ソフトウェアである。","highlightedContents":"\u003Cspan class=\"mark\"\u003ELucene\u003C/span\u003E（ルシーン）は、Javaで記述された全文検索ソフトウェアである。","highlightedTitle":null,"id":"2639","score":0.0603787899017334,"title":"[2]るしーん","type":0}
+INFO  2016-04-21 19:00:05,424 [SearchTest(152)] {"contents":"Luceneは、Javaで記述された全文検索ソフトウェアである。","highlightedContents":"\u003Cspan class=\"mark\"\u003ELucene\u003C/span\u003Eは、Javaで記述された全文検索ソフトウェアである。","highlightedTitle":null,"id":"3584","score":0.0603787899017334,"title":"[3]るしーん","type":0}
+INFO  2016-04-21 19:00:05,424 [SearchTest(157)] 再度検索 limit/offset
+INFO  2016-04-21 19:00:05,455 [SearchTest(166)] {"contents":"Luceneは、Javaで記述された全文検索ソフトウェアである。","highlightedContents":"\u003Cspan class=\"mark\"\u003ELucene\u003C/span\u003Eは、Javaで記述された全文検索ソフトウェアである。","highlightedTitle":null,"id":"3584","score":0.0603787899017334,"title":"[3]るしーん","type":0}
+INFO  2016-04-21 19:09:32,200 [H2DBServerLogic(52)] H2 Database server started.
+INFO  2016-04-21 19:09:32,232 [TestWatcher(23)] @@@@@@ TEST START - org.support.project.knowledge.control.open.KnowledgeControlTest#testView
+INFO  2016-04-21 19:09:32,817 [TestWatcher(31)] @@@@@@ TEST FINISHED - 585 [ms]  -  org.support.project.knowledge.control.open.KnowledgeControlTest#testView
+INFO  2016-04-21 19:09:32,817 [TestWatcher(23)] @@@@@@ TEST START - org.support.project.knowledge.control.open.KnowledgeControlTest#testList
+INFO  2016-04-21 19:09:33,957 [TestWatcher(31)] @@@@@@ TEST FINISHED - 1140 [ms]  -  org.support.project.knowledge.control.open.KnowledgeControlTest#testList
+INFO  2016-04-21 19:09:33,957 [TestWatcher(23)] @@@@@@ TEST START - org.support.project.knowledge.control.open.KnowledgeControlTest#test
+INFO  2016-04-21 19:09:33,958 [TestWatcher(31)] @@@@@@ TEST FINISHED - 1 [ms]  -  org.support.project.knowledge.control.open.KnowledgeControlTest#test
+INFO  2016-04-21 19:09:33,993 [H2DBServerLogic(66)] H2 Database server stoped.
+INFO  2016-04-21 19:09:34,009 [H2DBServerLogic(52)] H2 Database server started.
+INFO  2016-04-21 19:09:34,446 [H2DBServerLogic(66)] H2 Database server stoped.
+INFO  2016-04-21 19:09:34,494 [H2DBServerLogic(52)] H2 Database server started.
+INFO  2016-04-21 19:09:34,900 [DatabaseMetaDataDao(114)] Read Table info: ACCESS_LOGS
+INFO  2016-04-21 19:09:34,900 [DatabaseMetaDataDao(114)] Read Table info: ACCOUNT_IMAGES
+INFO  2016-04-21 19:09:34,900 [DatabaseMetaDataDao(114)] Read Table info: COMMENTS
+INFO  2016-04-21 19:09:34,900 [DatabaseMetaDataDao(114)] Read Table info: CONFIRM_MAIL_CHANGES
+INFO  2016-04-21 19:09:34,915 [DatabaseMetaDataDao(114)] Read Table info: FUNCTIONS
+INFO  2016-04-21 19:09:34,915 [DatabaseMetaDataDao(114)] Read Table info: GROUPS
+INFO  2016-04-21 19:09:34,915 [DatabaseMetaDataDao(114)] Read Table info: HASH_CONFIGS
+INFO  2016-04-21 19:09:34,915 [DatabaseMetaDataDao(114)] Read Table info: ITEM_CHOICES
+INFO  2016-04-21 19:09:34,915 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGES
+INFO  2016-04-21 19:09:34,915 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_EDIT_GROUPS
+INFO  2016-04-21 19:09:34,915 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_EDIT_USERS
+INFO  2016-04-21 19:09:34,915 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_FILES
+INFO  2016-04-21 19:09:34,915 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_GROUPS
+INFO  2016-04-21 19:09:34,915 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_HISTORIES
+INFO  2016-04-21 19:09:34,915 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_ITEM_VALUES
+INFO  2016-04-21 19:09:34,931 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_TAGS
+INFO  2016-04-21 19:09:34,946 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_USERS
+INFO  2016-04-21 19:09:34,946 [DatabaseMetaDataDao(114)] Read Table info: LDAP_CONFIGS
+INFO  2016-04-21 19:09:34,946 [DatabaseMetaDataDao(114)] Read Table info: LIKES
+INFO  2016-04-21 19:09:34,946 [DatabaseMetaDataDao(114)] Read Table info: LOCALES
+INFO  2016-04-21 19:09:34,946 [DatabaseMetaDataDao(114)] Read Table info: LOGIN_HISTORIES
+INFO  2016-04-21 19:09:34,962 [DatabaseMetaDataDao(114)] Read Table info: MAILS
+INFO  2016-04-21 19:09:34,962 [DatabaseMetaDataDao(114)] Read Table info: MAIL_CONFIGS
+INFO  2016-04-21 19:09:34,962 [DatabaseMetaDataDao(114)] Read Table info: NOTICES
+INFO  2016-04-21 19:09:34,962 [DatabaseMetaDataDao(114)] Read Table info: NOTIFY_CONFIGS
+INFO  2016-04-21 19:09:34,962 [DatabaseMetaDataDao(114)] Read Table info: NOTIFY_QUEUES
+INFO  2016-04-21 19:09:34,962 [DatabaseMetaDataDao(114)] Read Table info: PASSWORD_RESETS
+INFO  2016-04-21 19:09:34,962 [DatabaseMetaDataDao(114)] Read Table info: PROVISIONAL_REGISTRATIONS
+INFO  2016-04-21 19:09:34,978 [DatabaseMetaDataDao(114)] Read Table info: PROXY_CONFIGS
+INFO  2016-04-21 19:09:34,978 [DatabaseMetaDataDao(114)] Read Table info: READ_MARKS
+INFO  2016-04-21 19:09:34,978 [DatabaseMetaDataDao(114)] Read Table info: ROLES
+INFO  2016-04-21 19:09:34,978 [DatabaseMetaDataDao(114)] Read Table info: ROLE_FUNCTIONS
+INFO  2016-04-21 19:09:34,978 [DatabaseMetaDataDao(114)] Read Table info: STOCKS
+INFO  2016-04-21 19:09:34,978 [DatabaseMetaDataDao(114)] Read Table info: STOCK_KNOWLEDGES
+INFO  2016-04-21 19:09:34,978 [DatabaseMetaDataDao(114)] Read Table info: SYSTEMS
+INFO  2016-04-21 19:09:34,978 [DatabaseMetaDataDao(114)] Read Table info: SYSTEM_ATTRIBUTES
+INFO  2016-04-21 19:09:34,978 [DatabaseMetaDataDao(114)] Read Table info: SYSTEM_CONFIGS
+INFO  2016-04-21 19:09:34,978 [DatabaseMetaDataDao(114)] Read Table info: TAGS
+INFO  2016-04-21 19:09:34,978 [DatabaseMetaDataDao(114)] Read Table info: TEMPLATE_ITEMS
+INFO  2016-04-21 19:09:34,978 [DatabaseMetaDataDao(114)] Read Table info: TEMPLATE_MASTERS
+INFO  2016-04-21 19:09:34,978 [DatabaseMetaDataDao(114)] Read Table info: USERS
+INFO  2016-04-21 19:09:34,978 [DatabaseMetaDataDao(114)] Read Table info: USER_CONFIGS
+INFO  2016-04-21 19:09:34,978 [DatabaseMetaDataDao(114)] Read Table info: USER_GROUPS
+INFO  2016-04-21 19:09:34,978 [DatabaseMetaDataDao(114)] Read Table info: USER_ROLES
+INFO  2016-04-21 19:09:34,993 [DatabaseMetaDataDao(114)] Read Table info: VIEW_HISTORIES
+INFO  2016-04-21 19:09:34,993 [DatabaseMetaDataDao(114)] Read Table info: VOTES
+INFO  2016-04-21 19:09:34,993 [DatabaseMetaDataDao(114)] Read Table info: WEBHOOKS
+INFO  2016-04-21 19:09:34,993 [DatabaseMetaDataDao(114)] Read Table info: WEBHOOK_CONFIGS
+INFO  2016-04-21 19:09:35,634 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGES cascade
+INFO  2016-04-21 19:09:35,672 [InitializeDao(90)] DROP TABLE if exists ACCOUNT_IMAGES cascade
+INFO  2016-04-21 19:09:35,672 [InitializeDao(90)] DROP TABLE if exists HASH_CONFIGS cascade
+INFO  2016-04-21 19:09:35,688 [InitializeDao(90)] DROP TABLE if exists GROUPS cascade
+INFO  2016-04-21 19:09:35,688 [InitializeDao(90)] DROP TABLE if exists SYSTEM_CONFIGS cascade
+INFO  2016-04-21 19:09:35,703 [InitializeDao(90)] DROP TABLE if exists WEBHOOK_CONFIGS cascade
+INFO  2016-04-21 19:09:35,703 [InitializeDao(90)] DROP TABLE if exists MAIL_CONFIGS cascade
+INFO  2016-04-21 19:09:35,703 [InitializeDao(90)] DROP TABLE if exists VOTES cascade
+INFO  2016-04-21 19:09:35,703 [InitializeDao(90)] DROP TABLE if exists COMMENTS cascade
+INFO  2016-04-21 19:09:35,719 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_GROUPS cascade
+INFO  2016-04-21 19:09:35,719 [InitializeDao(90)] DROP TABLE if exists PASSWORD_RESETS cascade
+INFO  2016-04-21 19:09:35,734 [InitializeDao(90)] DROP TABLE if exists FUNCTIONS cascade
+INFO  2016-04-21 19:09:35,734 [InitializeDao(90)] DROP TABLE if exists LIKES cascade
+INFO  2016-04-21 19:09:35,734 [InitializeDao(90)] DROP TABLE if exists NOTICES cascade
+INFO  2016-04-21 19:09:35,734 [InitializeDao(90)] DROP TABLE if exists LOCALES cascade
+INFO  2016-04-21 19:09:35,750 [InitializeDao(90)] DROP TABLE if exists SYSTEM_ATTRIBUTES cascade
+INFO  2016-04-21 19:09:35,750 [InitializeDao(90)] DROP TABLE if exists VIEW_HISTORIES cascade
+INFO  2016-04-21 19:09:35,750 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_EDIT_GROUPS cascade
+INFO  2016-04-21 19:09:35,766 [InitializeDao(90)] DROP TABLE if exists WEBHOOKS cascade
+INFO  2016-04-21 19:09:35,766 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_FILES cascade
+INFO  2016-04-21 19:09:35,766 [InitializeDao(90)] DROP TABLE if exists NOTIFY_QUEUES cascade
+INFO  2016-04-21 19:09:35,766 [InitializeDao(90)] DROP TABLE if exists TEMPLATE_MASTERS cascade
+INFO  2016-04-21 19:09:35,781 [InitializeDao(90)] DROP TABLE if exists USER_GROUPS cascade
+INFO  2016-04-21 19:09:35,781 [InitializeDao(90)] DROP TABLE if exists ITEM_CHOICES cascade
+INFO  2016-04-21 19:09:35,781 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_EDIT_USERS cascade
+INFO  2016-04-21 19:09:35,797 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_HISTORIES cascade
+INFO  2016-04-21 19:09:35,797 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_ITEM_VALUES cascade
+INFO  2016-04-21 19:09:35,797 [InitializeDao(90)] DROP TABLE if exists ACCESS_LOGS cascade
+INFO  2016-04-21 19:09:35,797 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_TAGS cascade
+INFO  2016-04-21 19:09:35,813 [InitializeDao(90)] DROP TABLE if exists ROLE_FUNCTIONS cascade
+INFO  2016-04-21 19:09:35,813 [InitializeDao(90)] DROP TABLE if exists PROXY_CONFIGS cascade
+INFO  2016-04-21 19:09:35,813 [InitializeDao(90)] DROP TABLE if exists MAILS cascade
+INFO  2016-04-21 19:09:35,828 [InitializeDao(90)] DROP TABLE if exists LDAP_CONFIGS cascade
+INFO  2016-04-21 19:09:35,844 [InitializeDao(90)] DROP TABLE if exists LOGIN_HISTORIES cascade
+INFO  2016-04-21 19:09:35,844 [InitializeDao(90)] DROP TABLE if exists CONFIRM_MAIL_CHANGES cascade
+INFO  2016-04-21 19:09:35,844 [InitializeDao(90)] DROP TABLE if exists PROVISIONAL_REGISTRATIONS cascade
+INFO  2016-04-21 19:09:35,844 [InitializeDao(90)] DROP TABLE if exists USER_ROLES cascade
+INFO  2016-04-21 19:09:35,859 [InitializeDao(90)] DROP TABLE if exists NOTIFY_CONFIGS cascade
+INFO  2016-04-21 19:09:35,859 [InitializeDao(90)] DROP TABLE if exists ROLES cascade
+INFO  2016-04-21 19:09:35,859 [InitializeDao(90)] DROP TABLE if exists USER_CONFIGS cascade
+INFO  2016-04-21 19:09:35,859 [InitializeDao(90)] DROP TABLE if exists READ_MARKS cascade
+INFO  2016-04-21 19:09:35,875 [InitializeDao(90)] DROP TABLE if exists SYSTEMS cascade
+INFO  2016-04-21 19:09:35,875 [InitializeDao(90)] DROP TABLE if exists STOCKS cascade
+INFO  2016-04-21 19:09:35,875 [InitializeDao(90)] DROP TABLE if exists STOCK_KNOWLEDGES cascade
+INFO  2016-04-21 19:09:35,891 [InitializeDao(90)] DROP TABLE if exists USERS cascade
+INFO  2016-04-21 19:09:35,891 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_USERS cascade
+INFO  2016-04-21 19:09:35,891 [InitializeDao(90)] DROP TABLE if exists TAGS cascade
+INFO  2016-04-21 19:09:35,906 [InitializeDao(90)] DROP TABLE if exists TEMPLATE_ITEMS cascade
+INFO  2016-04-21 19:09:35,937 [Intercepter(215)] error. [object]class org.support.project.web.dao.SystemsDao_$$_jvstfee_a[proceed]_d17executeQuerySingle[param0]SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0[param1]class org.support.project.web.entity.SystemsEntity[param2][Ljava.lang.Object;@632ceb35
+[throwable.getMessage()] テーブル "SYSTEMS" が見つかりません
+Table "SYSTEMS" not found; SQL statement:
+SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0 [42102-183] [cause] テーブル "SYSTEMS" が見つかりません
+Table "SYSTEMS" not found; SQL statement:
+SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0 [42102-183]
+----- SQL Infomation -----
+[sql]SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0
+[params]
+	[params][0]knowledge
+[execute]SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = knowledge  AND DELETE_FLAG = 0
+
+ERROR 2016-04-21 19:09:35,937 [Transaction(60)] Error(Rollback) : org.support.project.web.dao.SystemsDao_$$_jvstfee_a#_d42selectOnKey
+INFO  2016-04-21 19:09:35,937 [Intercepter(215)] error. [object]class org.support.project.web.dao.SystemsDao_$$_jvstfee_a[proceed]_d42selectOnKey[param0]knowledge
+[throwable.getMessage()] テーブル "SYSTEMS" が見つかりません
+Table "SYSTEMS" not found; SQL statement:
+SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0 [42102-183] [cause] テーブル "SYSTEMS" が見つかりません
+Table "SYSTEMS" not found; SQL statement:
+SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0 [42102-183]
+----- SQL Infomation -----
+[sql]SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0
+[params]
+	[params][0]knowledge
+[execute]SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = knowledge  AND DELETE_FLAG = 0
+
+INFO  2016-04-21 19:09:35,937 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGES cascade
+INFO  2016-04-21 19:09:35,937 [InitializeDao(90)] DROP TABLE if exists ACCOUNT_IMAGES cascade
+INFO  2016-04-21 19:09:35,937 [InitializeDao(90)] DROP TABLE if exists HASH_CONFIGS cascade
+INFO  2016-04-21 19:09:35,937 [InitializeDao(90)] DROP TABLE if exists GROUPS cascade
+INFO  2016-04-21 19:09:35,937 [InitializeDao(90)] DROP TABLE if exists SYSTEM_CONFIGS cascade
+INFO  2016-04-21 19:09:35,953 [InitializeDao(90)] DROP TABLE if exists WEBHOOK_CONFIGS cascade
+INFO  2016-04-21 19:09:35,953 [InitializeDao(90)] DROP TABLE if exists MAIL_CONFIGS cascade
+INFO  2016-04-21 19:09:35,953 [InitializeDao(90)] DROP TABLE if exists VOTES cascade
+INFO  2016-04-21 19:09:35,953 [InitializeDao(90)] DROP TABLE if exists COMMENTS cascade
+INFO  2016-04-21 19:09:35,953 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_GROUPS cascade
+INFO  2016-04-21 19:09:35,953 [InitializeDao(90)] DROP TABLE if exists PASSWORD_RESETS cascade
+INFO  2016-04-21 19:09:35,953 [InitializeDao(90)] DROP TABLE if exists FUNCTIONS cascade
+INFO  2016-04-21 19:09:35,953 [InitializeDao(90)] DROP TABLE if exists LIKES cascade
+INFO  2016-04-21 19:09:35,953 [InitializeDao(90)] DROP TABLE if exists NOTICES cascade
+INFO  2016-04-21 19:09:35,969 [InitializeDao(90)] DROP TABLE if exists LOCALES cascade
+INFO  2016-04-21 19:09:35,969 [InitializeDao(90)] DROP TABLE if exists SYSTEM_ATTRIBUTES cascade
+INFO  2016-04-21 19:09:35,969 [InitializeDao(90)] DROP TABLE if exists VIEW_HISTORIES cascade
+INFO  2016-04-21 19:09:35,969 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_EDIT_GROUPS cascade
+INFO  2016-04-21 19:09:35,969 [InitializeDao(90)] DROP TABLE if exists WEBHOOKS cascade
+INFO  2016-04-21 19:09:35,969 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_FILES cascade
+INFO  2016-04-21 19:09:35,969 [InitializeDao(90)] DROP TABLE if exists NOTIFY_QUEUES cascade
+INFO  2016-04-21 19:09:35,969 [InitializeDao(90)] DROP TABLE if exists TEMPLATE_MASTERS cascade
+INFO  2016-04-21 19:09:35,984 [InitializeDao(90)] DROP TABLE if exists USER_GROUPS cascade
+INFO  2016-04-21 19:09:35,984 [InitializeDao(90)] DROP TABLE if exists ITEM_CHOICES cascade
+INFO  2016-04-21 19:09:35,984 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_EDIT_USERS cascade
+INFO  2016-04-21 19:09:35,984 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_HISTORIES cascade
+INFO  2016-04-21 19:09:35,984 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_ITEM_VALUES cascade
+INFO  2016-04-21 19:09:35,984 [InitializeDao(90)] DROP TABLE if exists ACCESS_LOGS cascade
+INFO  2016-04-21 19:09:35,984 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_TAGS cascade
+INFO  2016-04-21 19:09:35,984 [InitializeDao(90)] DROP TABLE if exists ROLE_FUNCTIONS cascade
+INFO  2016-04-21 19:09:35,984 [InitializeDao(90)] DROP TABLE if exists PROXY_CONFIGS cascade
+INFO  2016-04-21 19:09:35,984 [InitializeDao(90)] DROP TABLE if exists MAILS cascade
+INFO  2016-04-21 19:09:35,984 [InitializeDao(90)] DROP TABLE if exists LDAP_CONFIGS cascade
+INFO  2016-04-21 19:09:36,000 [InitializeDao(90)] DROP TABLE if exists LOGIN_HISTORIES cascade
+INFO  2016-04-21 19:09:36,000 [InitializeDao(90)] DROP TABLE if exists CONFIRM_MAIL_CHANGES cascade
+INFO  2016-04-21 19:09:36,000 [InitializeDao(90)] DROP TABLE if exists PROVISIONAL_REGISTRATIONS cascade
+INFO  2016-04-21 19:09:36,000 [InitializeDao(90)] DROP TABLE if exists USER_ROLES cascade
+INFO  2016-04-21 19:09:36,000 [InitializeDao(90)] DROP TABLE if exists NOTIFY_CONFIGS cascade
+INFO  2016-04-21 19:09:36,000 [InitializeDao(90)] DROP TABLE if exists ROLES cascade
+INFO  2016-04-21 19:09:36,000 [InitializeDao(90)] DROP TABLE if exists USER_CONFIGS cascade
+INFO  2016-04-21 19:09:36,000 [InitializeDao(90)] DROP TABLE if exists READ_MARKS cascade
+INFO  2016-04-21 19:09:36,000 [InitializeDao(90)] DROP TABLE if exists SYSTEMS cascade
+INFO  2016-04-21 19:09:36,000 [InitializeDao(90)] DROP TABLE if exists STOCKS cascade
+INFO  2016-04-21 19:09:36,000 [InitializeDao(90)] DROP TABLE if exists STOCK_KNOWLEDGES cascade
+INFO  2016-04-21 19:09:36,000 [InitializeDao(90)] DROP TABLE if exists USERS cascade
+INFO  2016-04-21 19:09:36,015 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_USERS cascade
+INFO  2016-04-21 19:09:36,015 [InitializeDao(90)] DROP TABLE if exists TAGS cascade
+INFO  2016-04-21 19:09:36,015 [InitializeDao(90)] DROP TABLE if exists TEMPLATE_ITEMS cascade
+INFO  2016-04-21 19:09:36,015 [InitializeDao(41)] Database initialize start.
+INFO  2016-04-21 19:09:36,327 [InitializeDao(47)] /org/support/project/web/database/ddl.sql is loaded.
+INFO  2016-04-21 19:09:36,546 [InitializeDao(47)] /org/support/project/knowledge/database/ddl.sql is loaded.
+INFO  2016-04-21 19:09:36,561 [InitializeDao(47)] /org/support/project/knowledge/database/init_datas.sql is loaded.
+INFO  2016-04-21 19:09:36,561 [InitializeDao(49)] Database initialize finish.
+INFO  2016-04-21 19:09:36,671 [InitDB(121)] Migrate to 1.1.0.pre1
+INFO  2016-04-21 19:09:51,947 [KnowledgesDaoTest(117)] 2016-03-21 10:09
+INFO  2016-04-21 19:09:51,947 [KnowledgesDaoTest(122)] 2016-04-22 10:09
+INFO  2016-04-21 19:09:51,978 [KnowledgesDaoTest(127)] Test-29:29
+INFO  2016-04-21 19:09:51,978 [KnowledgesDaoTest(127)] Test-28:28
+INFO  2016-04-21 19:09:51,978 [KnowledgesDaoTest(127)] Test-27:27
+INFO  2016-04-21 19:09:51,978 [KnowledgesDaoTest(127)] Test-26:26
+INFO  2016-04-21 19:09:51,978 [KnowledgesDaoTest(127)] Test-25:25
+INFO  2016-04-21 19:09:51,978 [KnowledgesDaoTest(127)] Test-24:24
+INFO  2016-04-21 19:09:51,978 [KnowledgesDaoTest(127)] Test-23:23
+INFO  2016-04-21 19:09:51,978 [KnowledgesDaoTest(127)] Test-22:22
+INFO  2016-04-21 19:09:51,978 [KnowledgesDaoTest(127)] Test-21:21
+INFO  2016-04-21 19:09:51,978 [KnowledgesDaoTest(127)] Test-20:20
+INFO  2016-04-21 19:09:51,978 [KnowledgesDaoTest(127)] Test-19:19
+INFO  2016-04-21 19:09:51,978 [KnowledgesDaoTest(127)] Test-18:18
+INFO  2016-04-21 19:09:51,978 [KnowledgesDaoTest(127)] Test-17:17
+INFO  2016-04-21 19:09:51,978 [KnowledgesDaoTest(127)] Test-16:16
+INFO  2016-04-21 19:09:51,978 [KnowledgesDaoTest(127)] Test-15:15
+INFO  2016-04-21 19:09:51,978 [KnowledgesDaoTest(127)] Test-14:14
+INFO  2016-04-21 19:09:51,978 [KnowledgesDaoTest(127)] Test-13:13
+INFO  2016-04-21 19:09:51,978 [KnowledgesDaoTest(127)] Test-12:12
+INFO  2016-04-21 19:09:51,978 [KnowledgesDaoTest(127)] Test-11:11
+INFO  2016-04-21 19:09:51,978 [KnowledgesDaoTest(127)] Test-10:10
+INFO  2016-04-21 19:09:55,505 [KnowledgesDaoTest(48)] {"commentCount":0,"content":"テスト","deleteFlag":0,"insertDatetime":1461233391978,"insertUser":2,"insertUserName":"テストユーザ1","keyValues":[31],"knowledgeId":31,"likeCount":0,"likeCountOnTerm":null,"publicFlag":0,"score":null,"tagIds":"","tagNames":"","title":"Test-0","typeId":0,"updateDatetime":1461233391978,"updateUser":2,"updateUserName":"テストユーザ1"}
+INFO  2016-04-21 19:09:55,505 [KnowledgesDaoTest(48)] {"commentCount":0,"content":"テスト","deleteFlag":0,"insertDatetime":1461233392353,"insertUser":2,"insertUserName":"テストユーザ1","keyValues":[32],"knowledgeId":32,"likeCount":0,"likeCountOnTerm":null,"publicFlag":0,"score":null,"tagIds":"","tagNames":"","title":"Test-1","typeId":0,"updateDatetime":1461233392353,"updateUser":2,"updateUserName":"テストユーザ1"}
+INFO  2016-04-21 19:09:55,505 [KnowledgesDaoTest(48)] {"commentCount":0,"content":"テスト","deleteFlag":0,"insertDatetime":1461233392696,"insertUser":2,"insertUserName":"テストユーザ1","keyValues":[33],"knowledgeId":33,"likeCount":0,"likeCountOnTerm":null,"publicFlag":0,"score":null,"tagIds":"","tagNames":"","title":"Test-2","typeId":0,"updateDatetime":1461233392696,"updateUser":2,"updateUserName":"テストユーザ1"}
+INFO  2016-04-21 19:09:55,505 [KnowledgesDaoTest(48)] {"commentCount":0,"content":"テスト","deleteFlag":0,"insertDatetime":1461233392993,"insertUser":2,"insertUserName":"テストユーザ1","keyValues":[34],"knowledgeId":34,"likeCount":0,"likeCountOnTerm":null,"publicFlag":0,"score":null,"tagIds":"","tagNames":"","title":"Test-3","typeId":0,"updateDatetime":1461233392993,"updateUser":2,"updateUserName":"テストユーザ1"}
+INFO  2016-04-21 19:09:55,505 [KnowledgesDaoTest(48)] {"commentCount":0,"content":"テスト","deleteFlag":0,"insertDatetime":1461233393274,"insertUser":2,"insertUserName":"テストユーザ1","keyValues":[35],"knowledgeId":35,"likeCount":0,"likeCountOnTerm":null,"publicFlag":0,"score":null,"tagIds":"","tagNames":"","title":"Test-4","typeId":0,"updateDatetime":1461233393274,"updateUser":2,"updateUserName":"テストユーザ1"}
+INFO  2016-04-21 19:09:55,505 [KnowledgesDaoTest(48)] {"commentCount":0,"content":"テスト","deleteFlag":0,"insertDatetime":1461233393633,"insertUser":2,"insertUserName":"テストユーザ1","keyValues":[36],"knowledgeId":36,"likeCount":0,"likeCountOnTerm":null,"publicFlag":0,"score":null,"tagIds":"","tagNames":"","title":"Test-5","typeId":0,"updateDatetime":1461233393633,"updateUser":2,"updateUserName":"テストユーザ1"}
+INFO  2016-04-21 19:09:55,521 [KnowledgesDaoTest(48)] {"commentCount":0,"content":"テスト","deleteFlag":0,"insertDatetime":1461233393929,"insertUser":2,"insertUserName":"テストユーザ1","keyValues":[37],"knowledgeId":37,"likeCount":0,"likeCountOnTerm":null,"publicFlag":0,"score":null,"tagIds":"","tagNames":"","title":"Test-6","typeId":0,"updateDatetime":1461233393929,"updateUser":2,"updateUserName":"テストユーザ1"}
+INFO  2016-04-21 19:09:55,521 [KnowledgesDaoTest(48)] {"commentCount":0,"content":"テスト","deleteFlag":0,"insertDatetime":1461233394382,"insertUser":2,"insertUserName":"テストユーザ1","keyValues":[38],"knowledgeId":38,"likeCount":0,"likeCountOnTerm":null,"publicFlag":0,"score":null,"tagIds":"","tagNames":"","title":"Test-7","typeId":0,"updateDatetime":1461233394382,"updateUser":2,"updateUserName":"テストユーザ1"}
+INFO  2016-04-21 19:09:55,521 [KnowledgesDaoTest(48)] {"commentCount":0,"content":"テスト","deleteFlag":0,"insertDatetime":1461233394772,"insertUser":2,"insertUserName":"テストユーザ1","keyValues":[39],"knowledgeId":39,"likeCount":0,"likeCountOnTerm":null,"publicFlag":0,"score":null,"tagIds":"","tagNames":"","title":"Test-8","typeId":0,"updateDatetime":1461233394772,"updateUser":2,"updateUserName":"テストユーザ1"}
+INFO  2016-04-21 19:09:55,521 [KnowledgesDaoTest(48)] {"commentCount":0,"content":"テスト","deleteFlag":0,"insertDatetime":1461233395115,"insertUser":2,"insertUserName":"テストユーザ1","keyValues":[40],"knowledgeId":40,"likeCount":0,"likeCountOnTerm":null,"publicFlag":0,"score":null,"tagIds":"","tagNames":"","title":"Test-9","typeId":0,"updateDatetime":1461233395115,"updateUser":2,"updateUserName":"テストユーザ1"}
+INFO  2016-04-21 19:10:08,493 [KnowledgesDaoTest(77)] 2016-03-21 10:10
+INFO  2016-04-21 19:10:08,493 [KnowledgesDaoTest(82)] 2016-04-22 10:10
+INFO  2016-04-21 19:10:08,540 [KnowledgesDaoTest(87)] Test-29:29
+INFO  2016-04-21 19:10:08,555 [KnowledgesDaoTest(87)] Test-29:29
+INFO  2016-04-21 19:10:08,555 [KnowledgesDaoTest(87)] Test-28:28
+INFO  2016-04-21 19:10:08,555 [KnowledgesDaoTest(87)] Test-28:28
+INFO  2016-04-21 19:10:08,555 [KnowledgesDaoTest(87)] Test-27:27
+INFO  2016-04-21 19:10:08,555 [KnowledgesDaoTest(87)] Test-27:27
+INFO  2016-04-21 19:10:08,555 [KnowledgesDaoTest(87)] Test-26:26
+INFO  2016-04-21 19:10:08,555 [KnowledgesDaoTest(87)] Test-26:26
+INFO  2016-04-21 19:10:08,555 [KnowledgesDaoTest(87)] Test-25:25
+INFO  2016-04-21 19:10:08,555 [KnowledgesDaoTest(87)] Test-25:25
+INFO  2016-04-21 19:10:08,555 [KnowledgesDaoTest(87)] Test-24:24
+INFO  2016-04-21 19:10:08,555 [KnowledgesDaoTest(87)] Test-24:24
+INFO  2016-04-21 19:10:08,555 [KnowledgesDaoTest(87)] Test-23:23
+INFO  2016-04-21 19:10:08,555 [KnowledgesDaoTest(87)] Test-23:23
+INFO  2016-04-21 19:10:08,555 [KnowledgesDaoTest(87)] Test-22:22
+INFO  2016-04-21 19:10:08,555 [KnowledgesDaoTest(87)] Test-22:22
+INFO  2016-04-21 19:10:08,555 [KnowledgesDaoTest(87)] Test-21:21
+INFO  2016-04-21 19:10:08,555 [KnowledgesDaoTest(87)] Test-21:21
+INFO  2016-04-21 19:10:08,555 [KnowledgesDaoTest(87)] Test-20:20
+INFO  2016-04-21 19:10:08,555 [KnowledgesDaoTest(87)] Test-20:20
+INFO  2016-04-21 19:10:08,618 [H2DBServerLogic(66)] H2 Database server stoped.
+INFO  2016-04-21 19:10:08,699 [H2DBServerLogic(52)] H2 Database server started.
+INFO  2016-04-21 19:10:08,823 [H2DBServerLogic(66)] H2 Database server stoped.
+INFO  2016-04-21 19:10:08,903 [H2DBServerLogic(52)] H2 Database server started.
+INFO  2016-04-21 19:10:09,028 [DatabaseMetaDataDao(114)] Read Table info: ACCESS_LOGS
+INFO  2016-04-21 19:10:09,028 [DatabaseMetaDataDao(114)] Read Table info: ACCOUNT_IMAGES
+INFO  2016-04-21 19:10:09,028 [DatabaseMetaDataDao(114)] Read Table info: COMMENTS
+INFO  2016-04-21 19:10:09,028 [DatabaseMetaDataDao(114)] Read Table info: CONFIRM_MAIL_CHANGES
+INFO  2016-04-21 19:10:09,028 [DatabaseMetaDataDao(114)] Read Table info: FUNCTIONS
+INFO  2016-04-21 19:10:09,028 [DatabaseMetaDataDao(114)] Read Table info: GROUPS
+INFO  2016-04-21 19:10:09,028 [DatabaseMetaDataDao(114)] Read Table info: HASH_CONFIGS
+INFO  2016-04-21 19:10:09,028 [DatabaseMetaDataDao(114)] Read Table info: ITEM_CHOICES
+INFO  2016-04-21 19:10:09,028 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGES
+INFO  2016-04-21 19:10:09,028 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_EDIT_GROUPS
+INFO  2016-04-21 19:10:09,028 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_EDIT_USERS
+INFO  2016-04-21 19:10:09,044 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_FILES
+INFO  2016-04-21 19:10:09,044 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_GROUPS
+INFO  2016-04-21 19:10:09,044 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_HISTORIES
+INFO  2016-04-21 19:10:09,044 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_ITEM_VALUES
+INFO  2016-04-21 19:10:09,044 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_TAGS
+INFO  2016-04-21 19:10:09,044 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_USERS
+INFO  2016-04-21 19:10:09,044 [DatabaseMetaDataDao(114)] Read Table info: LDAP_CONFIGS
+INFO  2016-04-21 19:10:09,044 [DatabaseMetaDataDao(114)] Read Table info: LIKES
+INFO  2016-04-21 19:10:09,044 [DatabaseMetaDataDao(114)] Read Table info: LOCALES
+INFO  2016-04-21 19:10:09,044 [DatabaseMetaDataDao(114)] Read Table info: LOGIN_HISTORIES
+INFO  2016-04-21 19:10:09,044 [DatabaseMetaDataDao(114)] Read Table info: MAILS
+INFO  2016-04-21 19:10:09,044 [DatabaseMetaDataDao(114)] Read Table info: MAIL_CONFIGS
+INFO  2016-04-21 19:10:09,044 [DatabaseMetaDataDao(114)] Read Table info: NOTICES
+INFO  2016-04-21 19:10:09,044 [DatabaseMetaDataDao(114)] Read Table info: NOTIFY_CONFIGS
+INFO  2016-04-21 19:10:09,044 [DatabaseMetaDataDao(114)] Read Table info: NOTIFY_QUEUES
+INFO  2016-04-21 19:10:09,044 [DatabaseMetaDataDao(114)] Read Table info: PASSWORD_RESETS
+INFO  2016-04-21 19:10:09,044 [DatabaseMetaDataDao(114)] Read Table info: PROVISIONAL_REGISTRATIONS
+INFO  2016-04-21 19:10:09,044 [DatabaseMetaDataDao(114)] Read Table info: PROXY_CONFIGS
+INFO  2016-04-21 19:10:09,044 [DatabaseMetaDataDao(114)] Read Table info: READ_MARKS
+INFO  2016-04-21 19:10:09,044 [DatabaseMetaDataDao(114)] Read Table info: ROLES
+INFO  2016-04-21 19:10:09,044 [DatabaseMetaDataDao(114)] Read Table info: ROLE_FUNCTIONS
+INFO  2016-04-21 19:10:09,044 [DatabaseMetaDataDao(114)] Read Table info: STOCKS
+INFO  2016-04-21 19:10:09,044 [DatabaseMetaDataDao(114)] Read Table info: STOCK_KNOWLEDGES
+INFO  2016-04-21 19:10:09,044 [DatabaseMetaDataDao(114)] Read Table info: SYSTEMS
+INFO  2016-04-21 19:10:09,044 [DatabaseMetaDataDao(114)] Read Table info: SYSTEM_ATTRIBUTES
+INFO  2016-04-21 19:10:09,044 [DatabaseMetaDataDao(114)] Read Table info: SYSTEM_CONFIGS
+INFO  2016-04-21 19:10:09,044 [DatabaseMetaDataDao(114)] Read Table info: TAGS
+INFO  2016-04-21 19:10:09,044 [DatabaseMetaDataDao(114)] Read Table info: TEMPLATE_ITEMS
+INFO  2016-04-21 19:10:09,044 [DatabaseMetaDataDao(114)] Read Table info: TEMPLATE_MASTERS
+INFO  2016-04-21 19:10:09,044 [DatabaseMetaDataDao(114)] Read Table info: USERS
+INFO  2016-04-21 19:10:09,044 [DatabaseMetaDataDao(114)] Read Table info: USER_CONFIGS
+INFO  2016-04-21 19:10:09,059 [DatabaseMetaDataDao(114)] Read Table info: USER_GROUPS
+INFO  2016-04-21 19:10:09,059 [DatabaseMetaDataDao(114)] Read Table info: USER_ROLES
+INFO  2016-04-21 19:10:09,059 [DatabaseMetaDataDao(114)] Read Table info: VIEW_HISTORIES
+INFO  2016-04-21 19:10:09,059 [DatabaseMetaDataDao(114)] Read Table info: VOTES
+INFO  2016-04-21 19:10:09,059 [DatabaseMetaDataDao(114)] Read Table info: WEBHOOKS
+INFO  2016-04-21 19:10:09,059 [DatabaseMetaDataDao(114)] Read Table info: WEBHOOK_CONFIGS
+INFO  2016-04-21 19:10:09,293 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGES cascade
+INFO  2016-04-21 19:10:09,293 [InitializeDao(90)] DROP TABLE if exists ACCOUNT_IMAGES cascade
+INFO  2016-04-21 19:10:09,309 [InitializeDao(90)] DROP TABLE if exists HASH_CONFIGS cascade
+INFO  2016-04-21 19:10:09,309 [InitializeDao(90)] DROP TABLE if exists GROUPS cascade
+INFO  2016-04-21 19:10:09,309 [InitializeDao(90)] DROP TABLE if exists SYSTEM_CONFIGS cascade
+INFO  2016-04-21 19:10:09,309 [InitializeDao(90)] DROP TABLE if exists WEBHOOK_CONFIGS cascade
+INFO  2016-04-21 19:10:09,325 [InitializeDao(90)] DROP TABLE if exists MAIL_CONFIGS cascade
+INFO  2016-04-21 19:10:09,325 [InitializeDao(90)] DROP TABLE if exists VOTES cascade
+INFO  2016-04-21 19:10:09,325 [InitializeDao(90)] DROP TABLE if exists COMMENTS cascade
+INFO  2016-04-21 19:10:09,325 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_GROUPS cascade
+INFO  2016-04-21 19:10:09,325 [InitializeDao(90)] DROP TABLE if exists PASSWORD_RESETS cascade
+INFO  2016-04-21 19:10:09,325 [InitializeDao(90)] DROP TABLE if exists FUNCTIONS cascade
+INFO  2016-04-21 19:10:09,325 [InitializeDao(90)] DROP TABLE if exists LIKES cascade
+INFO  2016-04-21 19:10:09,340 [InitializeDao(90)] DROP TABLE if exists NOTICES cascade
+INFO  2016-04-21 19:10:09,340 [InitializeDao(90)] DROP TABLE if exists LOCALES cascade
+INFO  2016-04-21 19:10:09,340 [InitializeDao(90)] DROP TABLE if exists SYSTEM_ATTRIBUTES cascade
+INFO  2016-04-21 19:10:09,340 [InitializeDao(90)] DROP TABLE if exists VIEW_HISTORIES cascade
+INFO  2016-04-21 19:10:09,340 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_EDIT_GROUPS cascade
+INFO  2016-04-21 19:10:09,356 [InitializeDao(90)] DROP TABLE if exists WEBHOOKS cascade
+INFO  2016-04-21 19:10:09,356 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_FILES cascade
+INFO  2016-04-21 19:10:09,356 [InitializeDao(90)] DROP TABLE if exists NOTIFY_QUEUES cascade
+INFO  2016-04-21 19:10:09,356 [InitializeDao(90)] DROP TABLE if exists TEMPLATE_MASTERS cascade
+INFO  2016-04-21 19:10:09,356 [InitializeDao(90)] DROP TABLE if exists USER_GROUPS cascade
+INFO  2016-04-21 19:10:09,356 [InitializeDao(90)] DROP TABLE if exists ITEM_CHOICES cascade
+INFO  2016-04-21 19:10:09,371 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_EDIT_USERS cascade
+INFO  2016-04-21 19:10:09,371 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_HISTORIES cascade
+INFO  2016-04-21 19:10:09,371 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_ITEM_VALUES cascade
+INFO  2016-04-21 19:10:09,371 [InitializeDao(90)] DROP TABLE if exists ACCESS_LOGS cascade
+INFO  2016-04-21 19:10:09,371 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_TAGS cascade
+INFO  2016-04-21 19:10:09,371 [InitializeDao(90)] DROP TABLE if exists ROLE_FUNCTIONS cascade
+INFO  2016-04-21 19:10:09,387 [InitializeDao(90)] DROP TABLE if exists PROXY_CONFIGS cascade
+INFO  2016-04-21 19:10:09,387 [InitializeDao(90)] DROP TABLE if exists MAILS cascade
+INFO  2016-04-21 19:10:09,403 [InitializeDao(90)] DROP TABLE if exists LDAP_CONFIGS cascade
+INFO  2016-04-21 19:10:09,403 [InitializeDao(90)] DROP TABLE if exists LOGIN_HISTORIES cascade
+INFO  2016-04-21 19:10:09,403 [InitializeDao(90)] DROP TABLE if exists CONFIRM_MAIL_CHANGES cascade
+INFO  2016-04-21 19:10:09,403 [InitializeDao(90)] DROP TABLE if exists PROVISIONAL_REGISTRATIONS cascade
+INFO  2016-04-21 19:10:09,403 [InitializeDao(90)] DROP TABLE if exists USER_ROLES cascade
+INFO  2016-04-21 19:10:09,403 [InitializeDao(90)] DROP TABLE if exists NOTIFY_CONFIGS cascade
+INFO  2016-04-21 19:10:09,418 [InitializeDao(90)] DROP TABLE if exists ROLES cascade
+INFO  2016-04-21 19:10:09,418 [InitializeDao(90)] DROP TABLE if exists USER_CONFIGS cascade
+INFO  2016-04-21 19:10:09,418 [InitializeDao(90)] DROP TABLE if exists READ_MARKS cascade
+INFO  2016-04-21 19:10:09,418 [InitializeDao(90)] DROP TABLE if exists SYSTEMS cascade
+INFO  2016-04-21 19:10:09,418 [InitializeDao(90)] DROP TABLE if exists STOCKS cascade
+INFO  2016-04-21 19:10:09,434 [InitializeDao(90)] DROP TABLE if exists STOCK_KNOWLEDGES cascade
+INFO  2016-04-21 19:10:09,434 [InitializeDao(90)] DROP TABLE if exists USERS cascade
+INFO  2016-04-21 19:10:09,434 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_USERS cascade
+INFO  2016-04-21 19:10:09,434 [InitializeDao(90)] DROP TABLE if exists TAGS cascade
+INFO  2016-04-21 19:10:09,465 [InitializeDao(90)] DROP TABLE if exists TEMPLATE_ITEMS cascade
+INFO  2016-04-21 19:10:09,465 [Intercepter(215)] error. [object]class org.support.project.web.dao.SystemsDao_$$_jvstfee_a[proceed]_d17executeQuerySingle[param0]SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0[param1]class org.support.project.web.entity.SystemsEntity[param2][Ljava.lang.Object;@2cbe455c
+[throwable.getMessage()] テーブル "SYSTEMS" が見つかりません
+Table "SYSTEMS" not found; SQL statement:
+SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0 [42102-183] [cause] テーブル "SYSTEMS" が見つかりません
+Table "SYSTEMS" not found; SQL statement:
+SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0 [42102-183]
+----- SQL Infomation -----
+[sql]SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0
+[params]
+	[params][0]knowledge
+[execute]SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = knowledge  AND DELETE_FLAG = 0
+
+ERROR 2016-04-21 19:10:09,465 [Transaction(60)] Error(Rollback) : org.support.project.web.dao.SystemsDao_$$_jvstfee_a#_d42selectOnKey
+INFO  2016-04-21 19:10:09,465 [Intercepter(215)] error. [object]class org.support.project.web.dao.SystemsDao_$$_jvstfee_a[proceed]_d42selectOnKey[param0]knowledge
+[throwable.getMessage()] テーブル "SYSTEMS" が見つかりません
+Table "SYSTEMS" not found; SQL statement:
+SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0 [42102-183] [cause] テーブル "SYSTEMS" が見つかりません
+Table "SYSTEMS" not found; SQL statement:
+SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0 [42102-183]
+----- SQL Infomation -----
+[sql]SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0
+[params]
+	[params][0]knowledge
+[execute]SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = knowledge  AND DELETE_FLAG = 0
+
+INFO  2016-04-21 19:10:09,465 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGES cascade
+INFO  2016-04-21 19:10:09,481 [InitializeDao(90)] DROP TABLE if exists ACCOUNT_IMAGES cascade
+INFO  2016-04-21 19:10:09,481 [InitializeDao(90)] DROP TABLE if exists HASH_CONFIGS cascade
+INFO  2016-04-21 19:10:09,481 [InitializeDao(90)] DROP TABLE if exists GROUPS cascade
+INFO  2016-04-21 19:10:09,481 [InitializeDao(90)] DROP TABLE if exists SYSTEM_CONFIGS cascade
+INFO  2016-04-21 19:10:09,481 [InitializeDao(90)] DROP TABLE if exists WEBHOOK_CONFIGS cascade
+INFO  2016-04-21 19:10:09,481 [InitializeDao(90)] DROP TABLE if exists MAIL_CONFIGS cascade
+INFO  2016-04-21 19:10:09,481 [InitializeDao(90)] DROP TABLE if exists VOTES cascade
+INFO  2016-04-21 19:10:09,496 [InitializeDao(90)] DROP TABLE if exists COMMENTS cascade
+INFO  2016-04-21 19:10:09,496 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_GROUPS cascade
+INFO  2016-04-21 19:10:09,496 [InitializeDao(90)] DROP TABLE if exists PASSWORD_RESETS cascade
+INFO  2016-04-21 19:10:09,496 [InitializeDao(90)] DROP TABLE if exists FUNCTIONS cascade
+INFO  2016-04-21 19:10:09,496 [InitializeDao(90)] DROP TABLE if exists LIKES cascade
+INFO  2016-04-21 19:10:09,496 [InitializeDao(90)] DROP TABLE if exists NOTICES cascade
+INFO  2016-04-21 19:10:09,496 [InitializeDao(90)] DROP TABLE if exists LOCALES cascade
+INFO  2016-04-21 19:10:09,496 [InitializeDao(90)] DROP TABLE if exists SYSTEM_ATTRIBUTES cascade
+INFO  2016-04-21 19:10:09,496 [InitializeDao(90)] DROP TABLE if exists VIEW_HISTORIES cascade
+INFO  2016-04-21 19:10:09,496 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_EDIT_GROUPS cascade
+INFO  2016-04-21 19:10:09,496 [InitializeDao(90)] DROP TABLE if exists WEBHOOKS cascade
+INFO  2016-04-21 19:10:09,496 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_FILES cascade
+INFO  2016-04-21 19:10:09,496 [InitializeDao(90)] DROP TABLE if exists NOTIFY_QUEUES cascade
+INFO  2016-04-21 19:10:09,496 [InitializeDao(90)] DROP TABLE if exists TEMPLATE_MASTERS cascade
+INFO  2016-04-21 19:10:09,496 [InitializeDao(90)] DROP TABLE if exists USER_GROUPS cascade
+INFO  2016-04-21 19:10:09,496 [InitializeDao(90)] DROP TABLE if exists ITEM_CHOICES cascade
+INFO  2016-04-21 19:10:09,496 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_EDIT_USERS cascade
+INFO  2016-04-21 19:10:09,496 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_HISTORIES cascade
+INFO  2016-04-21 19:10:09,496 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_ITEM_VALUES cascade
+INFO  2016-04-21 19:10:09,496 [InitializeDao(90)] DROP TABLE if exists ACCESS_LOGS cascade
+INFO  2016-04-21 19:10:09,496 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_TAGS cascade
+INFO  2016-04-21 19:10:09,496 [InitializeDao(90)] DROP TABLE if exists ROLE_FUNCTIONS cascade
+INFO  2016-04-21 19:10:09,512 [InitializeDao(90)] DROP TABLE if exists PROXY_CONFIGS cascade
+INFO  2016-04-21 19:10:09,512 [InitializeDao(90)] DROP TABLE if exists MAILS cascade
+INFO  2016-04-21 19:10:09,512 [InitializeDao(90)] DROP TABLE if exists LDAP_CONFIGS cascade
+INFO  2016-04-21 19:10:09,512 [InitializeDao(90)] DROP TABLE if exists LOGIN_HISTORIES cascade
+INFO  2016-04-21 19:10:09,512 [InitializeDao(90)] DROP TABLE if exists CONFIRM_MAIL_CHANGES cascade
+INFO  2016-04-21 19:10:09,512 [InitializeDao(90)] DROP TABLE if exists PROVISIONAL_REGISTRATIONS cascade
+INFO  2016-04-21 19:10:09,512 [InitializeDao(90)] DROP TABLE if exists USER_ROLES cascade
+INFO  2016-04-21 19:10:09,512 [InitializeDao(90)] DROP TABLE if exists NOTIFY_CONFIGS cascade
+INFO  2016-04-21 19:10:09,512 [InitializeDao(90)] DROP TABLE if exists ROLES cascade
+INFO  2016-04-21 19:10:09,512 [InitializeDao(90)] DROP TABLE if exists USER_CONFIGS cascade
+INFO  2016-04-21 19:10:09,512 [InitializeDao(90)] DROP TABLE if exists READ_MARKS cascade
+INFO  2016-04-21 19:10:09,512 [InitializeDao(90)] DROP TABLE if exists SYSTEMS cascade
+INFO  2016-04-21 19:10:09,512 [InitializeDao(90)] DROP TABLE if exists STOCKS cascade
+INFO  2016-04-21 19:10:09,512 [InitializeDao(90)] DROP TABLE if exists STOCK_KNOWLEDGES cascade
+INFO  2016-04-21 19:10:09,512 [InitializeDao(90)] DROP TABLE if exists USERS cascade
+INFO  2016-04-21 19:10:09,527 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_USERS cascade
+INFO  2016-04-21 19:10:09,527 [InitializeDao(90)] DROP TABLE if exists TAGS cascade
+INFO  2016-04-21 19:10:09,527 [InitializeDao(90)] DROP TABLE if exists TEMPLATE_ITEMS cascade
+INFO  2016-04-21 19:10:09,527 [InitializeDao(41)] Database initialize start.
+INFO  2016-04-21 19:10:09,746 [InitializeDao(47)] /org/support/project/web/database/ddl.sql is loaded.
+INFO  2016-04-21 19:10:09,839 [InitializeDao(47)] /org/support/project/knowledge/database/ddl.sql is loaded.
+INFO  2016-04-21 19:10:09,839 [InitializeDao(47)] /org/support/project/knowledge/database/init_datas.sql is loaded.
+INFO  2016-04-21 19:10:09,839 [InitializeDao(49)] Database initialize finish.
+INFO  2016-04-21 19:10:09,855 [InitDB(121)] Migrate to 1.1.0.pre1
+INFO  2016-04-21 19:10:10,027 [H2DBServerLogic(66)] H2 Database server stoped.
+INFO  2016-04-21 19:10:10,092 [H2DBServerLogic(52)] H2 Database server started.
+INFO  2016-04-21 19:10:10,248 [DatabaseMetaDataDao(114)] Read Table info: ACCESS_LOGS
+INFO  2016-04-21 19:10:10,248 [DatabaseMetaDataDao(114)] Read Table info: ACCOUNT_IMAGES
+INFO  2016-04-21 19:10:10,248 [DatabaseMetaDataDao(114)] Read Table info: COMMENTS
+INFO  2016-04-21 19:10:10,248 [DatabaseMetaDataDao(114)] Read Table info: CONFIRM_MAIL_CHANGES
+INFO  2016-04-21 19:10:10,248 [DatabaseMetaDataDao(114)] Read Table info: FUNCTIONS
+INFO  2016-04-21 19:10:10,248 [DatabaseMetaDataDao(114)] Read Table info: GROUPS
+INFO  2016-04-21 19:10:10,248 [DatabaseMetaDataDao(114)] Read Table info: HASH_CONFIGS
+INFO  2016-04-21 19:10:10,248 [DatabaseMetaDataDao(114)] Read Table info: ITEM_CHOICES
+INFO  2016-04-21 19:10:10,248 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGES
+INFO  2016-04-21 19:10:10,248 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_EDIT_GROUPS
+INFO  2016-04-21 19:10:10,248 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_EDIT_USERS
+INFO  2016-04-21 19:10:10,248 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_FILES
+INFO  2016-04-21 19:10:10,248 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_GROUPS
+INFO  2016-04-21 19:10:10,248 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_HISTORIES
+INFO  2016-04-21 19:10:10,248 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_ITEM_VALUES
+INFO  2016-04-21 19:10:10,248 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_TAGS
+INFO  2016-04-21 19:10:10,248 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_USERS
+INFO  2016-04-21 19:10:10,248 [DatabaseMetaDataDao(114)] Read Table info: LDAP_CONFIGS
+INFO  2016-04-21 19:10:10,248 [DatabaseMetaDataDao(114)] Read Table info: LIKES
+INFO  2016-04-21 19:10:10,248 [DatabaseMetaDataDao(114)] Read Table info: LOCALES
+INFO  2016-04-21 19:10:10,248 [DatabaseMetaDataDao(114)] Read Table info: LOGIN_HISTORIES
+INFO  2016-04-21 19:10:10,248 [DatabaseMetaDataDao(114)] Read Table info: MAILS
+INFO  2016-04-21 19:10:10,248 [DatabaseMetaDataDao(114)] Read Table info: MAIL_CONFIGS
+INFO  2016-04-21 19:10:10,248 [DatabaseMetaDataDao(114)] Read Table info: NOTICES
+INFO  2016-04-21 19:10:10,248 [DatabaseMetaDataDao(114)] Read Table info: NOTIFY_CONFIGS
+INFO  2016-04-21 19:10:10,248 [DatabaseMetaDataDao(114)] Read Table info: NOTIFY_QUEUES
+INFO  2016-04-21 19:10:10,248 [DatabaseMetaDataDao(114)] Read Table info: PASSWORD_RESETS
+INFO  2016-04-21 19:10:10,248 [DatabaseMetaDataDao(114)] Read Table info: PROVISIONAL_REGISTRATIONS
+INFO  2016-04-21 19:10:10,248 [DatabaseMetaDataDao(114)] Read Table info: PROXY_CONFIGS
+INFO  2016-04-21 19:10:10,248 [DatabaseMetaDataDao(114)] Read Table info: READ_MARKS
+INFO  2016-04-21 19:10:10,264 [DatabaseMetaDataDao(114)] Read Table info: ROLES
+INFO  2016-04-21 19:10:10,264 [DatabaseMetaDataDao(114)] Read Table info: ROLE_FUNCTIONS
+INFO  2016-04-21 19:10:10,264 [DatabaseMetaDataDao(114)] Read Table info: STOCKS
+INFO  2016-04-21 19:10:10,264 [DatabaseMetaDataDao(114)] Read Table info: STOCK_KNOWLEDGES
+INFO  2016-04-21 19:10:10,264 [DatabaseMetaDataDao(114)] Read Table info: SYSTEMS
+INFO  2016-04-21 19:10:10,264 [DatabaseMetaDataDao(114)] Read Table info: SYSTEM_ATTRIBUTES
+INFO  2016-04-21 19:10:10,264 [DatabaseMetaDataDao(114)] Read Table info: SYSTEM_CONFIGS
+INFO  2016-04-21 19:10:10,264 [DatabaseMetaDataDao(114)] Read Table info: TAGS
+INFO  2016-04-21 19:10:10,264 [DatabaseMetaDataDao(114)] Read Table info: TEMPLATE_ITEMS
+INFO  2016-04-21 19:10:10,264 [DatabaseMetaDataDao(114)] Read Table info: TEMPLATE_MASTERS
+INFO  2016-04-21 19:10:10,264 [DatabaseMetaDataDao(114)] Read Table info: USERS
+INFO  2016-04-21 19:10:10,264 [DatabaseMetaDataDao(114)] Read Table info: USER_CONFIGS
+INFO  2016-04-21 19:10:10,264 [DatabaseMetaDataDao(114)] Read Table info: USER_GROUPS
+INFO  2016-04-21 19:10:10,264 [DatabaseMetaDataDao(114)] Read Table info: USER_ROLES
+INFO  2016-04-21 19:10:10,264 [DatabaseMetaDataDao(114)] Read Table info: VIEW_HISTORIES
+INFO  2016-04-21 19:10:10,264 [DatabaseMetaDataDao(114)] Read Table info: VOTES
+INFO  2016-04-21 19:10:10,264 [DatabaseMetaDataDao(114)] Read Table info: WEBHOOKS
+INFO  2016-04-21 19:10:10,264 [DatabaseMetaDataDao(114)] Read Table info: WEBHOOK_CONFIGS
+INFO  2016-04-21 19:10:10,498 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGES cascade
+INFO  2016-04-21 19:10:10,498 [InitializeDao(90)] DROP TABLE if exists ACCOUNT_IMAGES cascade
+INFO  2016-04-21 19:10:10,498 [InitializeDao(90)] DROP TABLE if exists HASH_CONFIGS cascade
+INFO  2016-04-21 19:10:10,498 [InitializeDao(90)] DROP TABLE if exists GROUPS cascade
+INFO  2016-04-21 19:10:10,498 [InitializeDao(90)] DROP TABLE if exists SYSTEM_CONFIGS cascade
+INFO  2016-04-21 19:10:10,498 [InitializeDao(90)] DROP TABLE if exists WEBHOOK_CONFIGS cascade
+INFO  2016-04-21 19:10:10,513 [InitializeDao(90)] DROP TABLE if exists MAIL_CONFIGS cascade
+INFO  2016-04-21 19:10:10,513 [InitializeDao(90)] DROP TABLE if exists VOTES cascade
+INFO  2016-04-21 19:10:10,513 [InitializeDao(90)] DROP TABLE if exists COMMENTS cascade
+INFO  2016-04-21 19:10:10,513 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_GROUPS cascade
+INFO  2016-04-21 19:10:10,513 [InitializeDao(90)] DROP TABLE if exists PASSWORD_RESETS cascade
+INFO  2016-04-21 19:10:10,513 [InitializeDao(90)] DROP TABLE if exists FUNCTIONS cascade
+INFO  2016-04-21 19:10:10,544 [InitializeDao(90)] DROP TABLE if exists LIKES cascade
+INFO  2016-04-21 19:10:10,544 [InitializeDao(90)] DROP TABLE if exists NOTICES cascade
+INFO  2016-04-21 19:10:10,544 [InitializeDao(90)] DROP TABLE if exists LOCALES cascade
+INFO  2016-04-21 19:10:10,544 [InitializeDao(90)] DROP TABLE if exists SYSTEM_ATTRIBUTES cascade
+INFO  2016-04-21 19:10:10,560 [InitializeDao(90)] DROP TABLE if exists VIEW_HISTORIES cascade
+INFO  2016-04-21 19:10:10,560 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_EDIT_GROUPS cascade
+INFO  2016-04-21 19:10:10,560 [InitializeDao(90)] DROP TABLE if exists WEBHOOKS cascade
+INFO  2016-04-21 19:10:10,560 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_FILES cascade
+INFO  2016-04-21 19:10:10,560 [InitializeDao(90)] DROP TABLE if exists NOTIFY_QUEUES cascade
+INFO  2016-04-21 19:10:10,560 [InitializeDao(90)] DROP TABLE if exists TEMPLATE_MASTERS cascade
+INFO  2016-04-21 19:10:10,560 [InitializeDao(90)] DROP TABLE if exists USER_GROUPS cascade
+INFO  2016-04-21 19:10:10,576 [InitializeDao(90)] DROP TABLE if exists ITEM_CHOICES cascade
+INFO  2016-04-21 19:10:10,576 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_EDIT_USERS cascade
+INFO  2016-04-21 19:10:10,576 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_HISTORIES cascade
+INFO  2016-04-21 19:10:10,576 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_ITEM_VALUES cascade
+INFO  2016-04-21 19:10:10,576 [InitializeDao(90)] DROP TABLE if exists ACCESS_LOGS cascade
+INFO  2016-04-21 19:10:10,576 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_TAGS cascade
+INFO  2016-04-21 19:10:10,576 [InitializeDao(90)] DROP TABLE if exists ROLE_FUNCTIONS cascade
+INFO  2016-04-21 19:10:10,576 [InitializeDao(90)] DROP TABLE if exists PROXY_CONFIGS cascade
+INFO  2016-04-21 19:10:10,576 [InitializeDao(90)] DROP TABLE if exists MAILS cascade
+INFO  2016-04-21 19:10:10,576 [InitializeDao(90)] DROP TABLE if exists LDAP_CONFIGS cascade
+INFO  2016-04-21 19:10:10,576 [InitializeDao(90)] DROP TABLE if exists LOGIN_HISTORIES cascade
+INFO  2016-04-21 19:10:10,576 [InitializeDao(90)] DROP TABLE if exists CONFIRM_MAIL_CHANGES cascade
+INFO  2016-04-21 19:10:10,576 [InitializeDao(90)] DROP TABLE if exists PROVISIONAL_REGISTRATIONS cascade
+INFO  2016-04-21 19:10:10,576 [InitializeDao(90)] DROP TABLE if exists USER_ROLES cascade
+INFO  2016-04-21 19:10:10,576 [InitializeDao(90)] DROP TABLE if exists NOTIFY_CONFIGS cascade
+INFO  2016-04-21 19:10:10,591 [InitializeDao(90)] DROP TABLE if exists ROLES cascade
+INFO  2016-04-21 19:10:10,591 [InitializeDao(90)] DROP TABLE if exists USER_CONFIGS cascade
+INFO  2016-04-21 19:10:10,591 [InitializeDao(90)] DROP TABLE if exists READ_MARKS cascade
+INFO  2016-04-21 19:10:10,591 [InitializeDao(90)] DROP TABLE if exists SYSTEMS cascade
+INFO  2016-04-21 19:10:10,591 [InitializeDao(90)] DROP TABLE if exists STOCKS cascade
+INFO  2016-04-21 19:10:10,591 [InitializeDao(90)] DROP TABLE if exists STOCK_KNOWLEDGES cascade
+INFO  2016-04-21 19:10:10,591 [InitializeDao(90)] DROP TABLE if exists USERS cascade
+INFO  2016-04-21 19:10:10,591 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_USERS cascade
+INFO  2016-04-21 19:10:10,591 [InitializeDao(90)] DROP TABLE if exists TAGS cascade
+INFO  2016-04-21 19:10:10,591 [InitializeDao(90)] DROP TABLE if exists TEMPLATE_ITEMS cascade
+INFO  2016-04-21 19:10:10,591 [Intercepter(215)] error. [object]class org.support.project.web.dao.SystemsDao_$$_jvstfee_a[proceed]_d17executeQuerySingle[param0]SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0[param1]class org.support.project.web.entity.SystemsEntity[param2][Ljava.lang.Object;@2b458cd6
+[throwable.getMessage()] テーブル "SYSTEMS" が見つかりません
+Table "SYSTEMS" not found; SQL statement:
+SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0 [42102-183] [cause] テーブル "SYSTEMS" が見つかりません
+Table "SYSTEMS" not found; SQL statement:
+SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0 [42102-183]
+----- SQL Infomation -----
+[sql]SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0
+[params]
+	[params][0]knowledge
+[execute]SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = knowledge  AND DELETE_FLAG = 0
+
+ERROR 2016-04-21 19:10:10,591 [Transaction(60)] Error(Rollback) : org.support.project.web.dao.SystemsDao_$$_jvstfee_a#_d42selectOnKey
+INFO  2016-04-21 19:10:10,591 [Intercepter(215)] error. [object]class org.support.project.web.dao.SystemsDao_$$_jvstfee_a[proceed]_d42selectOnKey[param0]knowledge
+[throwable.getMessage()] テーブル "SYSTEMS" が見つかりません
+Table "SYSTEMS" not found; SQL statement:
+SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0 [42102-183] [cause] テーブル "SYSTEMS" が見つかりません
+Table "SYSTEMS" not found; SQL statement:
+SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0 [42102-183]
+----- SQL Infomation -----
+[sql]SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0
+[params]
+	[params][0]knowledge
+[execute]SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = knowledge  AND DELETE_FLAG = 0
+
+INFO  2016-04-21 19:10:10,607 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGES cascade
+INFO  2016-04-21 19:10:10,607 [InitializeDao(90)] DROP TABLE if exists ACCOUNT_IMAGES cascade
+INFO  2016-04-21 19:10:10,607 [InitializeDao(90)] DROP TABLE if exists HASH_CONFIGS cascade
+INFO  2016-04-21 19:10:10,607 [InitializeDao(90)] DROP TABLE if exists GROUPS cascade
+INFO  2016-04-21 19:10:10,622 [InitializeDao(90)] DROP TABLE if exists SYSTEM_CONFIGS cascade
+INFO  2016-04-21 19:10:10,622 [InitializeDao(90)] DROP TABLE if exists WEBHOOK_CONFIGS cascade
+INFO  2016-04-21 19:10:10,622 [InitializeDao(90)] DROP TABLE if exists MAIL_CONFIGS cascade
+INFO  2016-04-21 19:10:10,622 [InitializeDao(90)] DROP TABLE if exists VOTES cascade
+INFO  2016-04-21 19:10:10,622 [InitializeDao(90)] DROP TABLE if exists COMMENTS cascade
+INFO  2016-04-21 19:10:10,622 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_GROUPS cascade
+INFO  2016-04-21 19:10:10,622 [InitializeDao(90)] DROP TABLE if exists PASSWORD_RESETS cascade
+INFO  2016-04-21 19:10:10,622 [InitializeDao(90)] DROP TABLE if exists FUNCTIONS cascade
+INFO  2016-04-21 19:10:10,622 [InitializeDao(90)] DROP TABLE if exists LIKES cascade
+INFO  2016-04-21 19:10:10,622 [InitializeDao(90)] DROP TABLE if exists NOTICES cascade
+INFO  2016-04-21 19:10:10,622 [InitializeDao(90)] DROP TABLE if exists LOCALES cascade
+INFO  2016-04-21 19:10:10,622 [InitializeDao(90)] DROP TABLE if exists SYSTEM_ATTRIBUTES cascade
+INFO  2016-04-21 19:10:10,622 [InitializeDao(90)] DROP TABLE if exists VIEW_HISTORIES cascade
+INFO  2016-04-21 19:10:10,622 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_EDIT_GROUPS cascade
+INFO  2016-04-21 19:10:10,622 [InitializeDao(90)] DROP TABLE if exists WEBHOOKS cascade
+INFO  2016-04-21 19:10:10,622 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_FILES cascade
+INFO  2016-04-21 19:10:10,622 [InitializeDao(90)] DROP TABLE if exists NOTIFY_QUEUES cascade
+INFO  2016-04-21 19:10:10,638 [InitializeDao(90)] DROP TABLE if exists TEMPLATE_MASTERS cascade
+INFO  2016-04-21 19:10:10,638 [InitializeDao(90)] DROP TABLE if exists USER_GROUPS cascade
+INFO  2016-04-21 19:10:10,638 [InitializeDao(90)] DROP TABLE if exists ITEM_CHOICES cascade
+INFO  2016-04-21 19:10:10,638 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_EDIT_USERS cascade
+INFO  2016-04-21 19:10:10,638 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_HISTORIES cascade
+INFO  2016-04-21 19:10:10,638 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_ITEM_VALUES cascade
+INFO  2016-04-21 19:10:10,638 [InitializeDao(90)] DROP TABLE if exists ACCESS_LOGS cascade
+INFO  2016-04-21 19:10:10,638 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_TAGS cascade
+INFO  2016-04-21 19:10:10,638 [InitializeDao(90)] DROP TABLE if exists ROLE_FUNCTIONS cascade
+INFO  2016-04-21 19:10:10,638 [InitializeDao(90)] DROP TABLE if exists PROXY_CONFIGS cascade
+INFO  2016-04-21 19:10:10,638 [InitializeDao(90)] DROP TABLE if exists MAILS cascade
+INFO  2016-04-21 19:10:10,638 [InitializeDao(90)] DROP TABLE if exists LDAP_CONFIGS cascade
+INFO  2016-04-21 19:10:10,638 [InitializeDao(90)] DROP TABLE if exists LOGIN_HISTORIES cascade
+INFO  2016-04-21 19:10:10,638 [InitializeDao(90)] DROP TABLE if exists CONFIRM_MAIL_CHANGES cascade
+INFO  2016-04-21 19:10:10,638 [InitializeDao(90)] DROP TABLE if exists PROVISIONAL_REGISTRATIONS cascade
+INFO  2016-04-21 19:10:10,638 [InitializeDao(90)] DROP TABLE if exists USER_ROLES cascade
+INFO  2016-04-21 19:10:10,638 [InitializeDao(90)] DROP TABLE if exists NOTIFY_CONFIGS cascade
+INFO  2016-04-21 19:10:10,654 [InitializeDao(90)] DROP TABLE if exists ROLES cascade
+INFO  2016-04-21 19:10:10,654 [InitializeDao(90)] DROP TABLE if exists USER_CONFIGS cascade
+INFO  2016-04-21 19:10:10,654 [InitializeDao(90)] DROP TABLE if exists READ_MARKS cascade
+INFO  2016-04-21 19:10:10,654 [InitializeDao(90)] DROP TABLE if exists SYSTEMS cascade
+INFO  2016-04-21 19:10:10,654 [InitializeDao(90)] DROP TABLE if exists STOCKS cascade
+INFO  2016-04-21 19:10:10,654 [InitializeDao(90)] DROP TABLE if exists STOCK_KNOWLEDGES cascade
+INFO  2016-04-21 19:10:10,654 [InitializeDao(90)] DROP TABLE if exists USERS cascade
+INFO  2016-04-21 19:10:10,654 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_USERS cascade
+INFO  2016-04-21 19:10:10,654 [InitializeDao(90)] DROP TABLE if exists TAGS cascade
+INFO  2016-04-21 19:10:10,654 [InitializeDao(90)] DROP TABLE if exists TEMPLATE_ITEMS cascade
+INFO  2016-04-21 19:10:10,654 [InitializeDao(41)] Database initialize start.
+INFO  2016-04-21 19:10:10,841 [InitializeDao(47)] /org/support/project/web/database/ddl.sql is loaded.
+INFO  2016-04-21 19:10:10,966 [InitializeDao(47)] /org/support/project/knowledge/database/ddl.sql is loaded.
+INFO  2016-04-21 19:10:10,981 [InitializeDao(47)] /org/support/project/knowledge/database/init_datas.sql is loaded.
+INFO  2016-04-21 19:10:10,981 [InitializeDao(49)] Database initialize finish.
+INFO  2016-04-21 19:10:10,981 [InitDB(121)] Migrate to 1.1.0.pre1
+INFO  2016-04-21 19:10:12,650 [KnowledgeLogicTest(105)] [
+	{
+		"commentCount": 0,
+		"content": "テストだよ",
+		"deleteFlag": 0,
+		"insertDatetime": 1461233411122,
+		"insertUser": 2,
+		"insertUserName": "テストユーザ1",
+		"keyValues": [
+			1
+		],
+		"knowledgeId": 1,
+		"likeCount": 0,
+		"likeCountOnTerm": null,
+		"publicFlag": 0,
+		"score": "NaN",
+		"tagIds": "",
+		"tagNames": "",
+		"title": "Test1",
+		"typeId": -100,
+		"updateDatetime": 1461233411122,
+		"updateUser": 2,
+		"updateUserName": "テストユーザ1"
+	}
+]
+INFO  2016-04-21 19:10:12,682 [KnowledgeLogicTest(114)] [
+	{
+		"commentCount": 0,
+		"content": "hOzttyoIzxPBHMh7NmMfVuSE98vbK5lPsRBusff8XWH1FKiMWabTABqfYtDNYiIRoFTg5JHtyu2dfu5ghxoBoczA0YZ0PPKTm71FNkkozo8Q8yIksyUfIkRM9YbF9bGuRi9Qaut96dj8zamap6If222WcwnPbeKhZJjeyhDIbRYCakSD8pr42AS9GstPRhNOhvjYFUM2WzLuG0rHOIUpVJRHjRWRnGwpwedUdhg3eAeaThgzKMz0aH4EgKtZtJi4KFZMFDu0SEFffgDgr0htAFmUpc0QtiXlmHYJtdcQf3ih6DiHOehNpIXIRAPd4CS8qkGEQwE72jC1y7wydxXBuGjjBlRd4twZmAAatCLe7cJ3j4kG4HhLTj8XqyXLDOjRi9uJlvbONis5xGngwy1tiqoyn0iFl7sGtWYhnWjiAIo3SOaRBjoVIiU7HUCT1CvUwpomQmd8KrmfU8rPsHbtKb8WRfm0JDzxYRwUPNptJCtSdZNm8KxWPZqaWvDZWc4p3jfpS6L4vsKin0qMib9l2cdkMqYxoaW4MjB6fLUfRHpghT4GFVW93asoWlv83duHX0fluE9GViQny1AINrKjQG1CMROASUOQ6cHvlaD8TjbsuSfByKNxBmGkPCDwfxLTdTj1kLz0R1C1alSr60PWd8uDHdt4MqLDLBtbbrrANyQk0gpBYAJXmoXQn1jec9qvZSe6UccIpEXtVdwK03CgYHmAdaW73T9CGMoOiSn7iXQXms4xeNxCIVaR8NSNGWS4Gl21KocygXGFua17LtgYnYOTHiWQrNbm5y2hlwcPiV5aQCCI46SeqVMNQX8Z7DpurULaM5xukgKa0Q5DSPiDEGqCYvdK1mxxZMDKyI7bCvoM8pqzFxBGHSYV6slXg7el0AsaY8dCnX2JzG4nnjxXIbg2mppo3bi3B5t3GMphjVYkmhwuSHec8evLj27wGS9mfPHLDB2pir2spUk5b79AVmEdDZrNP8F8tBlqK1vj2wmgnWFDfTXlH8dEjz6L0yc4",
+		"deleteFlag": 0,
+		"insertDatetime": 1461233411449,
+		"insertUser": 3,
+		"insertUserName": "テストユーザ2",
+		"keyValues": [
+			2
+		],
+		"knowledgeId": 2,
+		"likeCount": 0,
+		"likeCountOnTerm": null,
+		"publicFlag": 1,
+		"score": "NaN",
+		"tagIds": "",
+		"tagNames": "",
+		"title": "pifs7mUK3kT2pUDRmbnwadNgwuaxm6xMSlT6ZNljvaYymfhsOjvDLLlIhopJFEia",
+		"typeId": -99,
+		"updateDatetime": 1461233412151,
+		"updateUser": 3,
+		"updateUserName": "テストユーザ2"
+	},
+	{
+		"commentCount": 0,
+		"content": "テストだよ",
+		"deleteFlag": 0,
+		"insertDatetime": 1461233411122,
+		"insertUser": 2,
+		"insertUserName": "テストユーザ1",
+		"keyValues": [
+			1
+		],
+		"knowledgeId": 1,
+		"likeCount": 0,
+		"likeCountOnTerm": null,
+		"publicFlag": 0,
+		"score": "NaN",
+		"tagIds": "",
+		"tagNames": "",
+		"title": "Test1",
+		"typeId": -100,
+		"updateDatetime": 1461233411122,
+		"updateUser": 2,
+		"updateUserName": "テストユーザ1"
+	}
+]
+INFO  2016-04-21 19:10:12,698 [KnowledgeLogicTest(123)] [
+	{
+		"commentCount": 0,
+		"content": "\u003Cspan class=\"mark\"\u003Eテスト\u003C/span\u003Eだよ",
+		"deleteFlag": 0,
+		"insertDatetime": 1461233411122,
+		"insertUser": 2,
+		"insertUserName": "テストユーザ1",
+		"keyValues": [
+			1
+		],
+		"knowledgeId": 1,
+		"likeCount": 0,
+		"likeCountOnTerm": null,
+		"publicFlag": 0,
+		"score": 0.33544760942459106,
+		"tagIds": "",
+		"tagNames": "",
+		"title": "Test1",
+		"typeId": -100,
+		"updateDatetime": 1461233411122,
+		"updateUser": 2,
+		"updateUserName": "テストユーザ1"
+	}
+]
+INFO  2016-04-21 19:10:12,716 [H2DBServerLogic(66)] H2 Database server stoped.
+INFO  2016-04-21 19:10:12,732 [H2DBServerLogic(52)] H2 Database server started.
+INFO  2016-04-21 19:10:12,842 [DatabaseMetaDataDao(114)] Read Table info: ACCESS_LOGS
+INFO  2016-04-21 19:10:12,842 [DatabaseMetaDataDao(114)] Read Table info: ACCOUNT_IMAGES
+INFO  2016-04-21 19:10:12,842 [DatabaseMetaDataDao(114)] Read Table info: COMMENTS
+INFO  2016-04-21 19:10:12,842 [DatabaseMetaDataDao(114)] Read Table info: CONFIRM_MAIL_CHANGES
+INFO  2016-04-21 19:10:12,842 [DatabaseMetaDataDao(114)] Read Table info: FUNCTIONS
+INFO  2016-04-21 19:10:12,842 [DatabaseMetaDataDao(114)] Read Table info: GROUPS
+INFO  2016-04-21 19:10:12,842 [DatabaseMetaDataDao(114)] Read Table info: HASH_CONFIGS
+INFO  2016-04-21 19:10:12,842 [DatabaseMetaDataDao(114)] Read Table info: ITEM_CHOICES
+INFO  2016-04-21 19:10:12,842 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGES
+INFO  2016-04-21 19:10:12,842 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_EDIT_GROUPS
+INFO  2016-04-21 19:10:12,842 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_EDIT_USERS
+INFO  2016-04-21 19:10:12,842 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_FILES
+INFO  2016-04-21 19:10:12,842 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_GROUPS
+INFO  2016-04-21 19:10:12,842 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_HISTORIES
+INFO  2016-04-21 19:10:12,842 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_ITEM_VALUES
+INFO  2016-04-21 19:10:12,842 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_TAGS
+INFO  2016-04-21 19:10:12,857 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_USERS
+INFO  2016-04-21 19:10:12,857 [DatabaseMetaDataDao(114)] Read Table info: LDAP_CONFIGS
+INFO  2016-04-21 19:10:12,857 [DatabaseMetaDataDao(114)] Read Table info: LIKES
+INFO  2016-04-21 19:10:12,857 [DatabaseMetaDataDao(114)] Read Table info: LOCALES
+INFO  2016-04-21 19:10:12,857 [DatabaseMetaDataDao(114)] Read Table info: LOGIN_HISTORIES
+INFO  2016-04-21 19:10:12,857 [DatabaseMetaDataDao(114)] Read Table info: MAILS
+INFO  2016-04-21 19:10:12,857 [DatabaseMetaDataDao(114)] Read Table info: MAIL_CONFIGS
+INFO  2016-04-21 19:10:12,857 [DatabaseMetaDataDao(114)] Read Table info: NOTICES
+INFO  2016-04-21 19:10:12,857 [DatabaseMetaDataDao(114)] Read Table info: NOTIFY_CONFIGS
+INFO  2016-04-21 19:10:12,857 [DatabaseMetaDataDao(114)] Read Table info: NOTIFY_QUEUES
+INFO  2016-04-21 19:10:12,857 [DatabaseMetaDataDao(114)] Read Table info: PASSWORD_RESETS
+INFO  2016-04-21 19:10:12,857 [DatabaseMetaDataDao(114)] Read Table info: PROVISIONAL_REGISTRATIONS
+INFO  2016-04-21 19:10:12,857 [DatabaseMetaDataDao(114)] Read Table info: PROXY_CONFIGS
+INFO  2016-04-21 19:10:12,857 [DatabaseMetaDataDao(114)] Read Table info: READ_MARKS
+INFO  2016-04-21 19:10:12,857 [DatabaseMetaDataDao(114)] Read Table info: ROLES
+INFO  2016-04-21 19:10:12,857 [DatabaseMetaDataDao(114)] Read Table info: ROLE_FUNCTIONS
+INFO  2016-04-21 19:10:12,857 [DatabaseMetaDataDao(114)] Read Table info: STOCKS
+INFO  2016-04-21 19:10:12,857 [DatabaseMetaDataDao(114)] Read Table info: STOCK_KNOWLEDGES
+INFO  2016-04-21 19:10:12,857 [DatabaseMetaDataDao(114)] Read Table info: SYSTEMS
+INFO  2016-04-21 19:10:12,857 [DatabaseMetaDataDao(114)] Read Table info: SYSTEM_ATTRIBUTES
+INFO  2016-04-21 19:10:12,857 [DatabaseMetaDataDao(114)] Read Table info: SYSTEM_CONFIGS
+INFO  2016-04-21 19:10:12,857 [DatabaseMetaDataDao(114)] Read Table info: TAGS
+INFO  2016-04-21 19:10:12,857 [DatabaseMetaDataDao(114)] Read Table info: TEMPLATE_ITEMS
+INFO  2016-04-21 19:10:12,857 [DatabaseMetaDataDao(114)] Read Table info: TEMPLATE_MASTERS
+INFO  2016-04-21 19:10:12,857 [DatabaseMetaDataDao(114)] Read Table info: USERS
+INFO  2016-04-21 19:10:12,857 [DatabaseMetaDataDao(114)] Read Table info: USER_CONFIGS
+INFO  2016-04-21 19:10:12,857 [DatabaseMetaDataDao(114)] Read Table info: USER_GROUPS
+INFO  2016-04-21 19:10:12,857 [DatabaseMetaDataDao(114)] Read Table info: USER_ROLES
+INFO  2016-04-21 19:10:12,857 [DatabaseMetaDataDao(114)] Read Table info: VIEW_HISTORIES
+INFO  2016-04-21 19:10:12,857 [DatabaseMetaDataDao(114)] Read Table info: VOTES
+INFO  2016-04-21 19:10:12,857 [DatabaseMetaDataDao(114)] Read Table info: WEBHOOKS
+INFO  2016-04-21 19:10:12,857 [DatabaseMetaDataDao(114)] Read Table info: WEBHOOK_CONFIGS
+INFO  2016-04-21 19:10:13,076 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGES cascade
+INFO  2016-04-21 19:10:13,091 [InitializeDao(90)] DROP TABLE if exists ACCOUNT_IMAGES cascade
+INFO  2016-04-21 19:10:13,091 [InitializeDao(90)] DROP TABLE if exists HASH_CONFIGS cascade
+INFO  2016-04-21 19:10:13,091 [InitializeDao(90)] DROP TABLE if exists GROUPS cascade
+INFO  2016-04-21 19:10:13,091 [InitializeDao(90)] DROP TABLE if exists SYSTEM_CONFIGS cascade
+INFO  2016-04-21 19:10:13,091 [InitializeDao(90)] DROP TABLE if exists WEBHOOK_CONFIGS cascade
+INFO  2016-04-21 19:10:13,091 [InitializeDao(90)] DROP TABLE if exists MAIL_CONFIGS cascade
+INFO  2016-04-21 19:10:13,091 [InitializeDao(90)] DROP TABLE if exists VOTES cascade
+INFO  2016-04-21 19:10:13,091 [InitializeDao(90)] DROP TABLE if exists COMMENTS cascade
+INFO  2016-04-21 19:10:13,107 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_GROUPS cascade
+INFO  2016-04-21 19:10:13,107 [InitializeDao(90)] DROP TABLE if exists PASSWORD_RESETS cascade
+INFO  2016-04-21 19:10:13,107 [InitializeDao(90)] DROP TABLE if exists FUNCTIONS cascade
+INFO  2016-04-21 19:10:13,107 [InitializeDao(90)] DROP TABLE if exists LIKES cascade
+INFO  2016-04-21 19:10:13,107 [InitializeDao(90)] DROP TABLE if exists NOTICES cascade
+INFO  2016-04-21 19:10:13,107 [InitializeDao(90)] DROP TABLE if exists LOCALES cascade
+INFO  2016-04-21 19:10:13,122 [InitializeDao(90)] DROP TABLE if exists SYSTEM_ATTRIBUTES cascade
+INFO  2016-04-21 19:10:13,122 [InitializeDao(90)] DROP TABLE if exists VIEW_HISTORIES cascade
+INFO  2016-04-21 19:10:13,122 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_EDIT_GROUPS cascade
+INFO  2016-04-21 19:10:13,122 [InitializeDao(90)] DROP TABLE if exists WEBHOOKS cascade
+INFO  2016-04-21 19:10:13,122 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_FILES cascade
+INFO  2016-04-21 19:10:13,122 [InitializeDao(90)] DROP TABLE if exists NOTIFY_QUEUES cascade
+INFO  2016-04-21 19:10:13,122 [InitializeDao(90)] DROP TABLE if exists TEMPLATE_MASTERS cascade
+INFO  2016-04-21 19:10:13,138 [InitializeDao(90)] DROP TABLE if exists USER_GROUPS cascade
+INFO  2016-04-21 19:10:13,138 [InitializeDao(90)] DROP TABLE if exists ITEM_CHOICES cascade
+INFO  2016-04-21 19:10:13,138 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_EDIT_USERS cascade
+INFO  2016-04-21 19:10:13,138 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_HISTORIES cascade
+INFO  2016-04-21 19:10:13,138 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_ITEM_VALUES cascade
+INFO  2016-04-21 19:10:13,138 [InitializeDao(90)] DROP TABLE if exists ACCESS_LOGS cascade
+INFO  2016-04-21 19:10:13,138 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_TAGS cascade
+INFO  2016-04-21 19:10:13,154 [InitializeDao(90)] DROP TABLE if exists ROLE_FUNCTIONS cascade
+INFO  2016-04-21 19:10:13,154 [InitializeDao(90)] DROP TABLE if exists PROXY_CONFIGS cascade
+INFO  2016-04-21 19:10:13,154 [InitializeDao(90)] DROP TABLE if exists MAILS cascade
+INFO  2016-04-21 19:10:13,154 [InitializeDao(90)] DROP TABLE if exists LDAP_CONFIGS cascade
+INFO  2016-04-21 19:10:13,154 [InitializeDao(90)] DROP TABLE if exists LOGIN_HISTORIES cascade
+INFO  2016-04-21 19:10:13,154 [InitializeDao(90)] DROP TABLE if exists CONFIRM_MAIL_CHANGES cascade
+INFO  2016-04-21 19:10:13,154 [InitializeDao(90)] DROP TABLE if exists PROVISIONAL_REGISTRATIONS cascade
+INFO  2016-04-21 19:10:13,169 [InitializeDao(90)] DROP TABLE if exists USER_ROLES cascade
+INFO  2016-04-21 19:10:13,169 [InitializeDao(90)] DROP TABLE if exists NOTIFY_CONFIGS cascade
+INFO  2016-04-21 19:10:13,169 [InitializeDao(90)] DROP TABLE if exists ROLES cascade
+INFO  2016-04-21 19:10:13,169 [InitializeDao(90)] DROP TABLE if exists USER_CONFIGS cascade
+INFO  2016-04-21 19:10:13,169 [InitializeDao(90)] DROP TABLE if exists READ_MARKS cascade
+INFO  2016-04-21 19:10:13,169 [InitializeDao(90)] DROP TABLE if exists SYSTEMS cascade
+INFO  2016-04-21 19:10:13,169 [InitializeDao(90)] DROP TABLE if exists STOCKS cascade
+INFO  2016-04-21 19:10:13,169 [InitializeDao(90)] DROP TABLE if exists STOCK_KNOWLEDGES cascade
+INFO  2016-04-21 19:10:13,185 [InitializeDao(90)] DROP TABLE if exists USERS cascade
+INFO  2016-04-21 19:10:13,185 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_USERS cascade
+INFO  2016-04-21 19:10:13,185 [InitializeDao(90)] DROP TABLE if exists TAGS cascade
+INFO  2016-04-21 19:10:13,185 [InitializeDao(90)] DROP TABLE if exists TEMPLATE_ITEMS cascade
+INFO  2016-04-21 19:10:13,185 [Intercepter(215)] error. [object]class org.support.project.web.dao.SystemsDao_$$_jvstfee_a[proceed]_d17executeQuerySingle[param0]SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0[param1]class org.support.project.web.entity.SystemsEntity[param2][Ljava.lang.Object;@5eeee124
+[throwable.getMessage()] テーブル "SYSTEMS" が見つかりません
+Table "SYSTEMS" not found; SQL statement:
+SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0 [42102-183] [cause] テーブル "SYSTEMS" が見つかりません
+Table "SYSTEMS" not found; SQL statement:
+SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0 [42102-183]
+----- SQL Infomation -----
+[sql]SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0
+[params]
+	[params][0]knowledge
+[execute]SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = knowledge  AND DELETE_FLAG = 0
+
+ERROR 2016-04-21 19:10:13,185 [Transaction(60)] Error(Rollback) : org.support.project.web.dao.SystemsDao_$$_jvstfee_a#_d42selectOnKey
+INFO  2016-04-21 19:10:13,185 [Intercepter(215)] error. [object]class org.support.project.web.dao.SystemsDao_$$_jvstfee_a[proceed]_d42selectOnKey[param0]knowledge
+[throwable.getMessage()] テーブル "SYSTEMS" が見つかりません
+Table "SYSTEMS" not found; SQL statement:
+SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0 [42102-183] [cause] テーブル "SYSTEMS" が見つかりません
+Table "SYSTEMS" not found; SQL statement:
+SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0 [42102-183]
+----- SQL Infomation -----
+[sql]SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0
+[params]
+	[params][0]knowledge
+[execute]SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = knowledge  AND DELETE_FLAG = 0
+
+INFO  2016-04-21 19:10:13,200 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGES cascade
+INFO  2016-04-21 19:10:13,200 [InitializeDao(90)] DROP TABLE if exists ACCOUNT_IMAGES cascade
+INFO  2016-04-21 19:10:13,200 [InitializeDao(90)] DROP TABLE if exists HASH_CONFIGS cascade
+INFO  2016-04-21 19:10:13,200 [InitializeDao(90)] DROP TABLE if exists GROUPS cascade
+INFO  2016-04-21 19:10:13,200 [InitializeDao(90)] DROP TABLE if exists SYSTEM_CONFIGS cascade
+INFO  2016-04-21 19:10:13,200 [InitializeDao(90)] DROP TABLE if exists WEBHOOK_CONFIGS cascade
+INFO  2016-04-21 19:10:13,200 [InitializeDao(90)] DROP TABLE if exists MAIL_CONFIGS cascade
+INFO  2016-04-21 19:10:13,200 [InitializeDao(90)] DROP TABLE if exists VOTES cascade
+INFO  2016-04-21 19:10:13,200 [InitializeDao(90)] DROP TABLE if exists COMMENTS cascade
+INFO  2016-04-21 19:10:13,200 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_GROUPS cascade
+INFO  2016-04-21 19:10:13,200 [InitializeDao(90)] DROP TABLE if exists PASSWORD_RESETS cascade
+INFO  2016-04-21 19:10:13,200 [InitializeDao(90)] DROP TABLE if exists FUNCTIONS cascade
+INFO  2016-04-21 19:10:13,200 [InitializeDao(90)] DROP TABLE if exists LIKES cascade
+INFO  2016-04-21 19:10:13,200 [InitializeDao(90)] DROP TABLE if exists NOTICES cascade
+INFO  2016-04-21 19:10:13,200 [InitializeDao(90)] DROP TABLE if exists LOCALES cascade
+INFO  2016-04-21 19:10:13,200 [InitializeDao(90)] DROP TABLE if exists SYSTEM_ATTRIBUTES cascade
+INFO  2016-04-21 19:10:13,200 [InitializeDao(90)] DROP TABLE if exists VIEW_HISTORIES cascade
+INFO  2016-04-21 19:10:13,200 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_EDIT_GROUPS cascade
+INFO  2016-04-21 19:10:13,216 [InitializeDao(90)] DROP TABLE if exists WEBHOOKS cascade
+INFO  2016-04-21 19:10:13,216 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_FILES cascade
+INFO  2016-04-21 19:10:13,216 [InitializeDao(90)] DROP TABLE if exists NOTIFY_QUEUES cascade
+INFO  2016-04-21 19:10:13,216 [InitializeDao(90)] DROP TABLE if exists TEMPLATE_MASTERS cascade
+INFO  2016-04-21 19:10:13,216 [InitializeDao(90)] DROP TABLE if exists USER_GROUPS cascade
+INFO  2016-04-21 19:10:13,216 [InitializeDao(90)] DROP TABLE if exists ITEM_CHOICES cascade
+INFO  2016-04-21 19:10:13,216 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_EDIT_USERS cascade
+INFO  2016-04-21 19:10:13,216 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_HISTORIES cascade
+INFO  2016-04-21 19:10:13,216 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_ITEM_VALUES cascade
+INFO  2016-04-21 19:10:13,216 [InitializeDao(90)] DROP TABLE if exists ACCESS_LOGS cascade
+INFO  2016-04-21 19:10:13,216 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_TAGS cascade
+INFO  2016-04-21 19:10:13,216 [InitializeDao(90)] DROP TABLE if exists ROLE_FUNCTIONS cascade
+INFO  2016-04-21 19:10:13,216 [InitializeDao(90)] DROP TABLE if exists PROXY_CONFIGS cascade
+INFO  2016-04-21 19:10:13,216 [InitializeDao(90)] DROP TABLE if exists MAILS cascade
+INFO  2016-04-21 19:10:13,216 [InitializeDao(90)] DROP TABLE if exists LDAP_CONFIGS cascade
+INFO  2016-04-21 19:10:13,216 [InitializeDao(90)] DROP TABLE if exists LOGIN_HISTORIES cascade
+INFO  2016-04-21 19:10:13,232 [InitializeDao(90)] DROP TABLE if exists CONFIRM_MAIL_CHANGES cascade
+INFO  2016-04-21 19:10:13,232 [InitializeDao(90)] DROP TABLE if exists PROVISIONAL_REGISTRATIONS cascade
+INFO  2016-04-21 19:10:13,232 [InitializeDao(90)] DROP TABLE if exists USER_ROLES cascade
+INFO  2016-04-21 19:10:13,232 [InitializeDao(90)] DROP TABLE if exists NOTIFY_CONFIGS cascade
+INFO  2016-04-21 19:10:13,232 [InitializeDao(90)] DROP TABLE if exists ROLES cascade
+INFO  2016-04-21 19:10:13,232 [InitializeDao(90)] DROP TABLE if exists USER_CONFIGS cascade
+INFO  2016-04-21 19:10:13,232 [InitializeDao(90)] DROP TABLE if exists READ_MARKS cascade
+INFO  2016-04-21 19:10:13,232 [InitializeDao(90)] DROP TABLE if exists SYSTEMS cascade
+INFO  2016-04-21 19:10:13,232 [InitializeDao(90)] DROP TABLE if exists STOCKS cascade
+INFO  2016-04-21 19:10:13,232 [InitializeDao(90)] DROP TABLE if exists STOCK_KNOWLEDGES cascade
+INFO  2016-04-21 19:10:13,232 [InitializeDao(90)] DROP TABLE if exists USERS cascade
+INFO  2016-04-21 19:10:13,232 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_USERS cascade
+INFO  2016-04-21 19:10:13,232 [InitializeDao(90)] DROP TABLE if exists TAGS cascade
+INFO  2016-04-21 19:10:13,232 [InitializeDao(90)] DROP TABLE if exists TEMPLATE_ITEMS cascade
+INFO  2016-04-21 19:10:13,247 [InitializeDao(41)] Database initialize start.
+INFO  2016-04-21 19:10:13,372 [InitializeDao(47)] /org/support/project/web/database/ddl.sql is loaded.
+INFO  2016-04-21 19:10:13,559 [InitializeDao(47)] /org/support/project/knowledge/database/ddl.sql is loaded.
+INFO  2016-04-21 19:10:13,559 [InitializeDao(47)] /org/support/project/knowledge/database/init_datas.sql is loaded.
+INFO  2016-04-21 19:10:13,559 [InitializeDao(49)] Database initialize finish.
+INFO  2016-04-21 19:10:13,575 [InitDB(121)] Migrate to 1.1.0.pre1
+WARN  2016-04-21 19:10:13,668 [MarkdownLogic(67)] PegDown parser was deprecated
+WARN  2016-04-21 19:10:14,330 [MarkdownLogic(67)] PegDown parser was deprecated
+WARN  2016-04-21 19:10:14,361 [MarkdownLogic(67)] PegDown parser was deprecated
+WARN  2016-04-21 19:10:14,377 [MarkdownLogic(67)] PegDown parser was deprecated
+WARN  2016-04-21 19:10:14,408 [MarkdownLogic(67)] PegDown parser was deprecated
+WARN  2016-04-21 19:10:14,423 [MarkdownLogic(64)] marked.js parser was deprecated
+WARN  2016-04-21 19:10:16,410 [MarkdownLogic(64)] marked.js parser was deprecated
+WARN  2016-04-21 19:10:16,566 [MarkdownLogic(64)] marked.js parser was deprecated
+INFO  2016-04-21 19:10:16,706 [H2DBServerLogic(66)] H2 Database server stoped.
+INFO  2016-04-21 19:10:16,755 [H2DBServerLogic(52)] H2 Database server started.
+INFO  2016-04-21 19:10:16,895 [DatabaseMetaDataDao(114)] Read Table info: ACCESS_LOGS
+INFO  2016-04-21 19:10:16,895 [DatabaseMetaDataDao(114)] Read Table info: ACCOUNT_IMAGES
+INFO  2016-04-21 19:10:16,895 [DatabaseMetaDataDao(114)] Read Table info: COMMENTS
+INFO  2016-04-21 19:10:16,895 [DatabaseMetaDataDao(114)] Read Table info: CONFIRM_MAIL_CHANGES
+INFO  2016-04-21 19:10:16,895 [DatabaseMetaDataDao(114)] Read Table info: FUNCTIONS
+INFO  2016-04-21 19:10:16,895 [DatabaseMetaDataDao(114)] Read Table info: GROUPS
+INFO  2016-04-21 19:10:16,895 [DatabaseMetaDataDao(114)] Read Table info: HASH_CONFIGS
+INFO  2016-04-21 19:10:16,895 [DatabaseMetaDataDao(114)] Read Table info: ITEM_CHOICES
+INFO  2016-04-21 19:10:16,895 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGES
+INFO  2016-04-21 19:10:16,895 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_EDIT_GROUPS
+INFO  2016-04-21 19:10:16,895 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_EDIT_USERS
+INFO  2016-04-21 19:10:16,895 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_FILES
+INFO  2016-04-21 19:10:16,895 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_GROUPS
+INFO  2016-04-21 19:10:16,895 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_HISTORIES
+INFO  2016-04-21 19:10:16,895 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_ITEM_VALUES
+INFO  2016-04-21 19:10:16,895 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_TAGS
+INFO  2016-04-21 19:10:16,895 [DatabaseMetaDataDao(114)] Read Table info: KNOWLEDGE_USERS
+INFO  2016-04-21 19:10:16,895 [DatabaseMetaDataDao(114)] Read Table info: LDAP_CONFIGS
+INFO  2016-04-21 19:10:16,895 [DatabaseMetaDataDao(114)] Read Table info: LIKES
+INFO  2016-04-21 19:10:16,895 [DatabaseMetaDataDao(114)] Read Table info: LOCALES
+INFO  2016-04-21 19:10:16,895 [DatabaseMetaDataDao(114)] Read Table info: LOGIN_HISTORIES
+INFO  2016-04-21 19:10:16,895 [DatabaseMetaDataDao(114)] Read Table info: MAILS
+INFO  2016-04-21 19:10:16,895 [DatabaseMetaDataDao(114)] Read Table info: MAIL_CONFIGS
+INFO  2016-04-21 19:10:16,895 [DatabaseMetaDataDao(114)] Read Table info: NOTICES
+INFO  2016-04-21 19:10:16,895 [DatabaseMetaDataDao(114)] Read Table info: NOTIFY_CONFIGS
+INFO  2016-04-21 19:10:16,895 [DatabaseMetaDataDao(114)] Read Table info: NOTIFY_QUEUES
+INFO  2016-04-21 19:10:16,895 [DatabaseMetaDataDao(114)] Read Table info: PASSWORD_RESETS
+INFO  2016-04-21 19:10:16,895 [DatabaseMetaDataDao(114)] Read Table info: PROVISIONAL_REGISTRATIONS
+INFO  2016-04-21 19:10:16,895 [DatabaseMetaDataDao(114)] Read Table info: PROXY_CONFIGS
+INFO  2016-04-21 19:10:16,895 [DatabaseMetaDataDao(114)] Read Table info: READ_MARKS
+INFO  2016-04-21 19:10:16,895 [DatabaseMetaDataDao(114)] Read Table info: ROLES
+INFO  2016-04-21 19:10:16,895 [DatabaseMetaDataDao(114)] Read Table info: ROLE_FUNCTIONS
+INFO  2016-04-21 19:10:16,895 [DatabaseMetaDataDao(114)] Read Table info: STOCKS
+INFO  2016-04-21 19:10:16,895 [DatabaseMetaDataDao(114)] Read Table info: STOCK_KNOWLEDGES
+INFO  2016-04-21 19:10:16,895 [DatabaseMetaDataDao(114)] Read Table info: SYSTEMS
+INFO  2016-04-21 19:10:16,895 [DatabaseMetaDataDao(114)] Read Table info: SYSTEM_ATTRIBUTES
+INFO  2016-04-21 19:10:16,911 [DatabaseMetaDataDao(114)] Read Table info: SYSTEM_CONFIGS
+INFO  2016-04-21 19:10:16,911 [DatabaseMetaDataDao(114)] Read Table info: TAGS
+INFO  2016-04-21 19:10:16,911 [DatabaseMetaDataDao(114)] Read Table info: TEMPLATE_ITEMS
+INFO  2016-04-21 19:10:16,911 [DatabaseMetaDataDao(114)] Read Table info: TEMPLATE_MASTERS
+INFO  2016-04-21 19:10:16,911 [DatabaseMetaDataDao(114)] Read Table info: USERS
+INFO  2016-04-21 19:10:16,911 [DatabaseMetaDataDao(114)] Read Table info: USER_CONFIGS
+INFO  2016-04-21 19:10:16,911 [DatabaseMetaDataDao(114)] Read Table info: USER_GROUPS
+INFO  2016-04-21 19:10:16,911 [DatabaseMetaDataDao(114)] Read Table info: USER_ROLES
+INFO  2016-04-21 19:10:16,911 [DatabaseMetaDataDao(114)] Read Table info: VIEW_HISTORIES
+INFO  2016-04-21 19:10:16,911 [DatabaseMetaDataDao(114)] Read Table info: VOTES
+INFO  2016-04-21 19:10:16,911 [DatabaseMetaDataDao(114)] Read Table info: WEBHOOKS
+INFO  2016-04-21 19:10:16,911 [DatabaseMetaDataDao(114)] Read Table info: WEBHOOK_CONFIGS
+INFO  2016-04-21 19:10:17,161 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGES cascade
+INFO  2016-04-21 19:10:17,176 [InitializeDao(90)] DROP TABLE if exists ACCOUNT_IMAGES cascade
+INFO  2016-04-21 19:10:17,176 [InitializeDao(90)] DROP TABLE if exists HASH_CONFIGS cascade
+INFO  2016-04-21 19:10:17,176 [InitializeDao(90)] DROP TABLE if exists GROUPS cascade
+INFO  2016-04-21 19:10:17,176 [InitializeDao(90)] DROP TABLE if exists SYSTEM_CONFIGS cascade
+INFO  2016-04-21 19:10:17,176 [InitializeDao(90)] DROP TABLE if exists WEBHOOK_CONFIGS cascade
+INFO  2016-04-21 19:10:17,176 [InitializeDao(90)] DROP TABLE if exists MAIL_CONFIGS cascade
+INFO  2016-04-21 19:10:17,176 [InitializeDao(90)] DROP TABLE if exists VOTES cascade
+INFO  2016-04-21 19:10:17,192 [InitializeDao(90)] DROP TABLE if exists COMMENTS cascade
+INFO  2016-04-21 19:10:17,192 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_GROUPS cascade
+INFO  2016-04-21 19:10:17,192 [InitializeDao(90)] DROP TABLE if exists PASSWORD_RESETS cascade
+INFO  2016-04-21 19:10:17,192 [InitializeDao(90)] DROP TABLE if exists FUNCTIONS cascade
+INFO  2016-04-21 19:10:17,192 [InitializeDao(90)] DROP TABLE if exists LIKES cascade
+INFO  2016-04-21 19:10:17,192 [InitializeDao(90)] DROP TABLE if exists NOTICES cascade
+INFO  2016-04-21 19:10:17,192 [InitializeDao(90)] DROP TABLE if exists LOCALES cascade
+INFO  2016-04-21 19:10:17,207 [InitializeDao(90)] DROP TABLE if exists SYSTEM_ATTRIBUTES cascade
+INFO  2016-04-21 19:10:17,207 [InitializeDao(90)] DROP TABLE if exists VIEW_HISTORIES cascade
+INFO  2016-04-21 19:10:17,207 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_EDIT_GROUPS cascade
+INFO  2016-04-21 19:10:17,207 [InitializeDao(90)] DROP TABLE if exists WEBHOOKS cascade
+INFO  2016-04-21 19:10:17,207 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_FILES cascade
+INFO  2016-04-21 19:10:17,207 [InitializeDao(90)] DROP TABLE if exists NOTIFY_QUEUES cascade
+INFO  2016-04-21 19:10:17,223 [InitializeDao(90)] DROP TABLE if exists TEMPLATE_MASTERS cascade
+INFO  2016-04-21 19:10:17,223 [InitializeDao(90)] DROP TABLE if exists USER_GROUPS cascade
+INFO  2016-04-21 19:10:17,223 [InitializeDao(90)] DROP TABLE if exists ITEM_CHOICES cascade
+INFO  2016-04-21 19:10:17,223 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_EDIT_USERS cascade
+INFO  2016-04-21 19:10:17,223 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_HISTORIES cascade
+INFO  2016-04-21 19:10:17,223 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_ITEM_VALUES cascade
+INFO  2016-04-21 19:10:17,223 [InitializeDao(90)] DROP TABLE if exists ACCESS_LOGS cascade
+INFO  2016-04-21 19:10:17,223 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_TAGS cascade
+INFO  2016-04-21 19:10:17,223 [InitializeDao(90)] DROP TABLE if exists ROLE_FUNCTIONS cascade
+INFO  2016-04-21 19:10:17,223 [InitializeDao(90)] DROP TABLE if exists PROXY_CONFIGS cascade
+INFO  2016-04-21 19:10:17,239 [InitializeDao(90)] DROP TABLE if exists MAILS cascade
+INFO  2016-04-21 19:10:17,239 [InitializeDao(90)] DROP TABLE if exists LDAP_CONFIGS cascade
+INFO  2016-04-21 19:10:17,239 [InitializeDao(90)] DROP TABLE if exists LOGIN_HISTORIES cascade
+INFO  2016-04-21 19:10:17,239 [InitializeDao(90)] DROP TABLE if exists CONFIRM_MAIL_CHANGES cascade
+INFO  2016-04-21 19:10:17,239 [InitializeDao(90)] DROP TABLE if exists PROVISIONAL_REGISTRATIONS cascade
+INFO  2016-04-21 19:10:17,239 [InitializeDao(90)] DROP TABLE if exists USER_ROLES cascade
+INFO  2016-04-21 19:10:17,239 [InitializeDao(90)] DROP TABLE if exists NOTIFY_CONFIGS cascade
+INFO  2016-04-21 19:10:17,239 [InitializeDao(90)] DROP TABLE if exists ROLES cascade
+INFO  2016-04-21 19:10:17,239 [InitializeDao(90)] DROP TABLE if exists USER_CONFIGS cascade
+INFO  2016-04-21 19:10:17,254 [InitializeDao(90)] DROP TABLE if exists READ_MARKS cascade
+INFO  2016-04-21 19:10:17,254 [InitializeDao(90)] DROP TABLE if exists SYSTEMS cascade
+INFO  2016-04-21 19:10:17,254 [InitializeDao(90)] DROP TABLE if exists STOCKS cascade
+INFO  2016-04-21 19:10:17,254 [InitializeDao(90)] DROP TABLE if exists STOCK_KNOWLEDGES cascade
+INFO  2016-04-21 19:10:17,254 [InitializeDao(90)] DROP TABLE if exists USERS cascade
+INFO  2016-04-21 19:10:17,254 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_USERS cascade
+INFO  2016-04-21 19:10:17,254 [InitializeDao(90)] DROP TABLE if exists TAGS cascade
+INFO  2016-04-21 19:10:17,254 [InitializeDao(90)] DROP TABLE if exists TEMPLATE_ITEMS cascade
+INFO  2016-04-21 19:10:17,254 [Intercepter(215)] error. [object]class org.support.project.web.dao.SystemsDao_$$_jvstfee_a[proceed]_d17executeQuerySingle[param0]SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0[param1]class org.support.project.web.entity.SystemsEntity[param2][Ljava.lang.Object;@2c955487
+[throwable.getMessage()] テーブル "SYSTEMS" が見つかりません
+Table "SYSTEMS" not found; SQL statement:
+SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0 [42102-183] [cause] テーブル "SYSTEMS" が見つかりません
+Table "SYSTEMS" not found; SQL statement:
+SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0 [42102-183]
+----- SQL Infomation -----
+[sql]SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0
+[params]
+	[params][0]knowledge
+[execute]SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = knowledge  AND DELETE_FLAG = 0
+
+ERROR 2016-04-21 19:10:17,254 [Transaction(60)] Error(Rollback) : org.support.project.web.dao.SystemsDao_$$_jvstfee_a#_d42selectOnKey
+INFO  2016-04-21 19:10:17,270 [Intercepter(215)] error. [object]class org.support.project.web.dao.SystemsDao_$$_jvstfee_a[proceed]_d42selectOnKey[param0]knowledge
+[throwable.getMessage()] テーブル "SYSTEMS" が見つかりません
+Table "SYSTEMS" not found; SQL statement:
+SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0 [42102-183] [cause] テーブル "SYSTEMS" が見つかりません
+Table "SYSTEMS" not found; SQL statement:
+SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0 [42102-183]
+----- SQL Infomation -----
+[sql]SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = ?  AND DELETE_FLAG = 0
+[params]
+	[params][0]knowledge
+[execute]SELECT * FROM SYSTEMS  WHERE  SYSTEM_NAME = knowledge  AND DELETE_FLAG = 0
+
+INFO  2016-04-21 19:10:17,270 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGES cascade
+INFO  2016-04-21 19:10:17,270 [InitializeDao(90)] DROP TABLE if exists ACCOUNT_IMAGES cascade
+INFO  2016-04-21 19:10:17,270 [InitializeDao(90)] DROP TABLE if exists HASH_CONFIGS cascade
+INFO  2016-04-21 19:10:17,270 [InitializeDao(90)] DROP TABLE if exists GROUPS cascade
+INFO  2016-04-21 19:10:17,270 [InitializeDao(90)] DROP TABLE if exists SYSTEM_CONFIGS cascade
+INFO  2016-04-21 19:10:17,270 [InitializeDao(90)] DROP TABLE if exists WEBHOOK_CONFIGS cascade
+INFO  2016-04-21 19:10:17,270 [InitializeDao(90)] DROP TABLE if exists MAIL_CONFIGS cascade
+INFO  2016-04-21 19:10:17,270 [InitializeDao(90)] DROP TABLE if exists VOTES cascade
+INFO  2016-04-21 19:10:17,270 [InitializeDao(90)] DROP TABLE if exists COMMENTS cascade
+INFO  2016-04-21 19:10:17,270 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_GROUPS cascade
+INFO  2016-04-21 19:10:17,285 [InitializeDao(90)] DROP TABLE if exists PASSWORD_RESETS cascade
+INFO  2016-04-21 19:10:17,285 [InitializeDao(90)] DROP TABLE if exists FUNCTIONS cascade
+INFO  2016-04-21 19:10:17,285 [InitializeDao(90)] DROP TABLE if exists LIKES cascade
+INFO  2016-04-21 19:10:17,285 [InitializeDao(90)] DROP TABLE if exists NOTICES cascade
+INFO  2016-04-21 19:10:17,285 [InitializeDao(90)] DROP TABLE if exists LOCALES cascade
+INFO  2016-04-21 19:10:17,285 [InitializeDao(90)] DROP TABLE if exists SYSTEM_ATTRIBUTES cascade
+INFO  2016-04-21 19:10:17,285 [InitializeDao(90)] DROP TABLE if exists VIEW_HISTORIES cascade
+INFO  2016-04-21 19:10:17,285 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_EDIT_GROUPS cascade
+INFO  2016-04-21 19:10:17,285 [InitializeDao(90)] DROP TABLE if exists WEBHOOKS cascade
+INFO  2016-04-21 19:10:17,285 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_FILES cascade
+INFO  2016-04-21 19:10:17,285 [InitializeDao(90)] DROP TABLE if exists NOTIFY_QUEUES cascade
+INFO  2016-04-21 19:10:17,285 [InitializeDao(90)] DROP TABLE if exists TEMPLATE_MASTERS cascade
+INFO  2016-04-21 19:10:17,301 [InitializeDao(90)] DROP TABLE if exists USER_GROUPS cascade
+INFO  2016-04-21 19:10:17,301 [InitializeDao(90)] DROP TABLE if exists ITEM_CHOICES cascade
+INFO  2016-04-21 19:10:17,301 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_EDIT_USERS cascade
+INFO  2016-04-21 19:10:17,301 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_HISTORIES cascade
+INFO  2016-04-21 19:10:17,301 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_ITEM_VALUES cascade
+INFO  2016-04-21 19:10:17,301 [InitializeDao(90)] DROP TABLE if exists ACCESS_LOGS cascade
+INFO  2016-04-21 19:10:17,301 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_TAGS cascade
+INFO  2016-04-21 19:10:17,301 [InitializeDao(90)] DROP TABLE if exists ROLE_FUNCTIONS cascade
+INFO  2016-04-21 19:10:17,301 [InitializeDao(90)] DROP TABLE if exists PROXY_CONFIGS cascade
+INFO  2016-04-21 19:10:17,301 [InitializeDao(90)] DROP TABLE if exists MAILS cascade
+INFO  2016-04-21 19:10:17,301 [InitializeDao(90)] DROP TABLE if exists LDAP_CONFIGS cascade
+INFO  2016-04-21 19:10:17,301 [InitializeDao(90)] DROP TABLE if exists LOGIN_HISTORIES cascade
+INFO  2016-04-21 19:10:17,301 [InitializeDao(90)] DROP TABLE if exists CONFIRM_MAIL_CHANGES cascade
+INFO  2016-04-21 19:10:17,301 [InitializeDao(90)] DROP TABLE if exists PROVISIONAL_REGISTRATIONS cascade
+INFO  2016-04-21 19:10:17,317 [InitializeDao(90)] DROP TABLE if exists USER_ROLES cascade
+INFO  2016-04-21 19:10:17,317 [InitializeDao(90)] DROP TABLE if exists NOTIFY_CONFIGS cascade
+INFO  2016-04-21 19:10:17,317 [InitializeDao(90)] DROP TABLE if exists ROLES cascade
+INFO  2016-04-21 19:10:17,317 [InitializeDao(90)] DROP TABLE if exists USER_CONFIGS cascade
+INFO  2016-04-21 19:10:17,317 [InitializeDao(90)] DROP TABLE if exists READ_MARKS cascade
+INFO  2016-04-21 19:10:17,317 [InitializeDao(90)] DROP TABLE if exists SYSTEMS cascade
+INFO  2016-04-21 19:10:17,317 [InitializeDao(90)] DROP TABLE if exists STOCKS cascade
+INFO  2016-04-21 19:10:17,317 [InitializeDao(90)] DROP TABLE if exists STOCK_KNOWLEDGES cascade
+INFO  2016-04-21 19:10:17,317 [InitializeDao(90)] DROP TABLE if exists USERS cascade
+INFO  2016-04-21 19:10:17,317 [InitializeDao(90)] DROP TABLE if exists KNOWLEDGE_USERS cascade
+INFO  2016-04-21 19:10:17,317 [InitializeDao(90)] DROP TABLE if exists TAGS cascade
+INFO  2016-04-21 19:10:17,317 [InitializeDao(90)] DROP TABLE if exists TEMPLATE_ITEMS cascade
+INFO  2016-04-21 19:10:17,317 [InitializeDao(41)] Database initialize start.
+INFO  2016-04-21 19:10:17,535 [InitializeDao(47)] /org/support/project/web/database/ddl.sql is loaded.
+INFO  2016-04-21 19:10:17,613 [InitializeDao(47)] /org/support/project/knowledge/database/ddl.sql is loaded.
+INFO  2016-04-21 19:10:17,613 [InitializeDao(47)] /org/support/project/knowledge/database/init_datas.sql is loaded.
+INFO  2016-04-21 19:10:17,613 [InitializeDao(49)] Database initialize finish.
+INFO  2016-04-21 19:10:17,629 [InitDB(121)] Migrate to 1.1.0.pre1
+INFO  2016-04-21 19:10:17,675 [NotifyCommentLogicTest(50)] テストユーザ1でKnowledge登録
+INFO  2016-04-21 19:10:18,276 [NotifyCommentLogicTest(57)] テストユーザ1でKnowledge登録
+INFO  2016-04-21 19:10:18,573 [NotifyCommentLogicTest(64)] テストユーザ1でKnowledge登録
+INFO  2016-04-21 19:10:18,869 [NotifyCommentLogicTest(76)] テストユーザ1でKnowledge登録
+INFO  2016-04-21 19:10:19,259 [H2DBServerLogic(66)] H2 Database server stoped.
+INFO  2016-04-21 19:10:19,321 [SearchTest(37)] インデックスを削除しました
+INFO  2016-04-21 19:10:20,102 [SearchTest(74)] {"contents":"Lucene（ルシーン）は、Javaで記述された全文検索ソフトウェアである。あらかじめ蓄積した大量のデータから、指定したキーワードを探し出す機能を持つ。Javaのクラスライブラリとして提供される。","highlightedContents":"\u003Cspan class=\"mark\"\u003ELucene\u003C/span\u003E（ルシーン）は、Javaで記述された全文検索ソフトウェアである。あらかじめ蓄積した大量のデータから、指定したキーワードを探し出す機能を持つ。Javaのクラスライブラリとして提供される。","highlightedTitle":"[1]\u003Cspan class=\"mark\"\u003ELucene\u003C/span\u003E","id":"1648","score":0.1830749213695526,"title":"[1]Lucene","type":0}
+INFO  2016-04-21 19:10:20,680 [SearchTest(97)] {"contents":"Lucene（ルシーン）は、Javaで記述された全文検索ソフトウェアである。あらかじめ蓄積した大量のデータから、指定したキーワードを探し出す機能を持つ。Javaのクラスライブラリとして提供される。","highlightedContents":"\u003Cspan class=\"mark\"\u003ELucene\u003C/span\u003E（ルシーン）は、Javaで記述された全文検索ソフトウェアである。あらかじめ蓄積した大量のデータから、指定したキーワードを探し出す機能を持つ。Javaのクラスライブラリとして提供される。","highlightedTitle":"[1]\u003Cspan class=\"mark\"\u003ELucene\u003C/span\u003E","id":"1648","score":0.6036866903305054,"title":"[1]Lucene","type":0}
+INFO  2016-04-21 19:10:20,680 [SearchTest(97)] {"contents":"Lucene（ルシーン）は、Javaで記述された全文検索ソフトウェアである。","highlightedContents":"\u003Cspan class=\"mark\"\u003ELucene\u003C/span\u003E（ルシーン）は、Javaで記述された全文検索ソフトウェアである。","highlightedTitle":null,"id":"2421","score":0.05696805194020271,"title":"[2]るしーん","type":0}
+INFO  2016-04-21 19:10:21,725 [SearchTest(120)] 検索（ユーザで絞り込み）
+INFO  2016-04-21 19:10:21,740 [SearchTest(129)] {"contents":"Luceneは、Javaで記述された全文検索ソフトウェアである。","highlightedContents":"\u003Cspan class=\"mark\"\u003ELucene\u003C/span\u003Eは、Javaで記述された全文検索ソフトウェアである。","highlightedTitle":null,"id":"5641","score":0.9806087613105774,"title":"[3]るしーん","type":0}
+INFO  2016-04-21 19:10:21,740 [SearchTest(137)] 再度検索（タグで絞り込み）
+INFO  2016-04-21 19:10:21,756 [SearchTest(145)] 再度検索（絞り込みなし）
+INFO  2016-04-21 19:10:21,772 [SearchTest(152)] {"contents":"Lucene（ルシーン）は、Javaで記述された全文検索ソフトウェアである。あらかじめ蓄積した大量のデータから、指定したキーワードを探し出す機能を持つ。Javaのクラスライブラリとして提供される。","highlightedContents":"\u003Cspan class=\"mark\"\u003ELucene\u003C/span\u003E（ルシーン）は、Javaで記述された全文検索ソフトウェアである。あらかじめ蓄積した大量のデータから、指定したキーワードを探し出す機能を持つ。Javaのクラスライブラリとして提供される。","highlightedTitle":"[1]\u003Cspan class=\"mark\"\u003ELucene\u003C/span\u003E","id":"1648","score":0.8539716601371765,"title":"[1]Lucene","type":0}
+INFO  2016-04-21 19:10:21,772 [SearchTest(152)] {"contents":"Lucene（ルシーン）は、Javaで記述された全文検索ソフトウェアである。","highlightedContents":"\u003Cspan class=\"mark\"\u003ELucene\u003C/span\u003E（ルシーン）は、Javaで記述された全文検索ソフトウェアである。","highlightedTitle":null,"id":"2421","score":0.0603787899017334,"title":"[2]るしーん","type":0}
+INFO  2016-04-21 19:10:21,772 [SearchTest(152)] {"contents":"Luceneは、Javaで記述された全文検索ソフトウェアである。","highlightedContents":"\u003Cspan class=\"mark\"\u003ELucene\u003C/span\u003Eは、Javaで記述された全文検索ソフトウェアである。","highlightedTitle":null,"id":"5641","score":0.0603787899017334,"title":"[3]るしーん","type":0}
+INFO  2016-04-21 19:10:21,772 [SearchTest(157)] 再度検索 limit/offset
+INFO  2016-04-21 19:10:21,803 [SearchTest(166)] {"contents":"Luceneは、Javaで記述された全文検索ソフトウェアである。","highlightedContents":"\u003Cspan class=\"mark\"\u003ELucene\u003C/span\u003Eは、Javaで記述された全文検索ソフトウェアである。","highlightedTitle":null,"id":"5641","score":0.0603787899017334,"title":"[3]るしーん","type":0}

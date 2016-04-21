@@ -9,12 +9,6 @@
 
 <% JspUtil jspUtil = new JspUtil(request, pageContext); %>
 
-<script type="text/javascript">
-<!--
-location.href="./open.knowledge/list";
--->
-</script>
-
 <c:import url="/WEB-INF/views/commons/layout/layoutTop.jsp">
 
 <c:param name="PARAM_HEAD">
@@ -24,9 +18,8 @@ location.href="./open.knowledge/list";
 </c:param>
 
 <c:param name="PARAM_CONTENT">
-<!--
 	<div id="headerimg">
-		<div id="headerwrap">
+		<div id="headerwrap" onclick="location.href='<%= request.getContextPath()%>/open.knowledge/list';" style="cursor: pointer;">
 			<h1><span><i class="fa fa-book"></i>&nbsp;Knowledge</span></h1>
 			<h2><span>Free Knowledge Base System</span></h2>
 			<br/>
@@ -36,23 +29,9 @@ location.href="./open.knowledge/list";
 			</a>
 			<br/><br/>
 			<br/><br/>
-			
-			<%
-				AppConfig appConfig = AppConfig.get();
-				List<LabelValue> languages = appConfig.getLanguages();
-				for (LabelValue language : languages) {
-			%>
-				<a href="<%= request.getContextPath() %>/lang/select/<%= language.getValue() %>" style="cursor: pointer;color: red;font-size: 18px">
-					<%= language.getLabel() %>
-				</a>
-				&nbsp;&nbsp;
-			<%
-				}
-			%>
 		</div>
 	</div>
--->
-<!--
+
 <div class="container">
 		<div class="contects" id="about">
 			<div class="row">
@@ -62,28 +41,28 @@ location.href="./open.knowledge/list";
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-sm-6 col-md-6 col-lg-3">
+				<div class="col-sm-6 col-md-3 col-lg-3">
 					<div class="about-icon">
 						<i class="fa fa-github icon-img"></i>
 					</div>
 					<div class="about-title"><%=jspUtil.label("knowledge.top.about.title.1")%></div>
 					<div class="about-description"><%=jspUtil.label("knowledge.top.about.description.1")%></div>
 				</div>
-				<div class="col-sm-6 col-md-6 col-lg-3">
+				<div class="col-sm-6 col-md-3 col-lg-3">
 					<div class="about-icon">
 						<i class="fa fa-download icon-img"></i>
 					</div>
 					<div class="about-title"><%=jspUtil.label("knowledge.top.about.title.2")%></div>
 					<div class="about-description"><%=jspUtil.label("knowledge.top.about.description.2")%></div>
 				</div>
-				<div class="col-sm-6 col-md-6 col-lg-3">
+				<div class="col-sm-6 col-md-3 col-lg-3">
 					<div class="about-icon">
 						<i class="fa fa-mobile-phone icon-img"></i>
 					</div>
 					<div class="about-title"><%=jspUtil.label("knowledge.top.about.title.3")%></div>
 					<div class="about-description"><%=jspUtil.label("knowledge.top.about.description.3")%></div>
 				</div>
-				<div class="col-sm-6 col-md-6 col-lg-3">
+				<div class="col-sm-6 col-md-3 col-lg-3">
 					<div class="about-icon">
 						<i class="fa fa-pencil icon-img"></i>
 					</div>
@@ -92,28 +71,28 @@ location.href="./open.knowledge/list";
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-sm-6 col-md-6 col-lg-3">
+				<div class="col-sm-6 col-md-3 col-lg-3">
 					<div class="about-icon">
 						<i class="fa fa-search icon-img"></i>
 					</div>
 					<div class="about-title"><%=jspUtil.label("knowledge.top.about.title.5")%></div>
 					<div class="about-description"><%=jspUtil.label("knowledge.top.about.description.5")%></div>
 				</div>
-				<div class="col-sm-6 col-md-6 col-lg-3">
+				<div class="col-sm-6 col-md-3 col-lg-3">
 					<div class="about-icon">
 						<i class="fa fa-bell-o icon-img"></i>
 					</div>
 					<div class="about-title"><%=jspUtil.label("knowledge.top.about.title.6")%></div>
 					<div class="about-description"><%=jspUtil.label("knowledge.top.about.description.6")%></div>
 				</div>
-				<div class="col-sm-6 col-md-6 col-lg-3">
+				<div class="col-sm-6 col-md-3 col-lg-3">
 					<div class="about-icon">
 						<i class="fa fa-paperclip icon-img"></i>
 					</div>
 					<div class="about-title"><%=jspUtil.label("knowledge.top.about.title.7")%></div>
 					<div class="about-description"><%=jspUtil.label("knowledge.top.about.description.7")%></div>
 				</div>
-				<div class="col-sm-6 col-md-6 col-lg-3">
+				<div class="col-sm-6 col-md-3 col-lg-3">
 					<div class="about-icon">
 						<i class="fa fa-comments icon-img"></i>
 					</div>
@@ -134,7 +113,6 @@ location.href="./open.knowledge/list";
 		
 		</div>
 </div>
--->
 
 </c:param>
 
