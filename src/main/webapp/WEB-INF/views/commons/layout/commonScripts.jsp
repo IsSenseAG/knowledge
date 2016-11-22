@@ -1,6 +1,8 @@
+<%@page pageEncoding="UTF-8" isELIgnored="false" session="false" errorPage="/WEB-INF/views/commons/errors/jsp_error.jsp"%>
+
+<%@page import="org.support.project.web.config.AppConfig"%>
 <%@page import="org.support.project.web.util.JspUtil"%>
 <%@page import="org.support.project.knowledge.control.Control"%>
-<%@page pageEncoding="UTF-8" isELIgnored="false" session="false" errorPage="/WEB-INF/views/commons/errors/jsp_error.jsp"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
@@ -11,8 +13,10 @@
 <script type="text/javascript" src="<%= request.getContextPath() %>/bower/jquery/dist/jquery.min.js"></script>
 <script type="text/javascript" src="<%= request.getContextPath() %>/bower/bootstrap/dist/js/bootstrap.min.js"></script>
 
-<script type="text/javascript" src="<%= request.getContextPath() %>/bower/notifyjs/dist/notify.js"></script>
-<script type="text/javascript" src="<%= request.getContextPath() %>/bower/notifyjs/dist/notify-combined.js"></script>
+<script type="text/javascript" src="<%= request.getContextPath() %>/bower/bluebird/js/browser/bluebird.min.js"></script>
+
+<script type="text/javascript" src="<%= request.getContextPath() %>/bower/notifyjs/dist/notify.min.js"></script>
+<script type="text/javascript" src="<%= request.getContextPath() %>/bower/notifyjs/dist/notify-combined.min.js"></script>
 <script type="text/javascript" src="<%= request.getContextPath() %>/bower/notifyjs/dist/styles/bootstrap/notify-bootstrap.js"></script>
 
 <script type="text/javascript" src="<%= request.getContextPath() %>/bower/marked/lib/marked.js"></script>
@@ -21,15 +25,18 @@
 <script type="text/javascript" src="<%= request.getContextPath() %>/bower/bootbox/bootbox.js"></script>
 
 <script type="text/javascript" src="<%= request.getContextPath() %>/bower/notify.js/notify.js"></script>
+<script type="text/javascript" src="<%= request.getContextPath() %>/bower/jquery-oembed-all/jquery.oembed.js"></script>
 
-<!--[if lt IE 9]>
-    <script src="<%= request.getContextPath() %>/bower/html5shiv/dist/html5shiv.min.js"></script>
-    <script src="<%= request.getContextPath() %>/bower/respond/dest/respond.min.js"></script>
-<![endif]-->
+<script type="text/javascript" src="<%= jspUtil.mustReloadFile("/js/common.js") %>"></script>
 
 
 <script type="text/javascript">
 var _CONTEXT = '<%= request.getContextPath() %>';
+<% if (jspUtil.logined()) { %>
+var _LOGIN_USER_ID = <%= jspUtil.id() %>;
+<% } else { %>
+var _LOGIN_USER_ID = null;
+<% } %>
 
 var getCookies = function() {
     var result = new Array();
@@ -45,14 +52,6 @@ var getCookies = function() {
 }
 
 var setCookie = function(c_name, value, expiredays, path) {
-//	var path = location.pathname;
-//	var paths = new Array();
-//	paths = path.split("/");
-//	if (paths[paths.length - 1] != "") {
-//		paths[paths.length - 1] = "";
-//		path = paths.join("/");
-//	}
-	
 	var extime = new Date().getTime();
 	var cltime = new Date(extime + (60 * 60 * 24 * 1000 * expiredays));
 	var exdate = cltime.toUTCString();
@@ -64,12 +63,13 @@ var setCookie = function(c_name, value, expiredays, path) {
 	if (path) {
 		s += ' path=' + path + ';';
 	} else {
-		s += ' path=' + _CONTEXT + ';';
+		s += ' path=' + _CONTEXT + '/;';
+//		s += ' path=/;';
 	}
 	
 	document.cookie = s;
 }
-setCookie('<%= JspUtil.TIME_ZONE_OFFSET %>', (new Date()).getTimezoneOffset(), 60);
+setCookie('<%= AppConfig.get().getSystemName() %>_<%= JspUtil.TIME_ZONE_OFFSET %>', (new Date()).getTimezoneOffset(), 60);
 
 <% 
 
@@ -116,14 +116,20 @@ function onNotifyShow() {
 	console.log('notification was shown!');
 }
 
-function notifyDesktop(msg) {
+function notifyDesktop(msg, link) {
 	$.notify(msg, 'info');
 	if (Notify.isSupported) {
 		Notify.requestPermission(
 			function() {
 				var myNotification = new Notify('Notify from Knowledge', {
 					body: msg,
-					notifyShow: onNotifyShow
+					notifyShow: onNotifyShow,
+					timeout: 3,
+					notifyClick: function() {
+						if (link) {
+							window.location.href=link;
+						}
+					}
 				});
 				myNotification.show();
 			},
@@ -157,15 +163,13 @@ window.onload = function() {
 		console.log('[RECEIVE] ');
 		var result = JSON.parse(message.data);
 		console.log(result);
-		notifyDesktop(result.message);
+		notifyDesktop(result.message, result.result);
 	}
 	webSocket.onerror = function(message) {
 	}
 	<%-- //webSocket.send(message); --%>
 }
 <% } %>
-
-
 
 </script>
 

@@ -1,49 +1,65 @@
 package org.support.project.knowledge.entity;
 
-import java.util.List;
-import java.util.Map;
-import java.sql.Timestamp;
-
-import org.support.project.common.bean.ValidateError;
 import org.support.project.di.Container;
 import org.support.project.di.DI;
 import org.support.project.di.Instance;
 import org.support.project.knowledge.entity.gen.GenStocksEntity;
 
-
 /**
  * ストックしたナレッジ
  */
-@DI(instance=Instance.Prototype)
+@DI(instance = Instance.Prototype)
 public class StocksEntity extends GenStocksEntity {
 
-	/** SerialVersion */
-	private static final long serialVersionUID = 1L;
+    public static final int STOCKTYPE_PRIVATE = 0;
+    public static final int STOCKTYPE_PUBLIC = 1;
 
-	/**
-	 * インスタンス取得
-	 * AOPに対応
-	 * @return インスタンス
-	 */
-	public static StocksEntity get() {
-		return Container.getComp(StocksEntity.class);
-	}
+    /** SerialVersion */
+    private static final long serialVersionUID = 1L;
 
-	/**
-	 * コンストラクタ
-	 */
-	public StocksEntity() {
-		super();
-	}
+    /**
+     * ストックに登録されたナレッジの件数
+     */
+    private Integer knowledgeCount;
 
-	/**
-	 * コンストラクタ
-	 * @param knowledgeId ナレッジID
-	 * @param userId USER_ID
-	 */
+    /**
+     * インスタンス取得 AOPに対応
+     * 
+     * @return インスタンス
+     */
+    public static StocksEntity get() {
+        return Container.getComp(StocksEntity.class);
+    }
 
-	public StocksEntity(Long knowledgeId, Integer userId) {
-		super(knowledgeId, userId);
-	}
+    /**
+     * コンストラクタ
+     */
+    public StocksEntity() {
+        super();
+    }
+
+    /**
+     * コンストラクタ
+     * 
+     * @param stockId stockId
+     */
+
+    public StocksEntity(Long stockId) {
+        super(stockId);
+    }
+
+    /**
+     * @return the knowledgeCount
+     */
+    public Integer getKnowledgeCount() {
+        return knowledgeCount;
+    }
+
+    /**
+     * @param knowledgeCount the knowledgeCount to set
+     */
+    public void setKnowledgeCount(Integer knowledgeCount) {
+        this.knowledgeCount = knowledgeCount;
+    }
 
 }

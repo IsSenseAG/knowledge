@@ -1,8 +1,5 @@
-<%@page import="org.support.project.knowledge.entity.KnowledgesEntity"%>
-<%@page import="org.support.project.knowledge.entity.CommentsEntity"%>
-<%@page import="org.support.project.knowledge.logic.KnowledgeLogic"%>
-<%@page import="org.support.project.web.util.JspUtil"%>
 <%@page pageEncoding="UTF-8" isELIgnored="false" session="false" errorPage="/WEB-INF/views/commons/errors/jsp_error.jsp"%>
+<%@page import="org.support.project.web.util.JspUtil"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
@@ -12,223 +9,69 @@
 <c:import url="/WEB-INF/views/commons/layout/layoutMain.jsp">
 
 <c:param name="PARAM_HEAD">
-<link rel="stylesheet" href="<%= request.getContextPath() %>/bower/bootstrap-tagsinput/dist/bootstrap-tagsinput.css" />
-<link rel="stylesheet" href="<%= jspUtil.mustReloadFile("/css/knowledge-edit.css") %>" />
-<link rel="stylesheet" href="<%= jspUtil.mustReloadFile("/css/knowledge-view.css") %>" />
-<link rel="stylesheet" href="<%= jspUtil.mustReloadFile("/css/markdown.css") %>" />
+<jsp:include page="partials/partials-view-styles.jsp"></jsp:include>
 </c:param>
-
 <c:param name="PARAM_SCRIPTS">
-<script type="text/javascript" src="<%= request.getContextPath() %>/bower/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js"></script>
-<script type="text/javascript" src="<%= request.getContextPath() %>/bower/echojs/dist/echo.min.js"></script>
-<script type="text/javascript" src="<%= request.getContextPath() %>/bower/emoji-parser/main.min.js"></script>
-<script type="text/javascript" src="<%= jspUtil.mustReloadFile("/js/knowledge-view.js") %>"></script>
-
-<script>
-var LABEL_LIKE = '<%= jspUtil.label("knowledge.view.like") %>';
-</script>
-
+<jsp:include page="partials/partials-view-scripts.jsp"></jsp:include>
 </c:param>
 
 <c:param name="PARAM_PAGE_TITLE">
-Knowledge - [<%= jspUtil.out("knowledgeId") %>] <%= jspUtil.out("title", JspUtil.ESCAPE_CLEAR) %>
+<%= jspUtil.out("title", JspUtil.ESCAPE_CLEAR) %> - Knowledge
 </c:param>
 
 
 <c:param name="PARAM_CONTENT">
-<%-- <h4 class="title"><%= jspUtil.label("knowledge.view.title") %></h4> --%>
-<h4 class="title">[<%= jspUtil.out("knowledgeId") %>] <%= jspUtil.out("title", JspUtil.ESCAPE_CLEAR) %></h4>
-	<div class="row">
-		<div class="col-sm-12">
-			<div class="thumbnail">
-				<div class="caption">
-					<c:if test="${!empty tagNames}">
-					<p class="tags">
-					<input type="text" name="tags" id="input_tags" placeholder="" data-role="tagsinput"
-						value="<%= jspUtil.out("tagNames", JspUtil.ESCAPE_CLEAR) %>" disabled="disabled"/>
-					</p>
-					</c:if>
-					
-					<p>
-						<button class="btn btn-warning" onclick="addlike(<%= jspUtil.out("knowledgeId") %>);">
-							<i class="fa fa-thumbs-o-up"></i>&nbsp;
-							<%= jspUtil.label("knowledge.view.like") %>
-						</button>
-					</p>
-					
-					<p>
-						<%= jspUtil.is(String.valueOf(KnowledgeLogic.PUBLIC_FLAG_PUBLIC), "publicFlag", 
-								jspUtil.label("label.public.view")) %>
-						<%= jspUtil.is(String.valueOf(KnowledgeLogic.PUBLIC_FLAG_PRIVATE), "publicFlag", 
-								jspUtil.label("label.private.view")) %>
-								
-						<% if(jspUtil.is(String.valueOf(KnowledgeLogic.PUBLIC_FLAG_PROTECT), "publicFlag")) { %>
-							<button class="btn btn-link" onclick="viewProtect(<%= jspUtil.out("knowledgeId") %>);">
-								<%= jspUtil.label("label.protect.view") %>
-							</button>
-							
-						<% } %>
-					
-						<a class="btn btn-link" href="<%= request.getContextPath() %>/open.knowledge/likes/<%= jspUtil.out("knowledgeId") %><%= jspUtil.out("params") %>" >
-							<i class="fa fa-thumbs-o-up"></i>&nbsp;
-							× <span id="like_count"><%= jspUtil.out("like_count") %></span>
-						</a>
-						
-						<a class="btn btn-link" href="#comments" id="commentsLink">
-							<i class="fa fa-comments-o"></i>&nbsp;
-							× <%= jspUtil.out("comments.size()") %>
-						</a>
-					</p>
-					
-					
-					<div class="insert_info">
-						<div class="saveType">
-						[<%= jspUtil.label("label.registration") %>]
-						</div>
-						<img src="<%= request.getContextPath()%>/images/loader.gif" 
-							data-echo="<%= request.getContextPath()%>/open.account/icon/<%= jspUtil.out("insertUser") %>" 
-							alt="icon" width="36" height="36" style="float:left" />
-						<a href="<%= request.getContextPath() %>/open.knowledge/list/0?user=<%= jspUtil.out("insertUser") %>">
-						<i class="fa fa-user" style="margin-left: 5px;"></i>&nbsp;<%= jspUtil.out("insertUserName", JspUtil.ESCAPE_CLEAR) %>
-						</a>
-						<br/>
-						<a href="<%= request.getContextPath() %>/open.knowledge/histories/<%= jspUtil.out("knowledgeId") %>">
-						<i class="fa fa-calendar" style="margin-left: 5px;"></i>&nbsp;<%= jspUtil.date("insertDatetime")%>
-						</a>
-					</div>
-					
-					<div class="insert_info">
-						<div class="saveType">
-						[<%= jspUtil.label("label.update") %>]
-						</div>
-						<img src="<%= request.getContextPath()%>/images/loader.gif" 
-							data-echo="<%= request.getContextPath()%>/open.account/icon/<%= jspUtil.out("updateUser") %>" 
-							alt="icon" width="36" height="36" style="float:left" />
-						<a href="<%= request.getContextPath() %>/open.knowledge/list/0?user=<%= jspUtil.out("updateUser") %>">
-						<i class="fa fa-user" style="margin-left: 5px;"></i>&nbsp;<%= jspUtil.out("updateUserName", JspUtil.ESCAPE_CLEAR) %>
-						</a>
-						<br/>
-						<a href="<%= request.getContextPath() %>/open.knowledge/histories/<%= jspUtil.out("knowledgeId") %>">
-						<i class="fa fa-calendar" style="margin-left: 5px;"></i>&nbsp;<%= jspUtil.date("updateDatetime")%>
-						</a>
-					</div>
-					
-					
-					<c:forEach var="file" items="${files}" >
-						<div class="downloadfile">
-							<img src="<%= jspUtil.out("file.thumbnailUrl") %>" />
-							<a href="<%= jspUtil.out("file.url") %>">
-							<%= jspUtil.out("file.name") %>
-							</a>
-						</div>
-					</c:forEach>
-					
-					<div style="word-break:break-all" id="content" class="markdown">
-					<%= jspUtil.out("content", JspUtil.ESCAPE_NONE) %>
-					</div>
-					
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<% if (request.getRemoteUser() != null) { 
-		if ((boolean) request.getAttribute("edit")) { %>
-		<a href="<%= request.getContextPath() %>/protect.knowledge/view_edit/<%= jspUtil.out("knowledgeId") %><%= jspUtil.out("params") %>"
-		class="btn btn-primary" role="button"><i class="fa fa-edit"></i>&nbsp;
-		<%= jspUtil.label("label.edit") %>
-		</a>
-	<%	} %>
-	<% } else { %>
-		<a href="<%= request.getContextPath() %>/protect.knowledge/view_edit/<%= jspUtil.out("knowledgeId") %><%= jspUtil.out("params") %>"
-		class="btn btn-primary" role="button"><i class="fa fa-edit"></i>&nbsp;
-		<%= jspUtil.label("knowledge.view.edit.with.login") %>
-		</a>
-	<% } %>
+    <div class="row" id="content_head">
+        <%-- 左上のヘッダー部分 --%>
+        <div class="col-sm-8">
+            <h4 class="title"><%=jspUtil.out("title", JspUtil.ESCAPE_CLEAR)%></h4>
+            <div style="margin-top: 10px;">
+                <jsp:include page="partials/partials-view-template.jsp"></jsp:include>
+            </div>
+            
+            <%-- 更新者情報 --%>
+            <jsp:include page="partials/partials-view-editor.jsp"></jsp:include>
+            <%-- タグ --%>
+            <jsp:include page="partials/partials-view-tag.jsp"></jsp:include>
+            <%-- ストックに入れているか --%>
+            <jsp:include page="partials/partials-view-stock.jsp"></jsp:include>
+            <%-- 公開区分 --%>
+            <jsp:include page="partials/partials-view-public-flag.jsp"></jsp:include>
+        </div>
 
-	<a href="<%= request.getContextPath() %>/open.knowledge/list/<%= jspUtil.out("offset") %><%= jspUtil.out("params") %>"
-	class="btn btn-success" role="button"><i class="fa fa-list-ul"></i>&nbsp;<%= jspUtil.label("knowledge.view.back.list") %></a>
-	
-	<hr/>
-	<h5 id="comments"><i class="fa fa-comments-o"></i>&nbsp;Comment</h5>
-	<c:forEach var="comment" items="${comments}" varStatus="status">
-	<%
-		CommentsEntity comment = jspUtil.getValue("comment", CommentsEntity.class);
-		Integer knowledge = jspUtil.getValue("insertUser", Integer.class);
-		if (!comment.getInsertUser().equals(knowledge)) {
-	%>
-	<div class="row">
-		<div class="col-sm-12">
-		<%= jspUtil.date("comment.updateDatetime")%> [<%= jspUtil.out("comment.updateUserName") %>]
-		</div>
-	</div>
-	<div class="question_Box">
-	<div class="question_image">
-		<img src="<%= request.getContextPath()%>/images/loader.gif" 
-			data-echo="<%= request.getContextPath()%>/open.account/icon/<%= jspUtil.out("comment.updateUser") %>" 
-			alt="icon" width="64" height="64"/>
-	</div>
-	<div class="arrow_question">
-	<%= jspUtil.out("comment.comment", JspUtil.ESCAPE_NONE) %>
-	</div><!-- /.arrow_question -->
-	</div><!-- /.question_Box -->
-	<% } else { %>
-	<div class="row">
-		<div class="col-sm-12" style="text-align: right;">
-		<%= jspUtil.date("comment.updateDatetime")%> [<%= jspUtil.out("comment.updateUserName") %>]
-		</div>
-	</div>
-	<div class="question_Box">
-	<div class="answer_image">
-		<img src="<%= request.getContextPath()%>/images/loader.gif" 
-			data-echo="<%= request.getContextPath()%>/open.account/icon/<%= jspUtil.out("comment.updateUser") %>" 
-			alt="icon" width="64" height="64"/>
-	</div>
-	<div class="arrow_answer">
-	<%= jspUtil.out("comment.comment", JspUtil.ESCAPE_NONE) %>
-	</div><!-- /.arrow_answer -->
-	</div><!-- /.question_Box -->
-	<% } %>
-	</c:forEach>
-	
-	<% if (request.getRemoteUser() != null) { %>
-		<form action="<%= request.getContextPath()%>/protect.knowledge/comment/<%= jspUtil.out("knowledgeId") %><%= jspUtil.out("params") %>" method="post" role="form">
-		<textarea class="form-control" name="addcomment" rows="1" placeholder="Comment" id="comment"><%= jspUtil.out("addcomment") %></textarea>
-		<a data-toggle="modal" href="<%= request.getContextPath()%>/open.emoji/people" data-target="#emojiPeopleModal">people</a>
-		<a data-toggle="modal" href="<%= request.getContextPath()%>/open.emoji/nature" data-target="#emojiNatureModal">nature</a>
-		<a data-toggle="modal" href="<%= request.getContextPath()%>/open.emoji/objects" data-target="#emojiObjectsModal">objects</a>
-		<a data-toggle="modal" href="<%= request.getContextPath()%>/open.emoji/places" data-target="#emojiPlacesModal">places</a>
-		<a data-toggle="modal" href="<%= request.getContextPath()%>/open.emoji/symbols" data-target="#emojiSymbolsModal">symbols</a>
-		<br/>
-		
-	<% if (jspUtil.out("insertUser").equals(request.getRemoteUser())) { %>
-		<button type="button" class="btn btn-info" onclick="previewans();"><i class="fa fa-play-circle"></i>&nbsp;<%= jspUtil.label("label.preview") %></button>
-	<%	} else { %>
-		<button type="button" class="btn btn-info" onclick="preview();"><i class="fa fa-play-circle"></i>&nbsp;<%= jspUtil.label("label.preview") %></button>
-	<%	} %>
-		
-		<button type="submit" class="btn btn-primary"><i class="fa fa-comment-o"></i>&nbsp;<%= jspUtil.label("knowledge.view.comment") %></button>
-		
-		<input type="hidden" name="offset" value="<%= jspUtil.out("offset") %>" />
-		<input type="hidden" name="keyword" value="<%= jspUtil.out("keyword") %>" />
-		<input type="hidden" name="tag" value="<%= jspUtil.out("tag") %>" />
-		<input type="hidden" name="user" value="<%= jspUtil.out("user") %>" />
-		<input type="hidden" name="loginuser" value="<%= request.getRemoteUser() %>" id="loginuser" />
-		
-		</form>
-	<% } else { %>
-		<form action="<%= request.getContextPath()%>/protect.knowledge/view/<%= jspUtil.out("knowledgeId") %>" method="get" role="form">
-		<button type="submit" class="btn btn-primary"><i class="fa fa-comment-o"></i>&nbsp;<%= jspUtil.label("knowledge.view.comment.with.login") %></button>
-		</form>
-	<% } %>
+        <%-- 右上のボタン部分 --%>
+        <div class="col-sm-4">
+            <%-- 公開区分やイイネ件数など --%>
+            <jsp:include page="partials/partials-view-menu-buttons.jsp"></jsp:include>
+            <%-- 目次 --%>
+            <jsp:include page="partials/partials-view-toc.jsp"></jsp:include>
+        </div>
+    </div>
 
+    <%-- ナレッジ表示（メインのコンテンツ部分） --%>
+    <div class="row" id="content_main">
+        <div class="col-sm-8" id="main_contents">
+            <%-- メインのコンテンツ --%>
+            <jsp:include page="partials/partials-view-main-contents.jsp"></jsp:include>
+        </div>
+        <div class="col-sm-4" id="attach_files">
+            <%-- 添付ファイル --%>
+            <jsp:include page="partials/partials-view-attach-files.jsp"></jsp:include>
+        </div>
+    </div>
 
-<p class="preview markdown" id="preview"></p>
-<span style="display: none;" id="comment_text">
-</span>
+    <%-- コメント表示 --%>
+    <jsp:include page="partials/partials-view-comment-list.jsp"></jsp:include>
 
+    <%-- コメント登録 --%>
+    <hr />
+    <jsp:include page="partials/partials-view-comment-edit.jsp"></jsp:include>
 
-<jsp:include page="../../open/emoji/cheatsheet.jsp"></jsp:include>
+    <%-- Stock Modal --%>
+    <jsp:include page="partials/partials-view-modal-stock.jsp"></jsp:include>
+
+    <%-- Emoji --%>
+    <jsp:include page="../../open/emoji/cheatsheet.jsp"></jsp:include>
 
 
 </c:param>
